@@ -1,0 +1,199 @@
+@font-face {
+    font-family: acumin-pro;
+    src: url(../../public//static/Acumin-RPro.otf);
+}
+
+@font-face {
+    font-family: acumin-pro-bold;
+    src: url(../../public//static/Acumin-BdPro.otf);
+}
+@font-face {
+    font-family: Neue Machinai-Light;
+    src: url(../../public//static//NeueMachina-Light.otf);
+}
+@font-face {
+    font-family: Neue Machinai-Regular;
+    src: url(../../public//static//NeueMachina-Regular.otf);
+}
+@font-face {
+    font-family: Neue Machinai-Bold;
+    src: url(../../public/static//NeueMachina-Ultrabold.otf);
+}
+@font-face {
+    font-family: BetterGrade;
+    src: url(../../public/static/BetterGrade-519DV.ttf);
+}
+
+
+@media only screen and (min-width: 1px) and (max-width: 300px) {
+    .container{
+        height: 100vh;
+        width: 100vw;
+        background-color: rgb(0, 0, 0);
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 500px) {
+.container{
+    height: 100vh;
+    width: 100vw;
+    background-color: bisque;
+}
+
+.ContentSection{
+    margin-top:5rem;
+    
+    height: auto;
+    width: 100%;
+    background-color: bisque;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.Content1{
+    height: auto;
+    width: auto;
+    font-family: BetterGrade;
+    color: #9c4eff;
+    font-size: 4rem;
+    margin-left:auto ;
+    margin-right:auto ;
+}
+
+.Content2{
+    height: auto;
+    width: auto;
+    font-family: Neue Machinai-Regular;
+    color:#0c0c0c ;
+    font-size: 3rem;
+    margin-left:auto ;
+    margin-right:auto ;
+}
+
+}
+
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+
+    .container{
+        height: 100vh;
+        width: 100vw;
+        background-color: bisque;
+    }
+    
+    .ContentSection{
+        margin-top:5rem;
+        
+        height: auto;
+        width: 100%;
+        background-color: bisque;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .Content1{
+        height: auto;
+        width: auto;
+        font-family: BetterGrade;
+        color: #9c4eff;
+        font-size: 4rem;
+        margin-left:auto ;
+        margin-right:auto ;
+    }
+    
+    .Content2{
+        height: auto;
+        width: auto;
+        font-family: Neue Machinai-Regular;
+        color:#0c0c0c ;
+        font-size: 4rem;
+        margin-left:auto ;
+        margin-right:auto ;
+    }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+
+    .container{
+        height: 100vh;
+        width: 100vw;
+        background-color: bisque;
+    }
+    
+    .ContentSection{
+        margin-top:5rem;
+        
+        height: auto;
+        width: 100%;
+        background-color: bisque;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .Content1{
+        height: auto;
+        width: auto;
+        font-family: BetterGrade;
+        color: #9c4eff;
+        font-size: 4rem;
+        margin-left:auto ;
+        margin-right:auto ;
+    }
+    
+    .Content2{
+        height: auto;
+        width: auto;
+        font-family: Neue Machinai-Regular;
+        color:#0c0c0c ;
+        font-size: 4rem;
+        margin-left:auto ;
+        margin-right:auto ;
+    }
+
+}
+
+@media only screen and (min-width: 1201px){
+
+    
+    .container{
+        height: 100vh;
+        width: 100vw;
+        background-color: bisque;
+    }
+    
+    .ContentSection{
+        margin-top:5rem;
+        
+        height: auto;
+        width: 100%;
+        background-color: bisque;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .Content1{
+        height: auto;
+        width: auto;
+        font-family: BetterGrade;
+        color: #9c4eff;
+        font-size: 4rem;
+        margin-left:auto ;
+        margin-right:auto ;
+    }
+    
+    .Content2{
+        height: auto;
+        width: auto;
+        font-family: Neue Machinai-Regular;
+        color:#0c0c0c ;
+        font-size: 4rem;
+        margin-left:auto ;
+        margin-right:auto ;
+    }
+
+}

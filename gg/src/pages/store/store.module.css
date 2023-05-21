@@ -1,0 +1,253 @@
+@font-face {
+    font-family: acumin-pro;
+    src: url(../../../public/static/Acumin-RPro.otf);
+}
+@font-face {
+    font-family: acumin-pro-bold;
+    src: url(../../../public//static/Acumin-BdPro.otf);
+}
+@font-face {
+    font-family: Neue Machinai-Light;
+    src: url(../../../public//static//NeueMachina-Light.otf);
+}
+@font-face {
+    font-family: Neue Machinai-Regular;
+    src: url(../../../public//static//NeueMachina-Regular.otf);
+}
+@font-face {
+    font-family: Neue Machinai-Bold;
+    src: url(../../../public/static//NeueMachina-Ultrabold.otf);
+}
+
+@font-face {
+    font-family: Cindie2;
+    src: url(../../../public/static/Cindie2-T.ttf);
+}
+@font-face {
+    font-family: BetterGrade;
+    src: url(../../../public/static/BetterGrade-519DV.ttf);
+}
+
+.container{
+    background-color: #646262;
+    height: 100vh;
+    width: 100vw;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+@media only screen and (min-width: 1px) and (max-width: 300px) {
+    .container{
+        height: 100vh;
+        width: 100vw;
+        background-color: rgb(0, 0, 0);
+        display: none;
+    }
+}
+@media only screen and (min-width: 300px) and (max-width: 500px) {
+.container{
+    /* background-color: #1b1919; */
+    background-color: #f3f3f3;
+   height: 100vh;
+    width: 100vw;
+    margin: 0px;
+    padding: 0px;
+    overflow-y: auto;
+}
+
+.navbarContainer{
+    background-color: #e610c9;
+    height: auto;
+    width: 100%;
+}
+
+.mainContentContainer{
+    /* background-color: aqua; */
+    background-color: #f3f3f3;
+    /* height: 48rem; */
+    height: auto;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+}
+.sidebarContainer{
+    /* background-color: rgb(32, 30, 6); */
+    background-color: #f3f3f3;
+    height: auto;
+    width: 100%;
+}
+
+.StoreContainer{
+    /* background-color: rgb(170, 3, 31); */
+    background-color: #f3f3f3;
+    height:auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 15%;
+}
+
+}
+
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+
+    .container{
+        /* background-color: #1b1919; */
+        background-color: #f3f3f3;
+       height: 100vh;
+        width: 100vw;
+        margin: 0px;
+        padding: 0px;
+        overflow-y: auto;
+    }
+    
+    .navbarContainer{
+        /* background-color: #e610c9; */
+        background-color: #f3f3f3;
+        height: auto;
+        width: 100%;
+    }
+    
+    .mainContentContainer{
+        background-color: aqua;
+        /* height: 48rem; */
+        height: auto;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .sidebarContainer{
+        /* background-color: rgb(32, 30, 6); */
+        background-color: #f3f3f3;
+        height: auto;
+        width: 100%;
+    }
+    
+    .StoreContainer{
+        /* background-color: rgb(170, 3, 31); */
+        background-color: #f3f3f3;
+        height:auto;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap:wrap;
+        justify-content:space-between;
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+    
+
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1200px){
+
+    .container{
+        /* background-color: #1b1919; */
+        background-color: #f3f3f3;
+       height: 100vh;
+        width: 100vw;
+        margin: 0px;
+        padding: 0px;
+        overflow-y: auto;
+    }
+    
+    .navbarContainer{
+        /* background-color: #e610c9; */
+        background-color: #f3f3f3;
+        height: auto;
+        width: 100%;
+    }
+    
+    .mainContentContainer{
+        /* background-color: aqua; */
+        /* height: 48rem; */
+        height: auto;
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .sidebarContainer{
+        /* background-color: rgb(32, 30, 6); */
+        background-color: #f3f3f3;
+        height: 70rem;
+        width: 25%;
+    }
+    
+    .StoreContainer{
+        /* background-color: rgb(170, 3, 31); */
+        background-color: #f3f3f3;
+        height:auto;
+        width: 75%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap:wrap;
+        justify-content:space-between;
+        padding-left: 1%;
+        padding-right: 1%;
+        margin-top: 25px;
+    }
+
+}
+
+@media only screen and (min-width: 1201px){
+
+    .container{
+        /* background-color: #1b1919; */
+        background-color: #f3f3f3;
+       height: 100vh;
+        width: 100vw;
+        margin: 0px;
+        padding: 0px;
+        overflow-y: auto;
+    }
+    
+    .navbarContainer{
+        /* background-color: #e610c9; */
+        background-color: #f3f3f3;
+        height: auto;
+        width: 100%;
+    }
+    
+    .mainContentContainer{
+        /* background-color: aqua; */
+        background-color: #f3f3f3;
+        /* height: 48rem; */
+        height: auto;
+        width: 95%;
+        display: flex;
+        flex-direction: row;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .sidebarContainer{
+        /* background-color: rgb(32, 30, 6); */
+        background-color: #f3f3f3;
+        height: 70rem;
+        width: 20%;
+       
+    }
+    
+    .StoreContainer{
+        /* background-color: rgb(170, 3, 31); */
+        background-color: #f3f3f3;
+        height:auto;
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap:wrap;
+        justify-content:space-between;
+        padding-left: 1%;
+        padding-right: 1%;
+        margin-top: 25px;
+    }
+    
+}

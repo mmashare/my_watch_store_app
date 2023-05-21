@@ -1,0 +1,1634 @@
+@font-face {
+    font-family: acumin-pro;
+    src: url(../../public//static/Acumin-RPro.otf);
+}
+
+@font-face {
+    font-family: acumin-pro-bold;
+    src: url(../../public//static/Acumin-BdPro.otf);
+}
+@font-face {
+    font-family: Neue Machinai-Light;
+    src: url(../../public//static//NeueMachina-Light.otf);
+}
+@font-face {
+    font-family: Neue Machinai-Regular;
+    src: url(../../public//static//NeueMachina-Regular.otf);
+}
+@font-face {
+    font-family: Neue Machinai-Bold;
+    src: url(../../public/static//NeueMachina-Ultrabold.otf);
+}
+.container{
+    height: 100%;
+    width: 100%;
+    background-color: bisque;
+    display: flex;
+    flex-direction: column;
+}
+
+.upperdiv{
+    height: 1.3rem;
+    width: 100%;
+    background-color: #ffffff;
+    border: 3.5px #0c0c0c solid;
+}
+.hamburgerContainer{display: none;}
+
+.mainNavbarSection{
+    height: 4rem;
+    width: 100%;
+    background-color: rgb(122, 104, 106);
+    display: flex;
+    flex-direction: row;
+}
+
+.logoSection{
+    height: 100%;
+    width: 15rem;
+    background-color: rgb(156, 16, 32);
+   
+}
+.imgss{
+    height: 100%;
+    width: 15rem;
+    background-color: #ffffff;
+    border-right: 1px solid #0c0c0c;
+}
+
+.optionSection{
+    height: 100%;
+    width: 67rem;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    border-right: 1px #0c0c0c solid;
+}
+
+.semiOptionSection{
+    height: 100%;
+    width: 45rem;
+    /* background-color: #381616; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.homeSection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+    width: 8rem;
+    /* background-color: #ff0707; */
+    font-family: acumin-pro;
+    font-size: 20px;
+    margin-left: 3rem;   
+}
+.homeSection:hover{
+ color: #9d50ff;
+ cursor: pointer;
+}
+
+.WomenSection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+    width: 8rem;
+    /* background-color: #ff0707; */
+    margin-left: 1rem;
+    font-family: acumin-pro;
+    font-size: 20px;
+}
+
+.WomenSection:hover{
+    color: #9d50ff;
+    cursor: pointer;
+}
+
+.MenSection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-family: acumin-pro;
+    height: 3rem;
+    width: 8rem;
+    /* background-color: #ff0707; */
+    margin-left: 1rem;
+}
+
+.MenSection:hover{
+    color: #9d50ff;
+    cursor: pointer;
+}
+
+
+.smartWatchSection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-family: acumin-pro;
+    height: 3rem;
+    width: 12rem;
+    /* background-color: #ff0707; */
+    margin-left: 1rem;
+}
+.smartWatchSection:hover{
+    color: #9d50ff;
+    cursor: pointer;
+}
+
+.semiInputSection{
+    height: 100%;
+    width: 22rem;
+    /* background-color: #960202; */
+    display: flex;
+    flex-direction: row;
+    
+    
+}
+.SearchIcon{
+    height: 50%;
+    width: 2rem;
+    /* background-color: #c7b6b6; */
+    margin-left: 2rem;
+    margin-top: 0.8rem;
+    border-top: #111111 1px solid;
+    border-left: #111111 1px solid;
+    border-bottom: #111111 1px solid;
+    /* box-shadow: #706f6f 0px 0.5px 10px ; */
+}
+.inputt{
+    height: 50%;
+    width: 15rem;
+    color: #0c0c0c;
+    margin-top: 0.8rem;
+    border-left:none ;
+    border-top: #111111 1px solid;
+    border-right: #111111 1px solid;
+    border-bottom: #111111 1px solid;
+    outline: none;
+    font-family:acumin-pro ;
+    font-size: 15px;
+    padding-left: 1.5px;
+    padding-right: 0.5px;
+    border-radius: 1px;
+    /* box-shadow: #706f6f 0px 0.5px 10px; */
+    
+}
+
+.iconSection{
+    height: 100%;
+    width: 15rem;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-right: 1px #0c0c0c solid;
+   
+}
+
+.icons1{
+    height: 40%;
+    width: 4rem;
+    /* background-color: rgb(119, 92, 94); */
+    margin-left: 5rem;
+}
+.icons1:hover{
+    color: #9d50ff;
+    cursor: pointer;
+}
+
+.icons2{
+    height: 40%;
+    width: 4rem;
+    /* background-color: rgb(119, 92, 94); */
+    margin-left: 1rem;
+    fill: none;
+    color: none;
+}
+.icons2:hover{
+    color: #9d50ff;
+    cursor: pointer;
+}
+.icons3{
+    height: 40%;
+    width: 4rem;
+    /* background-color: rgb(119, 92, 94); */
+    margin-left: 1rem;
+}
+.icons3:hover{
+    color: #9d50ff;
+    cursor: pointer;
+}
+
+.loginbtn{
+    height: 1.4rem;
+    width: 2.5rem;
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.signupbtn{
+    height: 1.4rem;
+    width: 2.9rem;
+    margin-right: 3px;
+    cursor: pointer;
+}
+
+.langSection{
+    height: 100%;
+    width: 9rem;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.langUS{
+    height: 20px;
+    width: 30px;
+    font-family: acumin-pro ;
+    font-size: 20px;
+    border-right:1px #0c0c0c solid ;
+    margin-left: 38px;
+    
+}
+
+.langEn{
+    height: 20px;
+    width: 30px;
+    font-family: acumin-pro ;
+    font-size: 20px;
+    
+}
+
+@media only screen and (min-width: 300px) and (max-width: 500px) {
+    .container{
+        height: 100%;
+        width: 100%;
+        background-color: bisque;
+        display: flex;
+        flex-direction: column;
+    }
+    .toogleContainer{
+        height: 11rem;
+        width: 100%;
+        background-color: bisque;
+        display: flex;
+        flex-direction: column;
+        transition: all 1s ease-in-out;   
+    }
+
+    .upperdiv{
+            display: none;   
+    }
+
+    .mainNavbarSection{
+        height: 3rem;
+        width: 100%;
+        background-color: rgb(122, 104, 106);
+        display: flex;
+        flex-direction: row;
+    }
+
+    .hamburgerContainer{
+        height: 3rem;
+        min-width: 3rem;
+        background-color: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hamburgerIcon{
+        height: 2rem;
+        width: 3.5rem;
+        color: #111111;
+    }
+
+    .logoSection{
+        height: 3rem;
+        min-width: 9rem;
+        background-color: rgb(156, 16, 32);   
+    }
+
+    .imgss{
+        height: 3rem;
+        width: 100%;
+        /* min-width: 9rem; */
+        background-color: #ffffff;
+        border-left: 1px solid #0c0c0c;
+        border-right: 1px solid #0c0c0c;
+    }
+    
+    .optionSection{
+        /* height: 100%;
+        width: 67rem;
+        background-color: #ffffff;
+        display: flex;
+        flex-direction: row;
+        border-right: 1px #0c0c0c solid; */
+        display: none;
+    }
+    
+    .semiOptionSection{
+        height: 100%;
+        width: 45rem;
+        /* background-color: #381616; */
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    
+    }
+    
+    .homeSection{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 3rem;
+        width: 8rem;
+        /* background-color: #ff0707; */
+        font-family: acumin-pro;
+        font-size: 20px;
+        margin-left: 3rem;   
+        color: #111111;
+    }
+    .homeSection:hover{
+     color: #9d50ff;
+     cursor: pointer;
+    }
+    
+    .WomenSection{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 3rem;
+        width: 8rem;
+        /* background-color: #ff0707; */
+        margin-left: 1rem;
+        font-family: acumin-pro;
+        font-size: 20px;
+        color: #111111;
+    }
+    
+    .WomenSection:hover{
+        color: #9d50ff;
+        cursor: pointer;
+    }
+    
+    .MenSection{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        font-family: acumin-pro;
+        height: 3rem;
+        width: 8rem;
+        /* background-color: #ff0707; */
+        margin-left: 1rem;
+        color: #111111;
+    }
+    
+    .MenSection:hover{
+        color: #9d50ff;
+        cursor: pointer;
+    }
+    
+    
+    .smartWatchSection{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        font-family: acumin-pro;
+        height: 3rem;
+        width: 12rem;
+        /* background-color: #ff0707; */
+        margin-left: 1rem;
+
+    }
+    .smartWatchSection:hover{
+        color: #9d50ff;
+        cursor: pointer;
+    }
+    
+    .semiInputSection{
+         /* height: 100%;
+        width: 22rem;
+    
+        display: flex;
+        flex-direction: row; 
+         */
+        display: none;
+        
+        
+    }
+    .SearchIcon{
+        height: 50%;
+        width: 2rem;
+        /* background-color: #c7b6b6; */
+        margin-left: 2rem;
+        margin-top: 0.8rem;
+        border-top: #111111 1px solid;
+        border-left: #111111 1px solid;
+        border-bottom: #111111 1px solid;
+        /* box-shadow: #706f6f 0px 0.5px 10px ; */
+    }
+    .inputt{
+        height: 50%;
+        width: 15rem;
+        color: #0c0c0c;
+        margin-top: 0.8rem;
+        border-left:none ;
+        border-top: #111111 1px solid;
+        border-right: #111111 1px solid;
+        border-bottom: #111111 1px solid;
+        outline: none;
+        font-family:acumin-pro ;
+        font-size: 15px;
+        padding-left: 1.5px;
+        padding-right: 0.5px;
+        border-radius: 1px;
+        /* box-shadow: #706f6f 0px 0.5px 10px; */
+        
+    }
+    
+    .iconSection{
+        height: 3rem;
+        min-width: 7rem;
+        width: 100%;
+        background-color: #ffffff;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content:flex-end;
+        border-right: 1px #0c0c0c solid;
+    }
+    
+    .icons1{
+        height: 58%;
+        /* width: 2.5rem; */
+        width: 30%;
+        margin-left: 7%;
+    }
+    .icons1:hover{
+        color: #9d50ff;
+        cursor: pointer;
+    }
+    
+    .icons2{
+        height: 50%;
+        /* width: 2.5rem; */
+        width: 30%;
+        margin-left: 2%;
+        fill: none;
+        color: none;
+    }
+    .icons2:hover{
+        color: #9d50ff;
+        cursor: pointer;
+    }
+    .icons3{
+        height: 40%;
+        /* width: 2.5rem; */
+        width: 25%;
+        margin-left: 2%;
+        display: flex;
+        flex-direction: column;
+    }
+    .icons3:hover{
+        color: #9d50ff;
+        cursor: pointer;
+    }
+
+    .iconSection2{
+        height: 3rem;
+        min-width: 7rem;
+        width: 100%;
+        background-color: #ffffff;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content:flex-end;
+        border-right: 1px #0c0c0c solid; 
+    }
+    .loginbtn{
+        height: 1.4rem;
+        width: 2.5rem;
+        /* margin-left: 5px; */
+        /* margin-right: 5px; */
+        background-color: #a8fa41;
+        border: 1px solid #0c0c0c;
+        font-family: Neue Machinai-Light;
+        font-size: 0.7rem;
+        cursor: pointer;
+        color: #111111;
+    }
+    .signupbtn{
+        height: 1.4rem;
+        width: 2.9rem;
+        margin-right: 5px;
+        background-color: #a8fa41;
+        border: 1px solid #0c0c0c;
+        font-family: Neue Machinai-Light;
+        font-size: 0.7rem;
+        cursor: pointer;
+        color: #111111;
+    }
+    
+    .langSection{
+        /* height: 100%;
+        width: 9rem;
+        background-color: #ffffff;
+        display: flex;
+        flex-direction: row;
+        align-items: center; */
+        display: none;
+    }
+    
+    .langUS{
+        /* height: 20px;
+        width: 30px;
+        font-family: acumin-pro ;
+        font-size: 20px;
+        border-right:1px #0c0c0c solid ;
+        margin-left: 38px; */
+        display: none;
+        
+    }
+    
+    .langEn{
+        /* height: 20px;
+        width: 30px;
+        font-family: acumin-pro ;
+        font-size: 20px; */
+        display: none;        
+    }
+    .TooglesemiOptionSection{
+        display: flex;
+        flex-direction: column;
+        background-color: #9d50ff;
+        height: 8rem;
+        width: 100%;
+        animation: killer2 normal ease-in;
+        animation-duration: 300ms;
+        transition: all 3s linear;
+    }
+    
+    @keyframes killer2 {
+        /* from{
+                opacity: 0;
+        }
+        to{
+            opacity: 1;
+        } */
+        from {
+            height: 8rem;
+            width: 0%;
+            opacity: 0;
+          }
+        
+          to {
+            height: 8rem;
+            width: 100%;
+            opacity: 1;
+          }
+    }
+    .TooglehomeSection{
+        display: flex;
+        height: 2.6rem;
+        width: 100%;
+        background-color: #ffffff;
+        color: #0c0c0c;
+        font-family: Neue Machinai-Light;
+        padding-left: 3%;
+        align-items: center;
+        border-bottom: 1px #0c0c0c solid;
+    }
+    .TooglehomeSection:hover{
+        background-color: #eedddd;
+    }
+    .TooglehomeSection{
+        display: flex;
+        align-items: center;
+        height: 2.6rem;
+        width: 100%;
+        background-color: #ffffff;
+        color: #0c0c0c;
+        font-family: Neue Machinai-Light;
+        padding-left: 3%;
+        border-bottom: 1px #0c0c0c solid;
+    }
+    .TooglehomeSection:hover{
+        background-color: #eedddd;
+    }
+    .ToogleWomenSection{
+        display: flex;
+        align-items: center;
+        height: 2.6rem;
+        width: 100%;
+        background-color: #ffffff;
+        color: #0c0c0c;
+        font-family: Neue Machinai-Light;
+        padding-left: 3%;
+        border-bottom: 1px #0c0c0c solid;
+    }
+    .ToogleWomenSection:hover{
+        background-color: #eedddd;
+    }
+    .ToogleMenSection{
+        display: flex;
+        align-items: center;
+        height: 2.6rem;
+        width: 100%;
+        background-color: #ffffff;
+        color: #0c0c0c;
+        font-family: Neue Machinai-Light;
+        padding-left: 3%;
+        border-bottom: 1px #0c0c0c solid;
+    }
+    .ToogleMenSection:hover{
+        background-color: #eedddd;
+    }
+    .TooglesmartWatchSection{
+        display: flex;
+        align-items: center;
+        height: 2.6rem;
+        width: 100%;
+        background-color: #ffffff;
+        color: #0c0c0c;
+        font-family: Neue Machinai-Light;
+        padding-left: 3%;
+        border-bottom: 1px #0c0c0c solid;
+    }
+    .TooglesmartWatchSection:hover{
+        background-color: #eedddd;
+    }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+    .container{
+        height: 3rem;
+        width: 100%;
+        background-color: #f3f3f3;
+        display: flex;
+        flex-direction: column;
+    }
+    .toogleContainer{
+        height: 11rem;
+        width: 100%;
+        /* background-color: bisque; */
+        display: flex;
+        flex-direction: column;
+        transition: all 1s ease-in-out;   
+    }
+
+    .upperdiv{
+        display: none;   
+}
+
+.mainNavbarSection{
+    height: 3rem;
+    width: 100%;
+    background-color: rgb(112, 5, 17);
+    display: flex;
+    flex-direction: row;
+}
+
+.hamburgerContainer{
+    height: 3rem;
+    width: 10%;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+
+    border-right: #0c0c0c 1px solid;
+}
+
+.hamburgerIcon{
+    height: 2rem;
+    width: 3.5rem;
+    color: #111111;
+}
+
+.logoSection{
+    display: flex;
+    justify-content: flex-start;
+    height: 3rem;
+    width: 40%;
+    /* background-color: rgb(156, 16, 32);    */
+    background-color: #ffffff;
+}
+
+.imgss{
+    height: 3rem;
+    width: 9rem;
+    /* min-width: 9rem; */
+    /* background-color: #ffffff; */
+    /* border-left: 1px solid #0c0c0c; */
+    /* border-right: 1px solid #0c0c0c; */
+    border: none;
+}
+
+.optionSection{
+    /* height: 100%;
+    width: 67rem;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    border-right: 1px #0c0c0c solid; */
+    display: none;
+}
+
+.semiOptionSection{
+    height: 100%;
+    width: 45rem;
+    /* background-color: #381616; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.homeSection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+    width: 8rem;
+    /* background-color: #ff0707; */
+    font-family: acumin-pro;
+    font-size: 20px;
+    margin-left: 3rem; 
+    color:#111111;  
+}
+.homeSection:hover{
+ color: #9d50ff;
+ cursor: pointer;
+}
+
+.WomenSection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+    width: 8rem;
+    /* background-color: #ff0707; */
+    margin-left: 1rem;
+    font-family: acumin-pro;
+    font-size: 20px;
+    color:#111111;
+}
+
+.WomenSection:hover{
+    color: #9d50ff;
+    cursor: pointer;
+}
+
+.MenSection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-family: acumin-pro;
+    height: 3rem;
+    width: 8rem;
+    /* background-color: #ff0707; */
+    margin-left: 1rem;
+    color:#111111;
+}
+
+.MenSection:hover{
+    color: #9d50ff;
+    cursor: pointer;
+}
+
+
+.smartWatchSection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-family: acumin-pro;
+    height: 3rem;
+    width: 12rem;
+    /* background-color: #ff0707; */
+    margin-left: 1rem;
+    color:#111111;
+}
+.smartWatchSection:hover{
+    color: #9d50ff;
+    cursor: pointer;
+}
+
+.semiInputSection{
+     /* height: 100%;
+    width: 22rem;
+
+    display: flex;
+    flex-direction: row; 
+     */
+    display: none;
+    
+    
+}
+.SearchIcon{
+    height: 50%;
+    width: 2rem;
+    /* background-color: #c7b6b6; */
+    margin-left: 2rem;
+    margin-top: 0.8rem;
+    border-top: #111111 1px solid;
+    border-left: #111111 1px solid;
+    border-bottom: #111111 1px solid;
+    /* box-shadow: #706f6f 0px 0.5px 10px ; */
+}
+.inputt{
+    height: 50%;
+    width: 15rem;
+    color: #0c0c0c;
+    margin-top: 0.8rem;
+    border-left:none ;
+    border-top: #111111 1px solid;
+    border-right: #111111 1px solid;
+    border-bottom: #111111 1px solid;
+    outline: none;
+    font-family:acumin-pro ;
+    font-size: 15px;
+    padding-left: 1.5px;
+    padding-right: 0.5px;
+    border-radius: 1px;
+    /* box-shadow: #706f6f 0px 0.5px 10px; */
+    
+}
+
+.iconSection{
+    height: 3rem;
+    /* min-width: 7rem; */
+    width: 50%;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-end;
+    align-items: center;
+    border-right: 1px #0c0c0c solid;         
+}
+
+.icons1{
+    height: 60%;
+    /* width: 2.5rem; */
+    width: 15%;
+    /* margin-left: 7%; */
+    
+}
+.icons1:hover{
+    color: #9d50ff;
+    cursor: pointer;
+}
+
+.icons2{
+    height: 60%;
+    /* width: 2.5rem; */
+    width: 15%;
+    /* margin-left: 2%; */
+    fill: none;
+    color: none;
+    
+}
+.icons2:hover{
+    color: #9d50ff;
+    cursor: pointer;
+}
+.icons3{
+    height: 60%;
+    /* width: 2.5rem; */
+    width: 15%;
+    /* margin-left: 2%; */
+    display: flex;
+    flex-direction: column;
+    
+}
+.icons3:hover{
+    color: #9d50ff;
+    cursor: pointer;
+}
+
+.loginbtn{
+    height: 2rem;
+    width: 4rem;
+    /* margin-left: 5px; */
+    /* margin-right: 5px; */
+    background-color: #a8fa41;
+    border: 1px solid #0c0c0c;
+    font-family: Neue Machinai-Light;
+    font-size: 1rem;
+    cursor: pointer;
+    color: #111111;
+}
+
+.loginbtn:hover{
+    background-color: inherit;
+}
+.signupbtn{
+    height: 2rem;
+    width: 4rem;
+    margin-right: 5px;
+    background-color: #a8fa41;
+    border: 1px solid #0c0c0c;
+    font-family: Neue Machinai-Light;
+    font-size: 1rem;
+    cursor: pointer;
+    color: #111111;
+}
+.signupbtn:hover{
+    background-color: inherit;
+}
+
+.langSection{
+    /* height: 100%;
+    width: 9rem;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    align-items: center; */
+    display: none;
+}
+
+.langUS{
+    /* height: 20px;
+    width: 30px;
+    font-family: acumin-pro ;
+    font-size: 20px;
+    border-right:1px #0c0c0c solid ;
+    margin-left: 38px; */
+    display: none;
+    
+}
+
+.langEn{
+    /* height: 20px;
+    width: 30px;
+    font-family: acumin-pro ;
+    font-size: 20px; */
+    display: none;        
+}
+.TooglesemiOptionSection{
+    display: flex;
+    flex-direction: column;
+    background-color: #f3f3f3;
+    height: 8rem;
+    width: 100%;
+    animation: killer2 normal ease-in;
+    animation-duration: 900ms;
+    transition: all ease-in;
+}
+
+@keyframes killer2 {
+    /* from{
+            opacity: 0;
+    }
+    to{
+        opacity: 1;
+    } */
+    from {
+        height: 8rem;
+        width: 0%;
+        opacity: 0;
+      }
+    
+      to {
+        height: 8rem;
+        width: 100%;
+        opacity: 1;
+      }
+}
+.TooglehomeSection{
+    display: flex;
+    height: 2.6rem;
+    width: 100%;
+    background-color: #ffffff;
+    color: #0c0c0c;
+    font-family: Neue Machinai-Light;
+    padding-left: 3%;
+    align-items: center;
+    border-bottom: 1px #0c0c0c solid;
+}
+.TooglehomeSection:hover{
+    background-color: #eedddd;
+}
+.TooglehomeSection{
+    display: flex;
+    align-items: center;
+    height: 2.6rem;
+    width: 100%;
+    background-color: #ffffff;
+    color: #0c0c0c;
+    font-family: Neue Machinai-Light;
+    padding-left: 3%;
+    border-bottom: 1px #0c0c0c solid;
+}
+.TooglehomeSection:hover{
+    background-color: #eedddd;
+}
+.ToogleWomenSection{
+    display: flex;
+    align-items: center;
+    height: 2.6rem;
+    width: 100%;
+    background-color: #ffffff;
+    color: #0c0c0c;
+    font-family: Neue Machinai-Light;
+    padding-left: 3%;
+    border-bottom: 1px #0c0c0c solid;
+}
+.ToogleWomenSection:hover{
+    background-color: #eedddd;
+}
+.ToogleMenSection{
+    display: flex;
+    align-items: center;
+    height: 2.6rem;
+    width: 100%;
+    background-color: #ffffff;
+    color: #0c0c0c;
+    font-family: Neue Machinai-Light;
+    padding-left: 3%;
+    border-bottom: 1px #0c0c0c solid;
+}
+.ToogleMenSection:hover{
+    background-color: #eedddd;
+}
+.TooglesmartWatchSection{
+    display: flex;
+    align-items: center;
+    height: 2.6rem;
+    width: 100%;
+    background-color: #ffffff;
+    color: #0c0c0c;
+    font-family: Neue Machinai-Light;
+    padding-left: 3%;
+    border-bottom: 1px #0c0c0c solid;
+}
+.TooglesmartWatchSection:hover{
+    background-color: #eedddd;
+}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+    .container{
+        height: 100%;
+        width: 100%;
+        background-color: bisque;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .upperdiv{
+        /* height: 1.3rem;
+        width: 100%;
+        background-color: #ffffff;
+        border: 3.5px #0c0c0c solid; */
+        display: none;
+    }
+    .hamburgerContainer{display: none;}
+    .mainNavbarSection{
+        height: 4rem;
+        width: 100%;
+        background-color: rgb(122, 104, 106);
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .logoSection{
+        height: 100%;
+        width: 20%;
+        background-color: rgb(156, 16, 32);
+       
+    }
+    .imgss{
+        height: 100%;
+        /* width: 10rem; */
+        width: 100%;
+        /* background-color: #ffffff; */
+        border-right: 1px solid #0c0c0c;
+    }
+    
+    .optionSection{
+        height: 100%;
+        width: 60%;
+        background-color: #ffffff;
+        display: flex;
+        flex-direction: row;
+        border-right: 1px #0c0c0c solid;
+    }
+    
+    .semiOptionSection{
+        height: 100%;
+        /* width: 30rem; */
+        width: 100%;
+        /* background-color: #381616; */
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    
+    }
+    
+    .homeSection{
+        display: flex;
+        align-items: center;
+        /* justify-content: center; */
+        height: 3rem;
+        width: 8rem;
+        /* background-color: #ff0707; */
+        font-family: acumin-pro;
+        font-size: 20px;
+        margin-left: 0.1rem;  
+        color: #111111; 
+    }
+    .homeSection:hover{
+     color: #9d50ff;
+     cursor: pointer;
+    }
+    
+    .WomenSection{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 3rem;
+        width: 8rem;
+        /* background-color: #ff0707; */
+        margin-left: 1rem;
+        font-family: acumin-pro;
+        font-size: 20px;
+        color: #111111;
+    }
+    
+    .WomenSection:hover{
+        color: #9d50ff;
+        cursor: pointer;
+    }
+    
+    .MenSection{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        font-family: acumin-pro;
+        height: 3rem;
+        width: 8rem;
+        /* background-color: #ff0707; */
+        margin-left: 1rem;
+        color: #111111;
+    }
+    
+    .MenSection:hover{
+        color: #9d50ff;
+        cursor: pointer;
+    }
+    
+    
+    .smartWatchSection{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        font-family: acumin-pro;
+        height: 3rem;
+        width: 12rem;
+        /* background-color: #ff0707; */
+        margin-left: 1rem;
+        color: #111111;
+    }
+    .smartWatchSection:hover{
+        color: #9d50ff;
+        cursor: pointer;
+    }
+    
+    .semiInputSection{
+        /* height: 100%;
+        width: 22rem;
+         background-color: #960202; 
+        display: flex;
+        flex-direction: row; */
+        display: none;
+        
+    }
+    /* .SearchIcon{
+        height: 50%;
+        width: 2rem;
+         background-color: #c7b6b6; 
+        margin-left: 2rem;
+        margin-top: 0.8rem;
+        border-top: #111111 1px solid;
+        border-left: #111111 1px solid;
+        border-bottom: #111111 1px solid;
+         box-shadow: #706f6f 0px 0.5px 10px ; 
+    }*/
+
+   /* .inputt{
+        height: 50%;
+        width: 15rem;
+        color: #0c0c0c;
+        margin-top: 0.8rem;
+        border-left:none ;
+        border-top: #111111 1px solid;
+        border-right: #111111 1px solid;
+        border-bottom: #111111 1px solid;
+        outline: none;
+        font-family:acumin-pro ;
+        font-size: 15px;
+        padding-left: 1.5px;
+        padding-right: 0.5px;
+        border-radius: 1px;
+         box-shadow: #706f6f 0px 0.5px 10px; 
+        
+    } */
+    
+    .iconSection{
+        height: 100%;
+        width: 20%;
+        background-color: #ffffff;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        border-right: 1px #0c0c0c solid;
+       
+    }
+    
+    .icons1{
+        height: 40%;
+        width: 4rem;
+        /* background-color: rgb(119, 92, 94); */
+        margin-left: 0.2rem;
+    }
+    .icons1:hover{
+        color: #9d50ff;
+        cursor: pointer;
+    }
+    
+    .icons2{
+        height: 40%;
+        width: 4rem;
+        /* background-color: rgb(119, 92, 94); */
+        margin-left: 1rem;
+        fill: none;
+        color: none;
+    }
+    .icons2:hover{
+        color: #9d50ff;
+        cursor: pointer;
+    }
+    .icons3{
+        height: 40%;
+        width: 4rem;
+        /* background-color: rgb(119, 92, 94); */
+        margin-left: 1rem;
+    }
+    .icons3:hover{
+        color: #9d50ff;
+        cursor: pointer;
+    }
+
+    .loginbtn{
+        height: 2rem;
+        width: 4rem;
+        /* margin-left: 5px; */
+        /* margin-right: 5px; */
+        background-color: #a8fa41;
+        border: 1px solid #0c0c0c;
+        font-family: Neue Machinai-Light;
+        font-size: 1rem;
+        cursor: pointer;
+        color: #111111;
+    }
+    .loginbtn:hover{
+        background-color: inherit;
+    }
+    .signupbtn{
+        height: 2rem;
+        width: 4rem;
+        margin-right: 5px;
+        background-color: #a8fa41;
+        border: 1px solid #0c0c0c;
+        font-family: Neue Machinai-Light;
+        font-size: 1rem;
+        cursor: pointer;
+        color: #111111;
+    }
+    .signupbtn:hover{
+        background-color: inherit;
+    }
+    .langSection{
+        /* height: 100%;
+        width: 9rem;
+        background-color: #ffffff;
+        display: flex;
+        flex-direction: row;
+        align-items: center; */
+        display: none;
+    }
+    
+    /* .langUS{
+        height: 20px;
+        width: 30px;
+        font-family: acumin-pro ;
+        font-size: 20px;
+        border-right:1px #0c0c0c solid ;
+        margin-left: 38px;
+        
+        
+    } */
+    
+    /* .langEn{
+        height: 20px;
+        width: 30px;
+        font-family: acumin-pro ;
+        font-size: 20px;
+        
+    } */
+}
+
+@media only screen and (min-width: 1201px){
+
+    .container{
+        height: 100%;
+        width: 100%;
+        background-color: bisque;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .upperdiv{
+        /* height: 1.3rem;
+        width: 100%;
+        background-color: #ffffff;
+        border: 3.5px #0c0c0c solid; */
+        display: none;
+    }
+    .hamburgerContainer{display: none;}
+    .mainNavbarSection{
+        height: 4rem;
+        width: 100%;
+        background-color: rgb(122, 104, 106);
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .logoSection{
+        height: 100%;
+        width: 20%;
+        background-color: rgb(156, 16, 32);
+       
+    }
+    .imgss{
+        height: 100%;
+        /* width: 10rem; */
+        width: 100%;
+        /* background-color: #ffffff; */
+        border-right: 1px solid #0c0c0c;
+    }
+    
+    .optionSection{
+        height: 100%;
+        width: 60%;
+        background-color: #ffffff;
+        display: flex;
+        flex-direction: row;
+
+        border-right: 1px #0c0c0c solid;
+    }
+    
+    .semiOptionSection{
+        height: 100%;
+        /* width: 30rem; */
+        width: 100%;
+        /* background-color: #381616; */
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    
+    }
+    
+    .homeSection{
+        display: flex;
+        align-items: center;
+        /* justify-content: center; */
+        height: 3rem;
+        width: 8rem;
+        /* background-color: #ff0707; */
+        font-family: acumin-pro;
+        font-size: 20px;
+        margin-left: 0.1rem; 
+        color: #111111;  
+    }
+    .homeSection:hover{
+     color: #9d50ff;
+     cursor: pointer;
+    }
+    
+    .WomenSection{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 3rem;
+        width: 8rem;
+        /* background-color: #ff0707; */
+        margin-left: 1rem;
+        font-family: acumin-pro;
+        font-size: 20px;
+        color: #111111;
+    }
+    
+    .WomenSection:hover{
+        color: #9d50ff;
+        cursor: pointer;
+    }
+    
+    .MenSection{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        font-family: acumin-pro;
+        height: 3rem;
+        width: 8rem;
+        /* background-color: #ff0707; */
+        margin-left: 1rem;
+        color: #111111;
+    }
+    
+    .MenSection:hover{
+        color: #9d50ff;
+        cursor: pointer;
+    }
+    
+    
+    .smartWatchSection{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        font-family: acumin-pro;
+        height: 3rem;
+        width: 12rem;
+        /* background-color: #ff0707; */
+        margin-left: 1rem;
+        color: #111111;
+    }
+    .smartWatchSection:hover{
+        color: #9d50ff;
+        cursor: pointer;
+    }
+    
+    .semiInputSection{
+        /* height: 100%;
+        width: 22rem;
+         background-color: #960202; 
+        display: flex;
+        flex-direction: row; */
+        display: none;
+        
+    }
+    /* .SearchIcon{
+        height: 50%;
+        width: 2rem;
+         background-color: #c7b6b6; 
+        margin-left: 2rem;
+        margin-top: 0.8rem;
+        border-top: #111111 1px solid;
+        border-left: #111111 1px solid;
+        border-bottom: #111111 1px solid;
+         box-shadow: #706f6f 0px 0.5px 10px ; 
+    }*/
+
+   /* .inputt{
+        height: 50%;
+        width: 15rem;
+        color: #0c0c0c;
+        margin-top: 0.8rem;
+        border-left:none ;
+        border-top: #111111 1px solid;
+        border-right: #111111 1px solid;
+        border-bottom: #111111 1px solid;
+        outline: none;
+        font-family:acumin-pro ;
+        font-size: 15px;
+        padding-left: 1.5px;
+        padding-right: 0.5px;
+        border-radius: 1px;
+         box-shadow: #706f6f 0px 0.5px 10px; 
+        
+    } */
+    
+    .iconSection{
+        height: 100%;
+        width: 20%;
+        background-color: #ffffff;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        border-right: 1px #0c0c0c solid;
+       
+    }
+    
+    .icons1{
+        height: 40%;
+        width: 4rem;
+        /* background-color: rgb(119, 92, 94); */
+        margin-left: 0.2rem;
+    }
+    .icons1:hover{
+        color: #9d50ff;
+        cursor: pointer;
+    }
+    
+    .icons2{
+        height: 40%;
+        width: 4rem;
+        /* background-color: rgb(119, 92, 94); */
+        margin-left: 1rem;
+        fill: none;
+        color: none;
+    }
+    .icons2:hover{
+        color: #9d50ff;
+        cursor: pointer;
+    }
+    .icons3{
+        height: 40%;
+        width: 4rem;
+        /* background-color: rgb(119, 92, 94); */
+        margin-left: 1rem;
+    }
+    .icons3:hover{
+        color: #9d50ff;
+        cursor: pointer;
+    }
+
+     
+    .loginbtn{
+        height: 2rem;
+        width: 4rem;
+        /* margin-left: 5px; */
+        /* margin-right: 5px; */
+        background-color: #a8fa41;
+        border: 1px solid #0c0c0c;
+        font-family: Neue Machinai-Light;
+        font-size: 1rem;
+        cursor: pointer;
+        color: #111111;
+    }
+    .loginbtn:hover{
+        background-color: inherit;
+    }
+    .signupbtn{
+        height: 2rem;
+        width: 4rem;
+        margin-right: 5px;
+        background-color: #a8fa41;
+        border: 1px solid #0c0c0c;
+        font-family: Neue Machinai-Light;
+        font-size: 1rem;
+        cursor: pointer;
+        color: #111111;
+    }
+    .signupbtn:hover{
+        background-color: inherit;
+    }
+    .langSection{
+         height: 100%;
+        width: 9rem;
+        background-color: #ffffff;
+        display: flex;
+        flex-direction: row;
+        align-items: center; 
+        
+    }
+
+     .langUS{
+        height: 20px;
+        width: 30px;
+        font-family: acumin-pro ;
+        font-size: 20px;
+        border-right:1px #0c0c0c solid ;
+        margin-left: 38px;
+        color: #111111;
+        
+    } 
+    
+    .langEn{
+        height: 20px;
+        width: 30px;
+        font-family: acumin-pro ;
+        font-size: 20px;
+        color: #111111;
+    } 
+}

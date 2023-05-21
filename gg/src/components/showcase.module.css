@@ -1,0 +1,226 @@
+@font-face {
+    font-family: acumin-pro;
+    src: url(../../public//static/Acumin-RPro.otf);
+}
+
+@font-face {
+    font-family: acumin-pro-bold;
+    src: url(../../public//static/Acumin-BdPro.otf);
+}
+@font-face {
+    font-family: Neue Machinai-Light;
+    src: url(../../public//static//NeueMachina-Light.otf);
+}
+@font-face {
+    font-family: Neue Machinai-Regular;
+    src: url(../../public//static//NeueMachina-Regular.otf);
+}
+@font-face {
+    font-family: Neue Machinai-Bold;
+    src: url(../../public/static//NeueMachina-Ultrabold.otf);
+}
+
+@media only screen and (min-width: 300px) and (max-width: 500px) {
+
+.container{
+    height: 19rem;
+    width: 80%;
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: column;
+    margin-top: 3%;
+    border: 1px solid #0c0c0c;
+}
+
+.imgContainer{
+    height: 14rem;
+    width: 100%;
+}
+
+.img{
+    height: 14rem;
+    width: 100%;
+}
+
+.detailContainer{
+    height: 5rem;
+    width: 100%;
+    background-color: aquamarine;
+}
+
+.name{
+    height: 2.5rem;
+    width: 100%;
+    background-color: #f3f3ff;
+    border-bottom: 1px solid #0c0c0c;
+    padding: 4% 2%;
+    color: #111111;
+    font-family: Neue Machinai-Regular;
+}
+
+.price{
+    height: 2.5rem;
+    width: 100%;
+    background-color: #f3f3ff;
+    padding: 4% 2%;
+    font-family: Neue Machinai-Regular;
+    border-bottom: 1px solid #0c0c0c;
+    color: #111111;
+}
+}
+
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+
+    .container{
+        height: 19rem;
+        width: 75%;
+        /* background-color: blueviolet; */
+        background-color: #f3f3f3;
+        display: flex;
+        flex-direction: column;
+        margin-top: 3%;
+        border: 1px solid #0c0c0c;
+    }
+    
+    .imgContainer{
+        height: 14rem;
+        width: 100%;
+    }
+    
+    .img{
+        height: 14rem;
+        width: 100%;
+    }
+    
+    .detailContainer{
+        height: 5rem;
+        width: 100%;
+        background-color: aquamarine;
+    }
+    
+    .name{
+        height: 2.5rem;
+        width: 100%;
+        background-color: #f3f3ff;
+        border-bottom: 1px solid #0c0c0c;
+        padding: 4% 2%;
+        font-family: Neue Machinai-Regular;
+        color: #111111;
+    }
+    
+    .price{
+        height: 2.5rem;
+        width: 100%;
+        background-color: #f3f3ff;
+        padding: 4% 2%;
+        font-family: Neue Machinai-Regular;
+        border-bottom: 1px solid #0c0c0c;
+        color: #111111;
+    }
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+
+    .container{
+        height: 19rem;
+        width: 75%;
+        /* background-color: blueviolet; */
+        background-color: #f3f3f3;
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        margin-right: 10px;
+        border: 1px solid #0c0c0c;
+    }
+    
+    .imgContainer{
+        height: 14rem;
+        width: 100%;
+    }
+    
+    .img{
+        height: 14rem;
+        width: 100%;
+    }
+    
+    .detailContainer{
+        height: 5rem;
+        width: 100%;
+        background-color: aquamarine;
+    }
+    
+    .name{
+        height: 2.5rem;
+        width: 100%;
+        background-color: #f3f3ff;
+        border-bottom: 1px solid #0c0c0c;
+        padding: 4% 2%;
+        font-family: Neue Machinai-Regular;
+        color: #111111;
+    }
+    
+    .price{
+        height: 2.5rem;
+        width: 100%;
+        background-color: #f3f3ff;
+        padding: 4% 2%;
+        font-family: Neue Machinai-Regular;
+        border-bottom: 1px solid #0c0c0c;
+        color: #111111;
+    }
+
+ }
+
+ @media only screen and (min-width: 1201px){
+
+    
+    .container{
+        height: 19rem;
+        width: 20rem;
+        background-color: blueviolet;
+        background-color: #f3f3f3;
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        margin-right: 7px;
+        border: 1px solid #0c0c0c;
+    }
+    
+    .imgContainer{
+        height: 14rem;
+        width: 100%;
+    }
+    
+    .img{
+        height: 14rem;
+        width: 100%;
+    }
+    
+    .detailContainer{
+        height: 5rem;
+        width: 100%;
+        background-color: aquamarine;
+    }
+    
+    .name{
+        height: 2.5rem;
+        width: 100%;
+        background-color: #f3f3ff;
+        border-bottom: 1px solid #0c0c0c;
+        padding: 4% 2%;
+        font-family: Neue Machinai-Regular;
+        color: #111111;
+    }
+    
+    .price{
+        height: 2.5rem;
+        width: 100%;
+        background-color: #f3f3ff;
+        padding: 4% 2%;
+        font-family: Neue Machinai-Regular;
+        border-bottom: 1px solid #0c0c0c;
+        color: #111111;
+    }
+ }
+

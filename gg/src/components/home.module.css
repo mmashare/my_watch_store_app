@@ -1,0 +1,454 @@
+@font-face {
+    font-family: acumin-pro;
+    src: url(../../public//static/Acumin-RPro.otf);
+}
+
+@font-face {
+    font-family: acumin-pro-bold;
+    src: url(../../public//static/Acumin-BdPro.otf);
+}
+@font-face {
+    font-family: Neue Machinai-Light;
+    src: url(../../public//static//NeueMachina-Light.otf);
+}
+@font-face {
+    font-family: Neue Machinai-Regular;
+    src: url(../../public//static//NeueMachina-Regular.otf);
+}
+@font-face {
+    font-family: Neue Machinai-Bold;
+    src: url(../../public/static//NeueMachina-Ultrabold.otf);
+}
+@font-face {
+    font-family: Cindie2;
+    src: url(../../public/static/Cindie2-T.ttf);
+}
+@media only screen and (min-width: 300px) and (max-width: 500px) {
+
+
+.container{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(2, 2, 2);
+    display: flex;
+    flex-direction:column-reverse;
+}
+
+.textContainer{
+    height: 13rem;
+    width: 100%;
+    background-color: #000000;
+}
+.heading1{
+    height: 2rem;
+    font-size: 2rem;
+    width: 100%;
+    padding-left: 2%;
+    font-family: Neue Machinai-Bold;
+    color: #acfc42;
+}
+.heading2{
+    height: 2rem;
+    font-size: 2rem;
+    width: 100%;
+    padding-left: 2%;
+    font-family: Neue Machinai-Bold;
+    color: #acfc42;
+}
+.heading3{
+    height: 2rem;
+    font-size: 2rem;
+    width: 100%;
+    padding-left: 2%;
+    font-family: Neue Machinai-Bold;
+    color: #acfc42;
+}
+.btnShop{
+    margin-left: 2%;
+    margin-top: 3%;
+    min-height: 3rem;
+    width: 6.5rem;
+    font-size: 1.2rem;
+    font-family: Neue Machinai-Regular;
+    color: #0c0c0c;
+    background-color: #acfc42;
+    border: none;
+    cursor: pointer;
+    
+}
+
+.btnShop:hover{
+    box-shadow: #f3f3f3 1px 1px;
+}
+
+
+
+.imgContainer{
+    padding: 0px;
+    margin: 0px;
+     height: 17rem;
+     width: 100%;
+     /* background-color: blueviolet; */
+     background-image: url("../../public//static/images/picture1.png");
+     background-size: 150% 150%; 
+     background-repeat: no-repeat;
+     animation: killer1 infinite ;
+     animation-delay: 2s;
+     animation-duration: 15s;
+     /* transition: all linear 1s; */
+
+ }
+
+ @keyframes killer1 {
+     0%{
+         background-image: url("../../public//static/images/picture1.png");
+         background-size: 150% 150%; 
+     }
+     30%{
+         background-image: url("../../public//static/images/picture1.png");
+         background-size: 150% 150%; 
+     }
+     60%{
+         background-image: url("../../public//static/images/picture2.png");
+         background-size: 100% 100%; 
+     }
+     85%{
+         background-image: url("../../public//static/images/picture3.png");
+         background-size: 100% 100%; 
+     }
+     100%{
+         background-image: url("../../public//static/images/picture3.png");
+         background-size: 100% 100%; 
+     }
+     
+ }
+
+.headerImagess{
+    height: 17rem;
+    width: 100%;
+}
+}
+
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+
+
+    .container{
+        height: 100%;
+        width: 100%;
+        background-color: rgb(2, 2, 2);
+        display: flex;
+        flex-direction:column-reverse;
+    }
+    
+    .textContainer{
+        margin: 0px;
+        height: 15rem;
+        width: 100%;
+        background-color: #000000;
+        /* background-color: #a01d1d;  */
+    }
+    .heading1{
+        height: 3rem;
+        font-size: 3rem;
+        width: 100%;
+        padding-left: 2%;
+        font-family: Neue Machinai-Bold;
+        color: #acfc42;
+    }
+    .heading2{
+        height: 3rem;
+        font-size: 3rem;
+        width: 100%;
+        padding-left: 2%;
+        font-family: Neue Machinai-Bold;
+        color: #acfc42;
+    }
+    .heading3{
+        height: 3rem;
+        font-size: 3rem;
+        width: 100%;
+        padding-left: 2%;
+        font-family: Neue Machinai-Bold;
+        color: #acfc42;
+    }
+    .btnShop{
+        margin-left: 2%;
+        margin-top: 3%;
+        min-height: 3rem;
+        width: 6.5rem;
+        font-size: 1.2rem;
+        font-family: Neue Machinai-Regular;
+        color: #0c0c0c;
+        background-color: #acfc42;
+        border: none;
+        cursor: pointer;
+    }
+    
+    .btnShop:hover{
+        box-shadow: #f3f3f3 1px 1px;
+    }
+    
+    
+    
+    .imgContainer{
+       padding: 0px;
+       margin: 0px;
+        height: 17rem;
+        width: 100%;
+        /* background-color: blueviolet; */
+        background-image: url("../../public//static/images/picture1.png");
+        background-size: 150% 150%;  
+        background-repeat: no-repeat;
+        animation: killer1 infinite ;
+        animation-delay: 2s;
+        animation-duration: 15s;
+        /* transition: all linear 1s; */
+
+    }
+
+    @keyframes killer1 {
+        0%{
+            background-image: url("../../public//static/images/picture1.png");
+            background-size: 150% 150%; 
+        }
+        30%{
+            background-image: url("../../public//static/images/picture1.png");
+            background-size: 150% 150%; 
+        }
+        60%{
+            background-image: url("../../public//static/images/picture2.png");
+            background-size: 100% 100%; 
+        }
+        85%{
+            background-image: url("../../public//static/images/picture3.png");
+            background-size: 100% 100%; 
+        }
+        100%{
+            background-image: url("../../public//static/images/picture3.png");
+            background-size: 100% 100%; 
+        }
+        
+    }
+    
+    .headerImagess{
+        height: 17rem;
+        width: 100%;
+    }
+    }
+
+    @media only screen and (min-width: 768px) and (max-width: 1200px) {
+
+
+        .container{
+            height: 100%;
+            width: 100%;
+            background-color: rgb(8, 8, 8);
+            display: flex;
+            flex-direction:column-reverse;
+        }
+        
+        .textContainer{
+            margin: 0px;
+            height: 15rem;
+            width: 100%;
+            background-color: #000000;
+            /* background-color: #a01d1d;  */
+        }
+        .heading1{
+            height: 3rem;
+            font-size: 3rem;
+            width: 100%;
+            padding-left: 2%;
+            font-family: Neue Machinai-Bold;
+            color: #acfc42;
+        }
+        .heading2{
+            height: 3rem;
+            font-size: 3rem;
+            width: 100%;
+            padding-left: 2%;
+            font-family: Neue Machinai-Bold;
+            color: #acfc42;
+        }
+        .heading3{
+            height: 3rem;
+            font-size: 3rem;
+            width: 100%;
+            padding-left: 2%;
+            font-family: Neue Machinai-Bold;
+            color: #acfc42;
+        }
+        .btnShop{
+            margin-left: 2%;
+            margin-top: 3%;
+            min-height: 3rem;
+            width: 6.5rem;
+            font-size: 1.2rem;
+            font-family: Neue Machinai-Regular;
+            color: #0c0c0c;
+            background-color: #acfc42;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .btnShop:hover{
+            box-shadow: #f3f3f3 1px 1px;
+        }
+        
+        
+        .imgContainer{
+           padding: 0px;
+           margin: 0px;
+            height: 17rem;
+            width: 100%;
+            /* background-color: blueviolet; */
+            background-image: url("../../public//static/images/picture1.png");
+            background-size: 150% 150%; 
+            background-repeat: no-repeat;
+            animation: killer1 infinite ;
+            animation-delay: 2s;
+            animation-duration: 15s;
+            /* transition: all linear 1s; */
+
+        }
+
+        @keyframes killer1 {
+            0%{
+                background-image: url("../../public//static/images/picture1.png");
+                background-size: 150% 150%; 
+            }
+            30%{
+                background-image: url("../../public//static/images/picture1.png");
+                background-size: 150% 150%; 
+            }
+            60%{
+                background-image: url("../../public//static/images/picture2.png");
+                background-size: 100% 100%; 
+            }
+            85%{
+                background-image: url("../../public//static/images/picture3.png");
+                background-size: 100% 100%; 
+            }
+            100%{
+                background-image: url("../../public//static/images/picture3.png");
+                background-size: 100% 100%; 
+            }
+            
+        }
+        
+        .headerImagess{
+            height: 17rem;
+            width: 100%;
+        }
+}
+
+
+@media only screen and (min-width: 1201px){
+
+    .container{
+        height: 100%;
+        width: 100%;
+        background-color: #000000;
+        display: flex;
+        flex-direction:row;
+    }
+    
+    .textContainer{
+       
+       
+      padding-top: 5rem;
+      padding-bottom: 5rem;
+        height: 100%;
+        width: 45%;
+        background-color: #000000;
+        /* background-color: #a01d1d;  */
+    }
+    .heading1{
+        /* height: 4.5rem; */
+        max-height: 4.5rem;
+        font-size: 4.2rem;
+        width: 100%;
+        padding-left: 2%;
+        font-family: Neue Machinai-Bold;
+        color: #acfc42;
+        /* background-color: antiquewhite; */
+    }
+    .heading2{
+        height: 4.5rem;
+        font-size: 4.2rem;
+        width: 100%;
+        padding-left: 2%;
+        font-family: Neue Machinai-Bold;
+        color: #acfc42;
+    }
+    .heading3{
+        height: 4.5rem;
+        font-size: 4.2rem;
+        width: 100%;
+        padding-left: 2%;
+        font-family: Neue Machinai-Bold;
+        color: #acfc42;
+    }
+    .btnShop{
+        margin-left: 2%;
+        margin-top: 3%;
+        min-height: 4rem;
+        width: 7.5rem;
+        font-size: 1.2rem;
+        font-family: Neue Machinai-Regular;
+        color: #0c0c0c;
+        background-color: #acfc42;
+        border: none;
+        cursor: pointer;
+    }
+    
+    .btnShop:hover{
+        box-shadow: #f3f3f3 1px 1px;
+    }
+    
+    
+    .imgContainer{
+       padding: 0px;
+       margin: 0px;
+        height: 100%;
+        width: 55%;
+        /* background-color: blueviolet; */
+        background-image: url("../../public//static/images/picture1.png");
+        background-size: 100% 100%; 
+        background-repeat: no-repeat;
+        animation: killer1 infinite ;
+        animation-delay: 2s;
+        animation-duration: 15s;
+        /* transition: all linear 1s; */
+
+    }
+
+    @keyframes killer1 {
+        0%{
+            background-image: url("../../public//static/images/picture1.png");
+            background-size: 100% 100%; 
+        }
+        30%{
+            background-image: url("../../public//static/images/picture1.png");
+            background-size: 150% 150%; 
+        }
+        60%{
+            background-image: url("../../public//static/images/picture2.png");
+            background-size: 100% 100%; 
+        }
+        85%{
+            background-image: url("../../public//static/images/picture3.png");
+            background-size: 100% 100%; 
+        }
+        100%{
+            background-image: url("../../public//static/images/picture3.png");
+            background-size: 100% 100%; 
+        }
+        
+    }
+    
+    .headerImagess{
+        height: 17rem;
+        width: 100%;
+    }
+}

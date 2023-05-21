@@ -1,0 +1,1390 @@
+@font-face {
+    font-family: acumin-pro;
+    src: url(../../public//static/Acumin-RPro.otf);
+}
+@font-face {
+    font-family: acumin-pro-bold;
+    src: url(../../public//static/Acumin-BdPro.otf);
+}
+@font-face {
+    font-family: Neue Machinai-Light;
+    src: url(../../public//static//NeueMachina-Light.otf);
+}
+@font-face {
+    font-family: Neue Machinai-Regular;
+    src: url(../../public//static//NeueMachina-Regular.otf);
+}
+@font-face {
+    font-family: Neue Machinai-Bold;
+    src: url(../../public/static//NeueMachina-Ultrabold.otf);
+}
+
+@font-face {
+    font-family: Cindie2;
+    src: url(../../public/static/Cindie2-T.ttf);
+}
+@font-face {
+    font-family: BetterGrade;
+    src: url(../../public/static/BetterGrade-519DV.ttf);
+}
+.container{
+    background-color: #646262;
+    height: 100vh;
+    width: 100vw;
+
+}
+
+.Navbarcontainer{
+    background-color: #e610c9;
+    height: 5rem;
+    width: 100%;
+}
+
+.homePageContainer{
+    background-color: #10e69f;
+    height: 47rem;
+    width: 100%;
+}
+
+.smartwatchWrapper{
+    background-color: #54e610;
+    height: 28rem;
+    width: 100%;
+}
+
+.highpriceWrapper{
+    background-color: #e6b410;
+    height: 42rem;
+    width: 100%;
+}
+
+.mosttrendingSection{
+    background-color: #1410e6;
+    height: 30rem;
+    width: 100%;
+}
+
+.shopebybrandSection{
+    background-color: #e61022;
+    height: 42rem;
+    width: 100%;
+}
+
+.signupSection{
+    background-color: #413f3f;
+    height: 25rem;
+    width: 100%;
+}
+
+.footerSection{
+    background-color: #ffe344;
+    height: 4rem;
+    width: 100%;
+}
+
+@media only screen and (min-width: 1px) and (max-width: 300px) {
+    .container{
+        height: 100vh;
+        width: 100vw;
+        background-color: rgb(0, 0, 0);
+        display: none;
+    }
+}
+
+
+
+@media only screen and (min-width: 300px) and (max-width: 500px) {
+    .container{
+        background-color: #f3f3f3;
+        height: 100vh;
+        width: 100vw;
+    
+    }
+    
+    .Navbarcontainer{
+        background-color: #dad8d8;
+        height: auto;
+        /* max-height: 17rem; */
+        width: 100%;
+    }
+
+    .homePageContainer{
+        background-color: #10e69f;
+        height: 28rem;
+        width: 100%;
+    }
+    .smartwatchWrapper{
+        background-color: #ffffff;
+        padding-top: 0px;
+        height: 67rem;
+        width: 100%;
+        overflow: hidden;
+    }
+    .headingDiv{
+        background-color: #ffffff;
+        margin-top: 1rem;
+        height :3rem;
+    }
+    .spanOfSmart{
+        font-family: BetterGrade;
+        font-weight: 600;
+        font-size: 2.2rem; 
+        margin-right: 3%;  
+        padding-top: 4px;
+        color: #c498f5;
+    }
+    .headingOfSmartWatch{
+        display: flex;
+        font-family: Neue Machinai-Regular;
+        font-weight: 200;
+        font-size: 2.2rem;
+        justify-content: center;
+        color: #111111;
+    }
+    .showCaseContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #ffffff;
+        margin-top: 5%;  
+        height :67rem;
+    }
+    .highpriceWrapper{
+        background-color: #ffffff;
+        height: 67rem;
+        width: 100%;
+        overflow: hidden;
+    }
+    .headingDivOfExp{
+        background-color: #ffffff;
+        margin-top: 5%;
+        margin-left: auto;
+        margin-right: auto;
+        height: 5.5rem;
+        width: 60%;
+    }
+    .headingOfExpensive{
+        display: flex;
+        /* flex-direction: column; */
+        font-family: BetterGrade;
+        justify-content: center;
+        font-weight: 700;
+        font-size: 2.5rem;
+        color: #c498f5;
+    }
+    .spanOfexp{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: Neue Machinai-Regular;
+        font-weight: 500;
+        font-size: 2.2rem; 
+        padding-top: 1%;
+        color: #111111;
+    }
+    .expensiveWContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 60rem;
+        width: 100%;
+    }
+    .shopebybrandSection{
+        background-color: #ffffff;
+        height: 20rem;
+        width: 100%;
+    }
+    .headLineContainer{
+        background-color: #ffffff;
+        height: 3rem;
+        width: 100%;
+    }
+    .headLine{
+        height: 3rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Neue Machinai-Regular;
+        font-size: 2rem;
+        color: #111111;
+    }
+    .Brand1Container{
+        background-color: #ffffff;
+        height: 2.5rem;
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 10%;
+        display: flex;
+        flex-direction: row;
+        border: 1px solid #0c0c0c;
+    }
+    .Brand1Container:hover{
+        background-color: #a8fa41;
+    }
+    .Brand1{
+        height: 2.5rem;
+        width: 70%;
+        color: #0c0c0c;
+        font-family: Neue Machinai-Regular;
+        font-size: 1.2rem;
+        padding-left: 5%;
+    }
+    .Brand1:hover{
+        font-family: BetterGrade;
+    }
+    .arrow1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* margin-top: ; */
+        height: 2.5rem;
+        width: 30%;
+        color: #111111;
+    }
+
+    .Breand2Container{
+        background-color: #ffffff;
+        height: 2.5rem;
+        width: 80%;
+        margin-left: 10%;
+        display: flex;
+        flex-direction: row;
+        border: 1px solid #0c0c0c;
+    }
+    .Breand2Container:hover{
+        background-color: #a8fa41;
+    }
+    .Breand2{
+        height: 2.5rem;
+        width: 70%;
+        color: #0c0c0c;
+        font-family: Neue Machinai-Regular;
+        font-size: 1.1rem;
+        padding-left: 5%;
+    }
+    .Breand2:hover{
+        font-family: BetterGrade;
+    }
+    .arrow2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* margin-top: ; */
+        height: 2.5rem;
+        width: 30%;
+        color: #111111;
+    }
+    .Brand3Container{
+        background-color: #ffffff;
+        height: 2.5rem;
+        width: 80%;
+        margin-left: 10%;
+        display: flex;
+        flex-direction: row;
+        border: 1px solid #0c0c0c;
+    }
+    .Brand3Container:hover{
+        background-color: #a8fa41;
+    }
+    .Brand3{
+        height: 2.5rem;
+        width: 70%;
+        
+        color: #0c0c0c;
+        font-family: Neue Machinai-Regular;
+        font-size: 1.1rem;
+        padding-left: 5%;
+    }
+    .Brand3:hover{
+        font-family: BetterGrade;
+    }
+    .arrow3{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* margin-top: ; */
+        height: 2.5rem;
+        width: 30%;
+        color: #111111;
+    }
+    .Brand4Container{
+        background-color: #ffffff;
+        height: 2.5rem;
+        width: 80%;
+        margin-left: 10%;
+        display: flex;
+        flex-direction: row;
+        border: 1px solid #0c0c0c;
+    }
+    .Brand4Container:hover{
+        background-color: #a8fa41;
+    }
+    .Brand4{
+        height: 2.5rem;
+        width: 70%;
+        color: #0c0c0c;
+        font-family: Neue Machinai-Regular;
+        font-size: 1.1rem;
+        padding-left: 5%;
+    }
+
+    .Brand4:hover{
+        font-family: BetterGrade;
+    }
+    .arrow4{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* margin-top: ; */
+        height: 2.5rem;
+        width: 30%;
+        color: #111111;
+    }
+    .signupSection{
+        background-color: #413f3f;
+        height: 15rem;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    .imgContainer{
+        /* background-color: #2e0b0b;
+        height: 15rem;
+        width: 30%;
+        margin-left: 3%;
+        background-image: url(../../public//static/images/watchrolex.jpg);
+        background-size: 100% 100%; */
+     display: none;
+    }
+
+    .ContentContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #a8fa41;
+        height: 15rem;
+        width: 100%;
+        /* margin-left: 1%; */
+    }
+
+    .heading1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 8rem;
+        width: 100%;
+        font-family: Neue Machinai-Regular;
+        font-size: 2rem;
+        color: #111111;
+    }
+
+    .heading2{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        height: 3rem;
+        width:100%;
+        /* background-color: #10e69f; */
+        font-family: Neue Machinai-Light;
+        font-size: 0.9rem;
+        transition: 1px solid #0c0c0c;
+        cursor: pointer;
+        color: #111111;
+    }
+
+    .heading2:hover{
+          text-decoration: underline;
+    }
+    
+    .footerSection{
+        background-color: #ffe344;
+        height: 5rem;
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+
+    .container{
+        background-color: #646262;
+        height: 100vh;
+        width: 100vw;
+    
+    }
+    
+    .Navbarcontainer{
+        background-color: #2c1a2a;
+        /* height: 5rem; */
+        height: auto;
+        width: 100%;
+        transition: all 1s ease;
+    }
+    
+    .homePageContainer{
+        background-color: #10e69f;
+        height: 32rem;
+        width: 100%;
+    }
+    
+    .smartwatchWrapper{
+        background-color: #ffffff;
+        padding-top: 0px;
+        height: 68rem;
+        width: 100%;
+        overflow: hidden;
+       
+    }
+    .headingDiv{
+        background-color: #ffffff;
+        margin-top: 1rem;
+        height :3rem;
+        
+    }
+    .spanOfSmart{
+        font-family: BetterGrade;
+        font-weight: 600;
+        font-size: 2.2rem; 
+        margin-right: 2%; 
+        padding-top: 4px;
+        color: #c498f5;
+    }
+    .headingOfSmartWatch{
+        display: flex;
+        font-family: Neue Machinai-Regular;
+        font-weight: 200;
+        font-size: 2.2rem;
+        justify-content: center;
+        color: #111111;
+    }
+    .showCaseContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #ffffff;
+        margin-top: 3%;  
+        height :67rem;
+    }
+    
+    .highpriceWrapper{
+        background-color: #ffffff;
+        height: 69rem;
+        width: 100%;
+        overflow: hidden;
+    }
+    .headingDivOfExp{
+        background-color: #ffffff;
+        margin-top: 3%;
+        margin-left: auto;
+        margin-right: auto;
+        height: 5.5rem;
+        width: 60%;
+    }
+    .headingOfExpensive{
+        display: flex;
+        /* flex-direction: column; */
+        font-family: BetterGrade;
+        justify-content: center;
+        font-weight: 700;
+        font-size: 2.5rem;
+        color: #c498f5;
+    }
+    .spanOfexp{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: Neue Machinai-Regular;
+        font-weight: 500;
+        font-size: 2.2rem; 
+        padding-top: 1%;
+        color: #111111;
+    }
+    .expensiveWContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 62rem;
+        width: 100%;
+    }
+    
+    .shopebybrandSection{
+        background-color: #ffffff;
+        height: 20rem;
+        width: 100%;
+    }
+    .headLineContainer{
+        background-color: #ffffff;
+        height: 3rem;
+        width: 100%;
+    }
+    .headLine{
+        height: 3rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Neue Machinai-Regular;
+        font-size: 2rem;
+        color: #111111;
+    }
+    .Brand1Container{
+        background-color: #ffffff;
+        height: 2.5rem;
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 10%;
+        display: flex;
+        flex-direction: row;
+        border: 1px solid #0c0c0c;
+    }
+    .Brand1Container:hover{
+        background-color: #a8fa41;
+    }
+    .Brand1{
+        height: 2.5rem;
+        width: 70%;
+        color: #0c0c0c;
+        font-family: Neue Machinai-Regular;
+        font-size: 1.2rem;
+        padding-left: 5%;
+        color: #111111;
+    }
+    .Brand1:hover{
+        font-family: BetterGrade;
+    }
+    .arrow1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* margin-top: ; */
+        height: 2.5rem;
+        width: 30%;
+        color: #111111;
+    }
+
+    .Breand2Container{
+        background-color: #ffffff;
+        height: 2.5rem;
+        width: 80%;
+        margin-left: 10%;
+        display: flex;
+        flex-direction: row;
+        border: 1px solid #0c0c0c;
+    }
+    .Breand2Container:hover{
+        background-color: #a8fa41;
+    }
+    .Breand2{
+        height: 2.5rem;
+        width: 70%;
+        color: #0c0c0c;
+        font-family: Neue Machinai-Regular;
+        font-size: 1.1rem;
+        padding-left: 5%;
+        color: #111111;
+    }
+    .Breand2:hover{
+        font-family: BetterGrade;
+    }
+    .arrow2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* margin-top: ; */
+        height: 2.5rem;
+        width: 30%;
+        color: #111111;
+    }
+    .Brand3Container{
+        background-color: #ffffff;
+        height: 2.5rem;
+        width: 80%;
+        margin-left: 10%;
+        display: flex;
+        flex-direction: row;
+        border: 1px solid #0c0c0c;
+    }
+    .Brand3Container:hover{
+        background-color: #a8fa41;
+    }
+    .Brand3{
+        height: 2.5rem;
+        width: 70%;
+        
+        color: #0c0c0c;
+        font-family: Neue Machinai-Regular;
+        font-size: 1.1rem;
+        padding-left: 5%;
+        color: #111111;
+    }
+    .Brand3:hover{
+        font-family: BetterGrade;
+    }
+    .arrow3{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* margin-top: ; */
+        height: 2.5rem;
+        width: 30%;
+        color: #111111;
+    }
+    .Brand4Container{
+        background-color: #ffffff;
+        height: 2.5rem;
+        width: 80%;
+        margin-left: 10%;
+        display: flex;
+        flex-direction: row;
+        border: 1px solid #0c0c0c;
+    }
+    .Brand4Container:hover{
+        background-color: #a8fa41;
+    }
+    .Brand4{
+        height: 2.5rem;
+        width: 70%;
+        color: #0c0c0c;
+        font-family: Neue Machinai-Regular;
+        font-size: 1.1rem;
+        padding-left: 5%;
+        color: #111111;
+    }
+
+    .Brand4:hover{
+        font-family: BetterGrade;
+    }
+    .arrow4{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* margin-top: ; */
+        height: 2.5rem;
+        width: 30%;
+        color: #111111;
+    }
+    .signupSection{
+        background-color: #413f3f;
+        height: 15rem;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    .imgContainer{
+        /* background-color: #2e0b0b;
+        height: 15rem;
+        width: 30%;
+        margin-left: 3%;
+        background-image: url(../../public//static/images/watchrolex.jpg);
+        background-size: 100% 100%; */
+     display: none;
+    }
+
+    .ContentContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #a8fa41;
+        height: 15rem;
+        width: 100%;
+        /* margin-left: 1%; */
+    }
+
+    .heading1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 8rem;
+        width: 100%;
+        font-family: Neue Machinai-Regular;
+        font-size: 2rem;
+        color: #111111;
+    }
+
+    .heading2{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        height: 3rem;
+        width:100%;
+        /* background-color: #10e69f; */
+        font-family: Neue Machinai-Light;
+        font-size: 0.9rem;
+        transition: 1px solid #0c0c0c;
+        cursor: pointer;
+        color: #111111;
+      
+    }
+
+    .heading2:hover{
+          text-decoration: underline;
+    }
+    
+    .footerSection{
+        background-color: #ffe344;
+        height: 5rem;
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+
+    .container{
+        background-color: #646262;
+        height: 100vh;
+        width: 100vw;
+    
+    }
+    
+    .Navbarcontainer{
+        background-color: #e610c9;
+        height: 4rem;
+        width: 100%;
+    }
+
+    .homePageContainer{
+        background-color: #10e69f;
+        height: 32rem;
+        width: 100%;
+    }
+    
+    .smartwatchWrapper{
+        background-color: #ffffff;
+        /* background-color: #ff0404; */
+        padding-top: 0px;
+        height: 28rem;
+        width: 100%;
+        overflow: hidden;
+       
+    }
+    .headingDiv{
+        background-color: #ffffff;
+        margin-top: 1rem;
+        height :3rem;
+    }
+    .spanOfSmart{
+        font-family: BetterGrade;
+        font-weight: 600;
+        font-size: 2.2rem; 
+        margin-right: 2%;  
+        padding-top: 4px;
+        color: #c498f5;
+    }
+    .headingOfSmartWatch{
+        display: flex;
+        font-family: Neue Machinai-Regular;
+        font-weight: 200;
+        font-size: 2.2rem;
+        justify-content: center;
+        color: #111111;
+    }
+    .showCaseContainer{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        background-color: #ffffff;
+        /* background-color: #570f0f; */
+        margin-top: 3%;  
+        height :22rem;
+        width: 100%;
+    }
+    
+    .highpriceWrapper{
+        background-color: #ffffff;
+        /* background-color: #ff1414; */
+        height: 30rem;
+        width: 100%;
+        overflow: hidden;
+    }
+    .headingDivOfExp{
+        background-color: #ffffff;
+        margin-top: 3%;
+        margin-left: auto;
+        margin-right: auto;
+        height: 5.5rem;
+        width: 60%;
+    }
+    .headingOfExpensive{
+        display: flex;
+        /* flex-direction: column; */
+        font-family: BetterGrade;
+        justify-content: center;
+        font-weight: 700;
+        font-size: 2.5rem;
+        color: #c498f5;
+    }
+    .spanOfexp{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: Neue Machinai-Regular;
+        font-weight: 500;
+        font-size: 2.2rem; 
+        padding-top: 1%;
+        color: #111111;
+    }
+    .expensiveWContainer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        /* background-color: #54e610; */
+        height: 23rem;
+        width: 100%;
+    }
+    
+    .shopebybrandSection{
+        background-color: #ffffff;
+        /* background-color: #af0d0d; */
+        height: 20rem;
+        width: 100%;
+    }
+    .headLineContainer{
+        
+        height: 3rem;
+        width: 100%;
+    }
+    .headLine{
+        height: 3rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Neue Machinai-Regular;
+        font-size: 2rem;
+        color: #111111;
+    }
+    .Brand1Container{
+        background-color: #ffffff;
+        height: 2.5rem;
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 5%;
+        display: flex;
+        flex-direction: row;
+        border: 1px solid #0c0c0c;
+    }
+    .Brand1Container:hover{
+        background-color: #a8fa41;
+    }
+    .Brand1{
+        height: 2.5rem;
+        width: 70%;
+        color: #0c0c0c;
+        font-family: Neue Machinai-Regular;
+        font-size: 1.2rem;
+        padding-left: 5%;
+        color: #111111;
+    }
+    .Brand1:hover{
+        font-family: BetterGrade;
+    }
+    .arrow1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* margin-top: ; */
+        height: 2.5rem;
+        width: 30%;
+        color: #111111;
+    }
+
+    .Breand2Container{
+        background-color: #ffffff;
+        height: 2.5rem;
+        width: 80%;
+        margin-left: 10%;
+        display: flex;
+        flex-direction: row;
+        border: 1px solid #0c0c0c;
+    }
+    .Breand2Container:hover{
+        background-color: #a8fa41;
+    }
+    .Breand2{
+        height: 2.5rem;
+        width: 70%;
+        color: #0c0c0c;
+        font-family: Neue Machinai-Regular;
+        font-size: 1.1rem;
+        padding-left: 5%;
+        color: #111111;
+    }
+    .Breand2:hover{
+        font-family: BetterGrade;
+    }
+    .arrow2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* margin-top: ; */
+        height: 2.5rem;
+        width: 30%;
+        color: #111111;
+    }
+    .Brand3Container{
+        background-color: #ffffff;
+        height: 2.5rem;
+        width: 80%;
+        margin-left: 10%;
+        display: flex;
+        flex-direction: row;
+        border: 1px solid #0c0c0c;
+    }
+    .Brand3Container:hover{
+        background-color: #a8fa41;
+    }
+    .Brand3{
+        height: 2.5rem;
+        width: 70%;
+        
+        color: #0c0c0c;
+        font-family: Neue Machinai-Regular;
+        font-size: 1.1rem;
+        padding-left: 5%;
+        color: #111111;
+    }
+    .Brand3:hover{
+        font-family: BetterGrade;
+    }
+    .arrow3{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* margin-top: ; */
+        height: 2.5rem;
+        width: 30%;
+        color: #111111;
+    }
+    .Brand4Container{
+        background-color: #ffffff;
+        height: 2.5rem;
+        width: 80%;
+        margin-left: 10%;
+        display: flex;
+        flex-direction: row;
+        border: 1px solid #0c0c0c;
+    }
+    .Brand4Container:hover{
+        background-color: #a8fa41;
+    }
+    .Brand4{
+        height: 2.5rem;
+        width: 70%;
+        color: #0c0c0c;
+        font-family: Neue Machinai-Regular;
+        font-size: 1.1rem;
+        padding-left: 5%;
+        color: #111111;
+    }
+
+    .Brand4:hover{
+        font-family: BetterGrade;
+    }
+    .arrow4{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* margin-top: ; */
+        height: 2.5rem;
+        width: 30%;
+        color: #111111;
+    }
+    .signupSection{
+        background-color: #413f3f;
+        height: 15rem;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    .imgContainer{
+        /* background-color: #2e0b0b;
+        height: 15rem;
+        width: 30%;
+        margin-left: 3%;
+        background-image: url(../../public//static/images/watchrolex.jpg);
+        background-size: 100% 100%; */
+     display: none;
+    }
+
+    .ContentContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #a8fa41;
+        height: 15rem;
+        width: 100%;
+        /* margin-left: 1%; */
+    }
+
+    .heading1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 8rem;
+        width: 100%;
+        font-family: Neue Machinai-Regular;
+        font-size: 2rem;
+        color: #111111;
+    }
+
+    .heading2{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        height: 3rem;
+        width:100%;
+        /* background-color: #10e69f; */
+        font-family: Neue Machinai-Light;
+        font-size: 0.9rem;
+        transition: 1px solid #0c0c0c;
+        cursor: pointer;
+        color: #111111;
+      
+    }
+
+    .heading2:hover{
+          text-decoration: underline;
+    }
+    
+    .footerSection{
+        background-color: #ffe344;
+        height: 5rem;
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 1201px){
+    .container{
+        background-color: #646262;
+        height: 100vh;
+        width: 100vw;
+    
+    }
+    
+    .Navbarcontainer{
+        background-color: #e610c9;
+        height: 4rem;
+        width: 100%;
+    }
+
+    .homePageContainer{
+        background-color: #10e69f;
+        height: 32rem;
+        width: 100%;
+    }
+    
+    .smartwatchWrapper{
+        background-color: #ffffff;
+        /* background-color: #ff0404; */
+        padding-top: 0px;
+        height: 32rem;
+        width: 100%;
+        overflow: hidden;
+       
+    }
+    .headingDiv{
+        background-color: #ffffff;
+        margin-top: 1rem;
+        height :3rem;
+    }
+    .spanOfSmart{
+        font-family: BetterGrade;
+        font-weight: 600;
+        font-size: 2.2rem; 
+        margin-right: 2%;  
+        padding-top: 4px;
+        color: #c498f5;
+    }
+    .headingOfSmartWatch{
+        display: flex;
+        font-family: Neue Machinai-Regular;
+        font-weight: 200;
+        font-size: 2.2rem;
+        justify-content: center;
+        color: #111111;
+    }
+    .showCaseContainer{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        background-color: #ffffff;
+        /* background-color: #570f0f; */
+        margin-top: 3%;  
+        height :22rem;
+        width: 100%;
+    }
+    
+    .highpriceWrapper{
+        background-color: #ffffff;
+        /* background-color: #ff1414; */
+        height: 35rem;
+        width: 100%;
+        overflow: hidden;
+    }
+    .headingDivOfExp{
+        background-color: #ffffff;
+        margin-top: 3%;
+        margin-left: auto;
+        margin-right: auto;
+        height: 5.5rem;
+        width: 60%;
+    }
+    .headingOfExpensive{
+        display: flex;
+        /* flex-direction: column; */
+        font-family: BetterGrade;
+        justify-content: center;
+        font-weight: 700;
+        font-size: 2.5rem;
+        color: #c498f5;
+    }
+    .spanOfexp{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: Neue Machinai-Regular;
+        font-weight: 500;
+        font-size: 2.2rem; 
+        padding-top: 1%;
+        color: #111111;
+    }
+    .expensiveWContainer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        /* background-color: #54e610; */
+        height: 23rem;
+        width: 100%;
+    }
+    
+    .shopebybrandSection{
+        background-color: #ffffff;
+        /* background-color: #af0d0d; */
+        height: 25rem;
+        width: 100%;
+    }
+    .headLineContainer{
+        
+        height: 3rem;
+        width: 100%;
+    }
+    .headLine{
+        height: 3rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Neue Machinai-Regular;
+        font-size: 2rem;
+        color: #111111;
+    }
+    .Brand1Container{
+        background-color: #ffffff;
+        height: 2.5rem;
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 5%;
+        display: flex;
+        flex-direction: row;
+        border: 1px solid #0c0c0c;
+    }
+    .Brand1Container:hover{
+        background-color: #a8fa41;
+    }
+    .Brand1{
+        height: 2.5rem;
+        width: 70%;
+        color: #0c0c0c;
+        font-family: Neue Machinai-Regular;
+        font-size: 1.2rem;
+        padding-left: 5%;
+        color: #111111;
+    }
+    .Brand1:hover{
+        font-family: BetterGrade;
+    }
+    .arrow1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* margin-top: ; */
+        height: 2.5rem;
+        width: 30%;
+        color: #111111;
+    }
+
+    .Breand2Container{
+        background-color: #ffffff;
+        height: 2.5rem;
+        width: 80%;
+        margin-left: 10%;
+        display: flex;
+        flex-direction: row;
+        border: 1px solid #0c0c0c;
+    }
+    .Breand2Container:hover{
+        background-color: #a8fa41;
+    }
+    .Breand2{
+        height: 2.5rem;
+        width: 70%;
+        color: #0c0c0c;
+        font-family: Neue Machinai-Regular;
+        font-size: 1.1rem;
+        padding-left: 5%;
+        color: #111111;
+    }
+    .Breand2:hover{
+        font-family: BetterGrade;
+    }
+    .arrow2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* margin-top: ; */
+        height: 2.5rem;
+        width: 30%;
+        color: #111111;
+    }
+    .Brand3Container{
+        background-color: #ffffff;
+        height: 2.5rem;
+        width: 80%;
+        margin-left: 10%;
+        display: flex;
+        flex-direction: row;
+        border: 1px solid #0c0c0c;
+    }
+    .Brand3Container:hover{
+        background-color: #a8fa41;
+    }
+    .Brand3{
+        height: 2.5rem;
+        width: 70%;
+        
+        color: #111111;
+        font-family: Neue Machinai-Regular;
+        font-size: 1.1rem;
+        padding-left: 5%;
+    }
+    .Brand3:hover{
+        font-family: BetterGrade;
+    }
+    .arrow3{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* margin-top: ; */
+        height: 2.5rem;
+        width: 30%;
+        color: #111111;
+    }
+    .Brand4Container{
+        background-color: #ffffff;
+        height: 2.5rem;
+        width: 80%;
+        margin-left: 10%;
+        display: flex;
+        flex-direction: row;
+        border: 1px solid #0c0c0c;
+    }
+    .Brand4Container:hover{
+        background-color: #a8fa41;
+    }
+    .Brand4{
+        height: 2.5rem;
+        width: 70%;
+        color: #111111;
+        font-family: Neue Machinai-Regular;
+        font-size: 1.1rem;
+        padding-left: 5%;
+    }
+
+    .Brand4:hover{
+        font-family: BetterGrade;
+    }
+    .arrow4{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* margin-top: ; */
+        height: 2.5rem;
+        width: 30%;
+        color: #111111;
+    }
+    .signupSection{
+        background-color: #413f3f;
+        height: 15rem;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    .imgContainer{
+        /* background-color: #2e0b0b;
+        height: 15rem;
+        width: 30%;
+        margin-left: 3%;
+        background-image: url(../../public//static/images/watchrolex.jpg);
+        background-size: 100% 100%; */
+     display: none;
+    }
+
+    .ContentContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #a8fa41;
+        height: 15rem;
+        width: 100%;
+        /* margin-left: 1%; */
+    }
+
+    .heading1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 8rem;
+        width: 100%;
+        font-family: Neue Machinai-Regular;
+        font-size: 2rem;
+        color: #111111;
+    }
+
+    .heading2{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        height: 3rem;
+        width:100%;
+        /* background-color: #10e69f; */
+        font-family: Neue Machinai-Light;
+        font-size: 0.9rem;
+        transition: 1px solid #0c0c0c;
+        cursor: pointer;
+        color: #111111;
+      
+    }
+
+    .heading2:hover{
+          text-decoration: underline;
+    }
+    
+    .footerSection{
+        background-color: #ffe344;
+        height: 5rem;
+        width: 100%;
+    }
+ }
+

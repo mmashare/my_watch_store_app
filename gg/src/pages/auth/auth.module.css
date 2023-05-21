@@ -1,0 +1,624 @@
+@font-face {
+    font-family: acumin-pro;
+    src: url(../../../public//static/Acumin-RPro.otf);
+}
+
+@font-face {
+    font-family: acumin-pro-bold;
+    src: url(../../../public//static/Acumin-BdPro.otf);
+}
+@font-face {
+    font-family: Neue Machinai-Light;
+    src: url(../../../public//static//NeueMachina-Light.otf);
+}
+@font-face {
+    font-family: Neue Machinai-Regular;
+    src: url(../../../public//static//NeueMachina-Regular.otf);
+}
+@font-face {
+    font-family: Neue Machinai-Bold;
+    src: url(../../../public/static//NeueMachina-Ultrabold.otf);
+}
+
+@media only screen and (min-width: 1px) and (max-width: 300px) {
+    .container{
+        height: 100vh;
+        width: 100vw;
+        background-color: rgb(0, 0, 0);
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 500px) {
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    background-color: #f3f3f3;
+}
+.headingContainer{
+    height: 5rem;
+    width: 100%;
+    /* background-color: rgb(161, 1, 1); */
+    color: aliceblue;
+}
+
+.heading{
+    height: auto;
+    width: auto;
+    margin-left: 10px;
+    color: #0c0c0c;
+    font-size: 3rem;
+    font-family: Neue Machinai-Regular;
+}
+
+.mainCOntainer{
+    height: auto;
+    width: 100%;
+    /* background-color: rgb(107, 8, 199); */
+}
+.Semicontainer{
+    height: auto;
+    width: 100%;
+    /* background-color: rgb(106, 62, 148); */
+    display: flex;
+    flex-direction: column;
+}
+.Imgcontainer{
+    display: none;
+}
+.nameContainer{
+    height: auto;
+    width: 100%;
+    margin-top: 10px;
+}
+.Reminder{
+    height: auto;
+    width: 100%;
+    background-color: #b9b71e;
+    margin-bottom: 1rem;
+    font-family: Neue Machinai-Light;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 1rem;
+    
+}
+.nameInput{
+    height: 2rem;
+    width: 70%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    outline: none;
+    border: 1px #0c0c0c solid;
+    padding-left: 5px;
+    font-family: Neue Machinai-Regular;
+}
+
+.emailContainer{
+    height: auto;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.emailInput{
+    height: 2rem;
+    width: 70%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    outline: none;
+    border: 1px #0c0c0c solid;
+    padding-left: 5px;
+    font-family: Neue Machinai-Regular;
+}
+
+.passwordContainer{
+    height: auto;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.passwordInput{
+    height: 2rem;
+    width: 70%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    outline: none;
+    border: 1px #0c0c0c solid;
+    padding-left: 5px;
+    font-family: Neue Machinai-Regular;
+}
+.btnSection{
+    height: auto;
+    width: 100%;
+    /* background-color: rgb(58, 11, 167); */
+    display: flex;
+    flex-direction: column;
+    
+
+}
+
+.GoBtn{
+    height: 2.5rem;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Neue Machinai-Regular;
+    border: #0c0c0c 1px solid;
+    background-color:#a8fa41 ;
+    margin-bottom: 5px;
+
+}
+
+.ToggleBtn{
+    height: 2.5rem;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Neue Machinai-Regular;
+    background-color:inherit;
+    border: #0c0c0c 1px solid;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+}
+
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+
+    .container{
+        height: 100vh;
+        width: 100vw;
+        background-color: #f3f3f3;
+    }
+    .headingContainer{
+        height: 5rem;
+        width: 100%;
+        /* background-color: rgb(161, 1, 1); */
+        color: aliceblue;
+    }
+    
+    .heading{
+        height: auto;
+        width: auto;
+        margin-left: 10px;
+        color: #0c0c0c;
+        font-size: 3rem;
+        font-family: Neue Machinai-Regular;
+    }
+    
+    .mainCOntainer{
+        height: auto;
+        width: 100%;
+        /* background-color: rgb(107, 8, 199); */
+    }
+    .Semicontainer{
+        height: auto;
+        width: 100%;
+        /* background-color: rgb(106, 62, 148); */
+        display: flex;
+        flex-direction: column;
+    }
+    .Imgcontainer{
+        display: none;
+    }
+    .nameContainer{
+        height: auto;
+        width: 100%;
+        margin-top: 10px;
+    }
+    .Reminder{
+        height: auto;
+        width: 100%;
+        background-color: #b9b71e;
+        margin-bottom: 1rem;
+        font-family: Neue Machinai-Light;
+        padding-left: 5px;
+        padding-right: 5px;
+        font-size: 1rem;
+        
+    }
+    .nameInput{
+        height: 2rem;
+        width: 70%;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        outline: none;
+        border: 1px #0c0c0c solid;
+        padding-left: 5px;
+        font-family: Neue Machinai-Regular;
+    }
+    
+    .emailContainer{
+        height: auto;
+        width: 100%;
+        margin-top: 10px;
+    }
+    
+    .emailInput{
+        height: 2rem;
+        width: 70%;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        outline: none;
+        border: 1px #0c0c0c solid;
+        padding-left: 5px;
+        font-family: Neue Machinai-Regular;
+    }
+    
+    .passwordContainer{
+        height: auto;
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .passwordInput{
+        height: 2rem;
+        width: 70%;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        outline: none;
+        border: 1px #0c0c0c solid;
+        padding-left: 5px;
+        font-family: Neue Machinai-Regular;
+    }
+    .btnSection{
+        height: auto;
+        width: 100%;
+        /* background-color: rgb(58, 11, 167); */
+        display: flex;
+        flex-direction: column;
+        
+    
+    }
+    
+    .GoBtn{
+        height: 2.5rem;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        font-family: Neue Machinai-Regular;
+        border: #0c0c0c 1px solid;
+        background-color:#a8fa41 ;
+        margin-bottom: 5px;
+    
+    }
+    
+    .ToggleBtn{
+        height: 2.5rem;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        font-family: Neue Machinai-Regular;
+        background-color:inherit;
+        border: #0c0c0c 1px solid;
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+
+
+    .container{
+        height: 100vh;
+        width: 100vw;
+        background-color: #f3f3f3;
+    }
+    .headingContainer{
+        height: 5rem;
+        width: 100%;
+        /* background-color: rgb(161, 1, 1); */
+        color: aliceblue;
+    }
+    
+    .heading{
+        height: auto;
+        width: auto;
+        margin-left: 10px;
+        color: #0c0c0c;
+        font-size: 3rem;
+        font-family: Neue Machinai-Regular;
+    }
+    
+    .mainCOntainer{
+        height: auto;
+        width: 100%;
+        /* background-color: rgb(107, 8, 199); */
+    }
+    .Semicontainer{
+        height: auto;
+        width: 100%;
+        /* background-color: rgb(106, 62, 148); */
+        display: flex;
+        flex-direction: row;
+    }
+
+    .Imgcontainer{
+        height: auto;
+        width: 50%;
+        background-color: rgb(15, 29, 24);
+    }
+    .Imgg{
+        height: 100%;
+        width: 100%;
+    }
+    .contentDiv{
+        height: 20rem;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #ebebeb;
+    }
+    .nameContainer{
+        height: auto;
+        width: 100%;
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    .Reminder{
+        height: auto;
+        width: 100%;
+        background-color: #b9b71e;
+        margin-bottom: 1rem;
+        font-family: Neue Machinai-Light;
+        padding-left: 5px;
+        padding-right: 5px;
+        font-size: 1rem;
+        
+    }
+    .nameInput{
+        height: 2rem;
+        width: 70%;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        outline: none;
+        border: 1px #0c0c0c solid;
+        padding-left: 5px;
+        font-family: Neue Machinai-Regular;
+    }
+    
+    .emailContainer{
+        height: auto;
+        width: 100%;
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .emailInput{
+        height: 2rem;
+        width: 70%;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        outline: none;
+        border: 1px #0c0c0c solid;
+        padding-left: 5px;
+        font-family: Neue Machinai-Regular;
+    }
+    
+    .passwordContainer{
+        height: auto;
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    .passwordInput{
+        height: 2rem;
+        width: 70%;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        outline: none;
+        border: 1px #0c0c0c solid;
+        padding-left: 5px;
+        font-family: Neue Machinai-Regular;
+    }
+    .btnSection{
+        height: auto;
+        width: 100%;
+        /* background-color: rgb(58, 11, 167); */
+        display: flex;
+        flex-direction: column;
+        
+    
+    }
+    
+    .GoBtn{
+        height: 2.5rem;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        font-family: Neue Machinai-Regular;
+        border: #0c0c0c 1px solid;
+        background-color:#a8fa41 ;
+        margin-bottom: 5px;
+    
+    }
+    
+    .ToggleBtn{
+        height: 2.5rem;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        font-family: Neue Machinai-Regular;
+        background-color:inherit;
+        border: #0c0c0c 1px solid;
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+
+}
+
+@media only screen and (min-width: 1201px){
+
+        
+    .container{
+        height: 100vh;
+        width: 100vw;
+        background-color: #f3f3f3;
+    }
+    .headingContainer{
+        height: 5rem;
+        width: 100%;
+        /* background-color: rgb(161, 1, 1); */
+        color: aliceblue;
+    }
+    
+    .heading{
+        height: auto;
+        width: auto;
+        margin-left: 10px;
+        color: #0c0c0c;
+        font-size: 3rem;
+        font-family: Neue Machinai-Regular;
+    }
+    
+    .mainCOntainer{
+        height: auto;
+        width: 100%;
+        /* background-color: rgb(107, 8, 199); */
+    }
+    .Semicontainer{
+        height: auto;
+        width: 100%;
+        /* background-color: rgb(106, 62, 148); */
+        display: flex;
+        flex-direction: row;
+    }
+
+    .Imgcontainer{
+        height: 20rem;
+        width: 50%;
+        background-color: rgb(15, 29, 24);
+    }
+    .Imgg{
+        height: 100%;
+        width: 100%;
+    }
+    .contentDiv{
+        height: 20rem;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #ebebeb;
+    }
+    .nameContainer{
+        height: auto;
+        width: 100%;
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    .Reminder{
+        height: auto;
+        width: 100%;
+        background-color: #b9b71e;
+        margin-bottom: 1rem;
+        font-family: Neue Machinai-Light;
+        padding-left: 5px;
+        padding-right: 5px;
+        font-size: 1rem;
+        
+    }
+    .nameInput{
+        height: 2rem;
+        width: 70%;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        outline: none;
+        border: 1px #0c0c0c solid;
+        padding-left: 5px;
+        font-family: Neue Machinai-Regular;
+    }
+    
+    .emailContainer{
+        height: auto;
+        width: 100%;
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .emailInput{
+        height: 2rem;
+        width: 70%;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        outline: none;
+        border: 1px #0c0c0c solid;
+        padding-left: 5px;
+        font-family: Neue Machinai-Regular;
+    }
+    
+    .passwordContainer{
+        height: auto;
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    .passwordInput{
+        height: 2rem;
+        width: 70%;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        outline: none;
+        border: 1px #0c0c0c solid;
+        padding-left: 5px;
+        font-family: Neue Machinai-Regular;
+    }
+    .btnSection{
+        height: auto;
+        width: 100%;
+        /* background-color: rgb(58, 11, 167); */
+        display: flex;
+        flex-direction: column;
+        
+    
+    }
+    
+    .GoBtn{
+        height: 2.5rem;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        font-family: Neue Machinai-Regular;
+        border: #0c0c0c 1px solid;
+        background-color:#a8fa41 ;
+        margin-bottom: 5px;
+    
+    }
+    
+    .ToggleBtn{
+        height: 2.5rem;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        font-family: Neue Machinai-Regular;
+        background-color:inherit;
+        border: #0c0c0c 1px solid;
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+
+}

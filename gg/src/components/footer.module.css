@@ -1,0 +1,275 @@
+@font-face {
+    font-family: Neue Machinai-Light;
+    src: url(../../public//static//NeueMachina-Light.otf);
+}
+@font-face {
+    font-family: Neue Machinai-Regular;
+    src: url(../../public//static//NeueMachina-Regular.otf);
+}
+@font-face {
+    font-family: Neue Machinai-Bold;
+    src: url(../../public/static//NeueMachina-Ultrabold.otf);
+}
+
+@media only screen and (min-width: 300px) and (max-width: 500px) {
+.container{
+     width: 100%;
+     height: 100%;
+     background-color: #f3f3f3;
+     display: flex;
+     flex-direction: column;
+
+}
+
+.copyrightSection{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+     height: 3rem;
+     color: rgb(107, 107, 107);
+    align-items: center;
+     
+    
+}
+
+.optionSection{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    width: 100%;
+    height: 2.5rem;
+    /* background-color: rgb(7, 32, 32); */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.option1{
+    width: 6rem;
+    height: 2rem;
+   color: #0c0c0c;
+   font-family: Neue Machinai-Regular;
+   font-size: 1rem;
+}
+.option2{
+    width: 6rem;
+    height: 2rem;
+    color: #0c0c0c;
+    font-family: Neue Machinai-Regular;
+    font-size: 1rem;
+}
+
+.option3{
+    width: 8rem;
+    height: 2rem;
+    color: #0c0c0c;
+    font-family: Neue Machinai-Regular;
+    font-size: 1rem;
+}
+
+.option4{
+    width: 3rem;
+    height: 2rem;
+    color: #0c0c0c;
+    font-family: Neue Machinai-Regular;
+    font-size: 1rem;
+}
+}
+
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+    .container{
+         width: 100%;
+         height: 100%;
+         background-color: #f3f3f3;
+         display: flex;
+         flex-direction: column;
+    
+    }
+    
+    .copyrightSection{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+         height: 3rem;
+         color: rgb(107, 107, 107);
+        align-items: center;
+         
+        
+    }
+    
+    .optionSection{
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+        width: 100%;
+        height: 2.5rem;
+        /* background-color: rgb(7, 32, 32); */
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .option1{
+        width: 6rem;
+        height: 2rem;
+       color: #0c0c0c;
+       font-family: Neue Machinai-Regular;
+       font-size: 1rem;
+    }
+    .option2{
+        width: 6rem;
+        height: 2rem;
+        color: #0c0c0c;
+        font-family: Neue Machinai-Regular;
+        font-size: 1rem;
+    }
+    
+    .option3{
+        width: 8rem;
+        height: 2rem;
+        color: #0c0c0c;
+        font-family: Neue Machinai-Regular;
+        font-size: 1rem;
+    }
+    
+    .option4{
+        width: 3rem;
+        height: 2rem;
+        color: #0c0c0c;
+        font-family: Neue Machinai-Regular;
+        font-size: 1rem;
+    }
+    }
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+    .container{
+        width: 100%;
+        height: 100%;
+        background-color: #f3f3f3;
+        display: flex;
+        flex-direction: column;
+   
+   }
+   
+   .copyrightSection{
+       display: flex;
+       justify-content: center;
+       width: 100%;
+        height: 3rem;
+        color: rgb(107, 107, 107);
+       align-items: center;
+        
+       
+   }
+   
+   .optionSection{
+       display: flex;
+       flex-direction: row;
+       justify-content:space-between;
+       width: 100%;
+       height: 2.5rem;
+       /* background-color: rgb(7, 32, 32); */
+       display: flex;
+       flex-direction: row;
+       align-items: center;
+   }
+   
+   .option1{
+       width: 6rem;
+       height: 2rem;
+      color: #0c0c0c;
+      font-family: Neue Machinai-Regular;
+      font-size: 1rem;
+   }
+   .option2{
+       width: 6rem;
+       height: 2rem;
+       color: #0c0c0c;
+       font-family: Neue Machinai-Regular;
+       font-size: 1rem;
+   }
+   
+   .option3{
+       width: 8rem;
+       height: 2rem;
+       color: #0c0c0c;
+       font-family: Neue Machinai-Regular;
+       font-size: 1rem;
+   }
+   
+   .option4{
+       width: 3rem;
+       height: 2rem;
+       color: #0c0c0c;
+       font-family: Neue Machinai-Regular;
+       font-size: 1rem;
+   }
+
+}
+
+@media only screen and (min-width: 1201px){
+    .container{
+        width: 100%;
+        height: 100%;
+        background-color: #f3f3f3;
+        display: flex;
+        flex-direction: column;
+   
+   }
+   
+   .copyrightSection{
+       display: flex;
+       justify-content: center;
+       width: 100%;
+        height: 3rem;
+        color: rgb(107, 107, 107);
+       align-items: center;
+        
+       
+   }
+   
+   .optionSection{
+       display: flex;
+       flex-direction: row;
+       justify-content:space-around;
+       width: 100%;
+       height: 2.5rem;
+       /* background-color: rgb(7, 32, 32); */
+       display: flex;
+       flex-direction: row;
+       align-items: center;
+   }
+   
+   .option1{
+       width: 6rem;
+       height: 2rem;
+      color: #0c0c0c;
+      font-family: Neue Machinai-Regular;
+      font-size: 1rem;
+   }
+   .option2{
+       width: 6rem;
+       height: 2rem;
+       color: #0c0c0c;
+       font-family: Neue Machinai-Regular;
+       font-size: 1rem;
+   }
+   
+   .option3{
+       width: 8rem;
+       height: 2rem;
+       color: #0c0c0c;
+       font-family: Neue Machinai-Regular;
+       font-size: 1rem;
+   }
+   
+   .option4{
+       width: 3rem;
+       height: 2rem;
+       color: #0c0c0c;
+       font-family: Neue Machinai-Regular;
+       font-size: 1rem;
+   }
+
+
+}

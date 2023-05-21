@@ -1,0 +1,2355 @@
+
+@font-face {
+    font-family: acumin-pro;
+    src: url(../../public//static/Acumin-RPro.otf);
+}
+@font-face {
+    font-family: acumin-pro-bold;
+    src: url(../../public//static/Acumin-BdPro.otf);
+}
+@font-face {
+    font-family: Neue Machinai-Light;
+    src: url(../../public//static//NeueMachina-Light.otf);
+}
+@font-face {
+    font-family: Neue Machinai-Regular;
+    src: url(../../public//static//NeueMachina-Regular.otf);
+}
+@font-face {
+    font-family: Neue Machinai-Bold;
+    src: url(../../public/static//NeueMachina-Ultrabold.otf);
+}
+
+@font-face {
+    font-family: Cindie2;
+    src: url(../../public/static/Cindie2-T.ttf);
+}
+@font-face {
+    font-family: BetterGrade;
+    src: url(../../public/static/BetterGrade-519DV.ttf);
+}
+@media only screen and (min-width: 300px) and (max-width: 500px) {
+
+.container{
+    background-color: antiquewhite;
+    height: 100%;
+    width: 100%;
+}
+.Wrapper{
+    margin-top: 1.5rem;
+    /* background-color: rgb(172, 111, 31); */
+    background-color: #f3f3f3;
+    height: 2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.textt{
+    /* background-color: rgb(83, 76, 76); */
+    background-color: #f3f3f3;
+    height: 2rem;
+    font-size: 1.5rem;
+    font-weight: 300;
+    width: 90%;
+    font-family: Neue Machinai-Light;
+    padding-left:0.3rem ;
+    color: #111111;
+}
+.plusIcon{
+    /* background-color: rgb(117, 0, 0); */
+    height: 2rem;
+    font-size: 0.5rem;
+    width: 10%;
+    transition: all ease-in 500ms;
+    color: #111111;
+}
+.crossicon{
+    /* background-color: rgb(117, 0, 0); */
+    height: 2rem;
+    font-size: 0.5rem;
+    width: 10%;
+    transform: rotate(43deg);
+    transition: all ease-in 500ms;
+    color: #111111;
+}
+
+
+.priceContainer{
+    display: none;
+}
+.OpenPriceContainer{
+    height: 8rem;
+    width: 100%;
+    background-color: #f3f3f3;
+}
+.priceTitle{
+    /* background-color:aquamarine; */
+    height: 2rem;
+    width: 5rem;
+    font-size: 1.2rem;
+    margin-left: 0.3rem;
+    font-family: Neue Machinai-Light;
+    color: #111111;
+}
+.firstPriceContainer{
+    /* background-color:rgb(15, 124, 88); */
+    height: 2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.firstPriceContainerInputContainer{
+    /* background-color:rgb(142, 235, 204); */
+    height: 2rem;
+    width: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.firstPricetitleDiv{
+    /* background-color:rgb(5, 34, 24); */
+    height: 2rem;
+    width: 90%;
+    display: flex;
+    
+}
+.title1{
+    /* background-color:rgb(6, 10, 9); */
+    height: 2rem;
+    width: 60%;
+    font-size: 0.9rem;
+    font-family: Neue Machinai-Light;
+    margin-top: 0.3rem;
+    padding-left:5px ;
+    color: #111111;
+}
+
+.TwoPriceContainer{
+    /* background-color:rgb(15, 124, 88); */
+    height: 2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.TwoPriceContainerInputContainer{
+    /* background-color:rgb(142, 235, 204); */
+    height: 2rem;
+    width: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.TwoPricetitleDiv{
+    /* background-color:rgb(5, 34, 24); */
+    height: 2rem;
+    width: 90%;
+    display: flex;
+}
+.title2{
+    height: 2rem;
+    width: 60%;
+    font-size: 0.9rem;
+    font-family: Neue Machinai-Light;
+    margin-top: 0.3rem;
+    padding-left:5px ;
+    color: #111111;
+}
+.ThirdPriceContainer{
+    /* background-color:rgb(15, 124, 88); */
+    height: 2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.ThirdPriceContainerInputContainer{
+    /* background-color:rgb(142, 235, 204); */
+    height: 2rem;
+    width: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.ThirdPricetitleDiv{
+    /* background-color:rgb(5, 34, 24); */
+    height: 2rem;
+    width: 90%;
+    display: flex;
+}
+.title3{
+    height: 2rem;
+    width: 60%;
+    font-size: 0.9rem;
+    font-family: Neue Machinai-Light;
+    margin-top: 0.3rem;
+    padding-left:5px ;
+    color: #111111;
+}
+.categoryContainer{
+    display: none;
+}
+
+.OpenCategoryContainer{
+    height: 6rem;
+    width: 100%;
+    /* background-color: rgb(90, 56, 4); */
+    display: flex;
+    flex-direction: column;
+}
+
+.btn1{
+    height: 2rem;
+    width: 100%;
+    background-color: #f3f3f3;
+    color: #0c0c0c;
+    border: 1px #0c0c0c solid;
+    font-size: 1.3rem;
+    font-family: Neue Machinai-Light;
+    color: #111111;
+}
+.btn1:hover{
+    background-color: #0c0c0c;
+    color: #f3f3f3;
+}
+
+.btn2{
+    height: 2rem;
+    width: 100%;
+    background-color: #f3f3f3;
+    color: #0c0c0c;
+    border: 1px #0c0c0c solid;
+    border-bottom: none;
+    border-top: none;
+    font-size: 1.3rem;
+    font-family: Neue Machinai-Light;
+    color: #111111;
+}
+.btn2:hover{
+    background-color: #0c0c0c;
+    color: #f3f3f3;
+}
+.btn3{
+    height: 2rem;
+    width: 100%;
+    background-color: #f3f3f3;
+    color: #0c0c0c;
+    border: 1px #0c0c0c solid;
+    font-size: 1.3rem;
+    font-family: Neue Machinai-Light;
+    color: #111111;
+   
+}
+.btn3:hover{
+    background-color: #0c0c0c;
+    color: #f3f3f3;
+}
+.companyContainer{
+    display: none;
+}
+
+.OpenCompanyContainer{
+    height: 21rem;
+    width: 100%;
+    background-color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+}
+
+.campanyTitle{
+        /* background-color:aquamarine; */
+        height: 1.2rem;
+        width: 9rem;
+        font-size: 1.2rem;
+        margin-left: 0.3rem;
+        font-family: Neue Machinai-Light;
+        margin-top: 2%;
+        margin-bottom: 4%;
+        color: #111111;
+}
+
+.firstCompanyContainer{
+    /* background-color:rgb(15, 124, 88); */
+    height: 2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.firstCompanyContainerInputContainer{
+    /* background-color:rgb(142, 235, 204); */
+    height: 2rem;
+    width: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.firstCompanytitleDiv{
+    /* background-color:rgb(5, 34, 24); */
+    height: 2rem;
+    width: 90%;
+    display: flex;
+    
+}
+.titleOfCompany1{
+    /* background-color:rgb(6, 10, 9); */
+    height: 2rem;
+    width: 60%;
+    font-size: 0.9rem;
+    font-family: Neue Machinai-Light;
+    margin-top: 0.3rem;
+    padding-left:5px ;
+    color: #111111;
+}
+
+.secCompanyContainer{
+    height: 2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.secCompanyContainerInputContainer{
+    height: 2rem;
+    width: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.secCompanytitleDiv{
+    height: 2rem;
+    width: 90%;
+    display: flex;
+    
+}
+.titleOfCompany2{
+    /* background-color:rgb(6, 10, 9); */
+    height: 2rem;
+    width: 60%;
+    font-size: 0.9rem;
+    font-family: Neue Machinai-Light;
+    margin-top: 0.3rem;
+    padding-left:5px ;
+    color: #111111;
+}
+
+.thirdCompanyContainer{
+    height: 2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.thirdCompanyContainerInputContainer{
+    height: 2rem;
+    width: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.thirdCompanytitleDiv{
+    height: 2rem;
+    width: 90%;
+    display: flex;
+    
+}
+.titleOfCompany3{
+    /* background-color:rgb(6, 10, 9); */
+    height: 2rem;
+    width: 60%;
+    font-size: 0.9rem;
+    font-family: Neue Machinai-Light;
+    margin-top: 0.3rem;
+    padding-left:5px ;
+    color: #111111;
+}
+
+.fourthCompanyContainer{
+    /* background-color:rgb(15, 124, 88); */
+    height: 2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.fourthCompanyContainerInputContainer{
+    /* background-color:rgb(142, 235, 204); */
+    height: 2rem;
+    width: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.fourthCompanytitleDiv{
+    /* background-color:rgb(5, 34, 24); */
+    height: 2rem;
+    width: 90%;
+    display: flex;
+    
+}
+.titleOfCompany4{
+    /* background-color:rgb(6, 10, 9); */
+    height: 2rem;
+    width: 60%;
+    font-size: 0.9rem;
+    font-family: Neue Machinai-Light;
+    margin-top: 0.3rem;
+    padding-left:5px ;
+    color: #111111;
+}
+
+.fifthCompanyContainer{
+    /* background-color:rgb(15, 124, 88); */
+    height: 2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.fifthCompanyContainerInputContainer{
+    /* background-color:rgb(142, 235, 204); */
+    height: 2rem;
+    width: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.fifthCompanytitleDiv{
+    /* background-color:rgb(5, 34, 24); */
+    height: 2rem;
+    width: 90%;
+    display: flex;
+    
+}
+.titleOfCompany5{
+    /* background-color:rgb(6, 10, 9); */
+    height: 2rem;
+    width: 60%;
+    font-size: 0.9rem;
+    font-family: Neue Machinai-Light;
+    margin-top: 0.3rem;
+    padding-left:5px ;
+    color: #111111;
+}
+
+
+.sixthCompanyContainer{
+    /* background-color:rgb(15, 124, 88); */
+    height: 2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.sixthCompanyContainerInputContainer{
+    /* background-color:rgb(142, 235, 204); */
+    height: 2rem;
+    width: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.sixthCompanytitleDiv{
+    /* background-color:rgb(5, 34, 24); */
+    height: 2rem;
+    width: 90%;
+    display: flex;
+    
+}
+.titleOfCompany6{
+    /* background-color:rgb(6, 10, 9); */
+    height: 2rem;
+    width: 60%;
+    font-size: 0.9rem;
+    font-family: Neue Machinai-Light;
+    margin-top: 0.3rem;
+    padding-left:5px ;
+    color: #111111;
+}
+
+
+.sevenCompanyContainer{
+    /* background-color:rgb(15, 124, 88); */
+    height: 2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.sevenCompanyContainerInputContainer{
+    /* background-color:rgb(142, 235, 204); */
+    height: 2rem;
+    width: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.sevenCompanytitleDiv{
+    /* background-color:rgb(5, 34, 24); */
+    height: 2rem;
+    width: 90%;
+    display: flex;
+    
+}
+.titleOfCompany7{
+    /* background-color:rgb(6, 10, 9); */
+    height: 2rem;
+    width: 60%;
+    font-size: 0.9rem;
+    font-family: Neue Machinai-Light;
+    margin-top: 0.3rem;
+    padding-left:5px ;
+    color: #111111;
+}
+
+
+.eightCompanyContainer{
+    /* background-color:rgb(15, 124, 88); */
+    height: 2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.eightCompanyContainerInputContainer{
+    /* background-color:rgb(142, 235, 204); */
+    height: 2rem;
+    width: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.eightCompanytitleDiv{
+    /* background-color:rgb(5, 34, 24); */
+    height: 2rem;
+    width: 90%;
+    display: flex;
+    
+}
+.titleOfCompany8{
+    /* background-color:rgb(6, 10, 9); */
+    height: 2rem;
+    width: 60%;
+    font-size: 0.9rem;
+    font-family: Neue Machinai-Light;
+    margin-top: 0.3rem;
+    padding-left:5px ;
+    color: #111111;
+}
+
+
+.ninthCompanyContainer{
+    /* background-color:rgb(15, 124, 88); */
+    height: 2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.ninthCompanyContainerInputContainer{
+    /* background-color:rgb(142, 235, 204); */
+    height: 2rem;
+    width: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.ninthCompanytitleDiv{
+    /* background-color:rgb(5, 34, 24); */
+    height: 2rem;
+    width: 90%;
+    display: flex;
+    
+}
+.titleOfCompany9{
+    /* background-color:rgb(6, 10, 9); */
+    height: 2rem;
+    width: 60%;
+    font-size: 0.9rem;
+    font-family: Neue Machinai-Light;
+    margin-top: 0.3rem;
+    padding-left:5px ;
+    color: #111111;
+}
+
+
+.tenthCompanyContainer{
+    /* background-color:rgb(15, 124, 88); */
+    height: 2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.tenthCompanyContainerInputContainer{
+    /* background-color:rgb(142, 235, 204); */
+    height: 2rem;
+    width: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.tenthCompanytitleDiv{
+    /* background-color:rgb(5, 34, 24); */
+    height: 2rem;
+    width: 90%;
+    display: flex;
+    
+}
+.titleOfCompany10{
+    /* background-color:rgb(6, 10, 9); */
+    height: 2rem;
+    width: 60%;
+    font-size: 0.9rem;
+    font-family: Neue Machinai-Light;
+    margin-top: 0.3rem;
+    padding-left:5px ;
+    color: #111111;
+}
+
+}
+
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+
+    .container{
+        background-color: antiquewhite;
+        height: 100%;
+        width: 100%;
+    }
+    .Wrapper{
+        margin-top: 1.5rem;
+        /* background-color: rgb(172, 111, 31); */
+        background-color: #f3f3f3;
+        height: 2rem;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    .textt{
+        /* background-color: rgb(83, 76, 76); */
+        background-color: #f3f3f3;
+        height: 2rem;
+        font-size: 1.5rem;
+        font-weight: 300;
+        width: 90%;
+        font-family: Neue Machinai-Light;
+        padding-left:0.3rem ;
+    }
+    .plusIcon{
+        /* background-color: rgb(117, 0, 0); */
+        height: 2rem;
+        font-size: 0.5rem;
+        width: 10%;
+        transition: all ease-in 500ms;
+    }
+    .crossicon{
+        /* background-color: rgb(117, 0, 0); */
+        height: 2rem;
+        font-size: 0.5rem;
+        width: 10%;
+        transform: rotate(43deg);
+        transition: all ease-in 500ms;
+    }
+    
+    
+    .priceContainer{
+        display: none;
+    }
+    .OpenPriceContainer{
+        height: 8rem;
+        width: 100%;
+        background-color: #f3f3f3;
+    }
+    .priceTitle{
+        /* background-color:aquamarine; */
+        height: 2rem;
+        width: 5rem;
+        font-size: 1.2rem;
+        margin-left: 0.3rem;
+        font-family: Neue Machinai-Light;
+    }
+    .firstPriceContainer{
+        /* background-color:rgb(15, 124, 88); */
+        height: 2rem;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .firstPriceContainerInputContainer{
+        /* background-color:rgb(142, 235, 204); */
+        height: 2rem;
+        width: 10%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .firstPricetitleDiv{
+        /* background-color:rgb(5, 34, 24); */
+        height: 2rem;
+        width: 90%;
+        display: flex;
+        
+    }
+    .title1{
+        /* background-color:rgb(6, 10, 9); */
+        height: 2rem;
+        width: 60%;
+        font-size: 0.9rem;
+        font-family: Neue Machinai-Light;
+        margin-top: 0.3rem;
+        padding-left:5px ;
+        
+    }
+    
+    .TwoPriceContainer{
+        /* background-color:rgb(15, 124, 88); */
+        height: 2rem;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    .TwoPriceContainerInputContainer{
+        /* background-color:rgb(142, 235, 204); */
+        height: 2rem;
+        width: 10%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .TwoPricetitleDiv{
+        /* background-color:rgb(5, 34, 24); */
+        height: 2rem;
+        width: 90%;
+        display: flex;
+    }
+    .title2{
+        height: 2rem;
+        width: 60%;
+        font-size: 0.9rem;
+        font-family: Neue Machinai-Light;
+        margin-top: 0.3rem;
+        padding-left:5px ;
+    }
+    .ThirdPriceContainer{
+        /* background-color:rgb(15, 124, 88); */
+        height: 2rem;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    .ThirdPriceContainerInputContainer{
+        /* background-color:rgb(142, 235, 204); */
+        height: 2rem;
+        width: 10%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .ThirdPricetitleDiv{
+        /* background-color:rgb(5, 34, 24); */
+        height: 2rem;
+        width: 90%;
+        display: flex;
+    }
+    .title3{
+        height: 2rem;
+        width: 60%;
+        font-size: 0.9rem;
+        font-family: Neue Machinai-Light;
+        margin-top: 0.3rem;
+        padding-left:5px ;
+    }
+    .categoryContainer{
+        display: none;
+    }
+    
+    .OpenCategoryContainer{
+        height: 6rem;
+        width: 100%;
+        /* background-color: rgb(90, 56, 4); */
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .btn1{
+        height: 2rem;
+        width: 100%;
+        background-color: #f3f3f3;
+        color: #0c0c0c;
+        border: 1px #0c0c0c solid;
+        font-size: 1.3rem;
+        font-family: Neue Machinai-Light;
+    }
+    .btn1:hover{
+        background-color: #0c0c0c;
+        color: #f3f3f3;
+    }
+    
+    .btn2{
+        height: 2rem;
+        width: 100%;
+        background-color: #f3f3f3;
+        color: #0c0c0c;
+        border: 1px #0c0c0c solid;
+        border-bottom: none;
+        border-top: none;
+        font-size: 1.3rem;
+        font-family: Neue Machinai-Light;
+    }
+    .btn2:hover{
+        background-color: #0c0c0c;
+        color: #f3f3f3;
+    }
+    .btn3{
+        height: 2rem;
+        width: 100%;
+        background-color: #f3f3f3;
+        color: #0c0c0c;
+        border: 1px #0c0c0c solid;
+        font-size: 1.3rem;
+        font-family: Neue Machinai-Light;
+       
+    }
+    .btn3:hover{
+        background-color: #0c0c0c;
+        color: #f3f3f3;
+    }
+    .companyContainer{
+        display: none;
+    }
+    
+    .OpenCompanyContainer{
+        height: 21rem;
+        width: 100%;
+        background-color: #f3f3f3;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .campanyTitle{
+            /* background-color:aquamarine; */
+            height: 1.2rem;
+            width: 9rem;
+            font-size: 1.2rem;
+            margin-left: 0.3rem;
+            font-family: Neue Machinai-Light;
+            margin-top: 2%;
+            margin-bottom: 4%;
+    }
+    
+    .firstCompanyContainer{
+        /* background-color:rgb(15, 124, 88); */
+        height: 2rem;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .firstCompanyContainerInputContainer{
+        /* background-color:rgb(142, 235, 204); */
+        height: 2rem;
+        width: 10%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .firstCompanytitleDiv{
+        /* background-color:rgb(5, 34, 24); */
+        height: 2rem;
+        width: 90%;
+        display: flex;
+        
+    }
+    .titleOfCompany1{
+        /* background-color:rgb(6, 10, 9); */
+        height: 2rem;
+        width: 60%;
+        font-size: 0.9rem;
+        font-family: Neue Machinai-Light;
+        margin-top: 0.3rem;
+        padding-left:5px ;
+        
+    }
+    
+    .secCompanyContainer{
+        height: 2rem;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .secCompanyContainerInputContainer{
+        height: 2rem;
+        width: 10%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .secCompanytitleDiv{
+        height: 2rem;
+        width: 90%;
+        display: flex;
+        
+    }
+    .titleOfCompany2{
+        /* background-color:rgb(6, 10, 9); */
+        height: 2rem;
+        width: 60%;
+        font-size: 0.9rem;
+        font-family: Neue Machinai-Light;
+        margin-top: 0.3rem;
+        padding-left:5px ;
+        
+    }
+    
+    .thirdCompanyContainer{
+        height: 2rem;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .thirdCompanyContainerInputContainer{
+        height: 2rem;
+        width: 10%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .thirdCompanytitleDiv{
+        height: 2rem;
+        width: 90%;
+        display: flex;
+        
+    }
+    .titleOfCompany3{
+        /* background-color:rgb(6, 10, 9); */
+        height: 2rem;
+        width: 60%;
+        font-size: 0.9rem;
+        font-family: Neue Machinai-Light;
+        margin-top: 0.3rem;
+        padding-left:5px ;
+        
+    }
+    
+    .fourthCompanyContainer{
+        /* background-color:rgb(15, 124, 88); */
+        height: 2rem;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .fourthCompanyContainerInputContainer{
+        /* background-color:rgb(142, 235, 204); */
+        height: 2rem;
+        width: 10%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .fourthCompanytitleDiv{
+        /* background-color:rgb(5, 34, 24); */
+        height: 2rem;
+        width: 90%;
+        display: flex;
+        
+    }
+    .titleOfCompany4{
+        /* background-color:rgb(6, 10, 9); */
+        height: 2rem;
+        width: 60%;
+        font-size: 0.9rem;
+        font-family: Neue Machinai-Light;
+        margin-top: 0.3rem;
+        padding-left:5px ;
+        
+    }
+    
+    .fifthCompanyContainer{
+        /* background-color:rgb(15, 124, 88); */
+        height: 2rem;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .fifthCompanyContainerInputContainer{
+        /* background-color:rgb(142, 235, 204); */
+        height: 2rem;
+        width: 10%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .fifthCompanytitleDiv{
+        /* background-color:rgb(5, 34, 24); */
+        height: 2rem;
+        width: 90%;
+        display: flex;
+        
+    }
+    .titleOfCompany5{
+        /* background-color:rgb(6, 10, 9); */
+        height: 2rem;
+        width: 60%;
+        font-size: 0.9rem;
+        font-family: Neue Machinai-Light;
+        margin-top: 0.3rem;
+        padding-left:5px ;
+        
+    }
+    
+    
+    .sixthCompanyContainer{
+        /* background-color:rgb(15, 124, 88); */
+        height: 2rem;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .sixthCompanyContainerInputContainer{
+        /* background-color:rgb(142, 235, 204); */
+        height: 2rem;
+        width: 10%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .sixthCompanytitleDiv{
+        /* background-color:rgb(5, 34, 24); */
+        height: 2rem;
+        width: 90%;
+        display: flex;
+        
+    }
+    .titleOfCompany6{
+        /* background-color:rgb(6, 10, 9); */
+        height: 2rem;
+        width: 60%;
+        font-size: 0.9rem;
+        font-family: Neue Machinai-Light;
+        margin-top: 0.3rem;
+        padding-left:5px ;
+        
+    }
+    
+    
+    .sevenCompanyContainer{
+        /* background-color:rgb(15, 124, 88); */
+        height: 2rem;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .sevenCompanyContainerInputContainer{
+        /* background-color:rgb(142, 235, 204); */
+        height: 2rem;
+        width: 10%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .sevenCompanytitleDiv{
+        /* background-color:rgb(5, 34, 24); */
+        height: 2rem;
+        width: 90%;
+        display: flex;
+        
+    }
+    .titleOfCompany7{
+        /* background-color:rgb(6, 10, 9); */
+        height: 2rem;
+        width: 60%;
+        font-size: 0.9rem;
+        font-family: Neue Machinai-Light;
+        margin-top: 0.3rem;
+        padding-left:5px ;
+        
+    }
+    
+    
+    .eightCompanyContainer{
+        /* background-color:rgb(15, 124, 88); */
+        height: 2rem;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .eightCompanyContainerInputContainer{
+        /* background-color:rgb(142, 235, 204); */
+        height: 2rem;
+        width: 10%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .eightCompanytitleDiv{
+        /* background-color:rgb(5, 34, 24); */
+        height: 2rem;
+        width: 90%;
+        display: flex;
+        
+    }
+    .titleOfCompany8{
+        /* background-color:rgb(6, 10, 9); */
+        height: 2rem;
+        width: 60%;
+        font-size: 0.9rem;
+        font-family: Neue Machinai-Light;
+        margin-top: 0.3rem;
+        padding-left:5px ;
+        
+    }
+    
+    
+    .ninthCompanyContainer{
+        /* background-color:rgb(15, 124, 88); */
+        height: 2rem;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .ninthCompanyContainerInputContainer{
+        /* background-color:rgb(142, 235, 204); */
+        height: 2rem;
+        width: 10%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .ninthCompanytitleDiv{
+        /* background-color:rgb(5, 34, 24); */
+        height: 2rem;
+        width: 90%;
+        display: flex;
+        
+    }
+    .titleOfCompany9{
+        /* background-color:rgb(6, 10, 9); */
+        height: 2rem;
+        width: 60%;
+        font-size: 0.9rem;
+        font-family: Neue Machinai-Light;
+        margin-top: 0.3rem;
+        padding-left:5px ;
+        
+    }
+    
+    
+    .tenthCompanyContainer{
+        /* background-color:rgb(15, 124, 88); */
+        height: 2rem;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .tenthCompanyContainerInputContainer{
+        /* background-color:rgb(142, 235, 204); */
+        height: 2rem;
+        width: 10%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .tenthCompanytitleDiv{
+        /* background-color:rgb(5, 34, 24); */
+        height: 2rem;
+        width: 90%;
+        display: flex;
+        
+    }
+    .titleOfCompany10{
+        /* background-color:rgb(6, 10, 9); */
+        height: 2rem;
+        width: 60%;
+        font-size: 0.9rem;
+        font-family: Neue Machinai-Light;
+        margin-top: 0.3rem;
+        padding-left:5px ;
+        
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1200px){
+
+    
+    .container{
+        /* background-color: antiquewhite; */
+        background-color: #f3f3f3;
+        height: 100%;
+        width: 100%;
+    }
+    .Wrapper{
+        margin-top: 1.5rem;
+        /* background-color: rgb(172, 111, 31); */
+        background-color: #f3f3f3;
+        height: 2rem;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    .textt{
+        /* background-color: rgb(83, 76, 76); */
+        background-color: #f3f3f3;
+        height: 2rem;
+        font-size: 1.5rem;
+        font-weight: 500;
+        width: 90%;
+        font-family: Neue Machinai-Light;
+        padding-left:0.3rem ;
+    }
+    .plusIcon{
+        /* background-color: rgb(117, 0, 0); */
+        /* height: 2rem;
+        font-size: 0.5rem;
+        width: 10%;
+        transition: all ease-in 500ms; */
+        display: none;
+    }
+    .crossicon{
+        /* background-color: rgb(117, 0, 0); */
+        /* height: 2rem;
+        font-size: 0.5rem;
+        width: 10%;
+        transform: rotate(43deg);
+        transition: all ease-in 500ms; */
+        display: none;
+    }
+    
+    
+    .priceContainer{
+        /* display: none; */
+        height: 8rem;
+        width: 100%;
+        background-color: #f3f3f3;
+        border: #0c0c0c 1px solid;
+        margin-bottom: 10px;
+        box-shadow: 1px 0.5px 0.5px #0c0c0c;
+    }
+    .OpenPriceContainer{
+       display: none;
+    }
+    .priceTitle{
+        /* background-color:aquamarine; */
+        height: 1.5rem;
+        width: 5rem;
+        font-size: 1.1rem;
+        margin-left: 0.3rem;
+        font-family: Neue Machinai-Light;
+        color: #201f1f;
+    }
+    .firstPriceContainer{
+        /* background-color:rgb(15, 124, 88); */
+        height: 2rem;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        
+    }
+    
+    .firstPriceContainerInputContainer{
+        /* background-color:rgb(142, 235, 204); */
+        height: 2rem;
+        width: 10%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .firstPricetitleDiv{
+        /* background-color:rgb(5, 34, 24); */
+        height: 2rem;
+        width: 90%;
+        display: flex;
+        
+    }
+    .title1{
+        height: 2rem;
+        width: 90%;
+    }
+    .title1{
+        /* background-color:rgb(6, 10, 9); */
+        height: 2rem;
+        width: 60%;
+        font-size: 0.9rem;
+        font-family: Neue Machinai-Light;
+        margin-top: 0.3rem;
+        padding-left:5px ;
+        
+    }
+    
+    .TwoPriceContainer{
+        /* background-color:rgb(15, 124, 88); */
+        height: 2rem;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    .TwoPriceContainerInputContainer{
+        /* background-color:rgb(142, 235, 204); */
+        height: 2rem;
+        width: 10%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .TwoPricetitleDiv{
+        /* background-color:rgb(5, 34, 24); */
+        height: 2rem;
+        width: 90%;
+        display: flex;
+    }
+    .title2{
+        height: 2rem;
+        width: 90%;
+        font-size: 0.9rem;
+        font-family: Neue Machinai-Light;
+        margin-top: 0.3rem;
+        padding-left:5px ;
+    }
+    .ThirdPriceContainer{
+        /* background-color:rgb(15, 124, 88); */
+        height: 2rem;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    .ThirdPriceContainerInputContainer{
+        /* background-color:rgb(142, 235, 204); */
+        height: 2rem;
+        width: 10%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .ThirdPricetitleDiv{
+        /* background-color:rgb(5, 34, 24); */
+        height: 2rem;
+        width: 90%;
+        display: flex;
+    }
+    .title3{
+        height: 2rem;
+        width: 90%;
+        font-size: 0.9rem;
+        font-family: Neue Machinai-Light;
+        margin-top: 0.3rem;
+        padding-left:5px ;
+    }
+    .categoryContainer{
+    
+        height: 6rem;
+        width: 100%;
+        /* background-color: rgb(90, 56, 4); */
+        display: flex;
+        flex-direction: column;
+        
+    }
+    
+    .OpenCategoryContainer{
+        display: none;
+    }
+    
+    .btn1{
+        height: 2rem;
+        width: 100%;
+        background-color: #f3f3f3;
+        color: #0c0c0c;
+        border: 1px #0c0c0c solid;
+        font-size: 1.3rem;
+        font-family: Neue Machinai-Light;
+    }
+    .btn1:hover{
+        background-color: #0c0c0c;
+        color: #f3f3f3;
+    }
+    
+    .btn2{
+        height: 2rem;
+        width: 100%;
+        background-color: #f3f3f3;
+        color: #0c0c0c;
+        border: 1px #0c0c0c solid;
+        border-bottom: none;
+        border-top: none;
+        font-size: 1.3rem;
+        font-family: Neue Machinai-Light;
+    }
+    .btn2:hover{
+        background-color: #0c0c0c;
+        color: #f3f3f3;
+    }
+    .btn3{
+        height: 2rem;
+        width: 100%;
+        background-color: #f3f3f3;
+        color: #0c0c0c;
+        border: 1px #0c0c0c solid;
+        font-size: 1.3rem;
+        font-family: Neue Machinai-Light;
+       
+    }
+    .btn3:hover{
+        background-color: #0c0c0c;
+        color: #f3f3f3;
+    }
+    .companyContainer{
+        
+        height: 21rem;
+        width: 100%;
+        background-color: #f3f3f3;
+        display: flex;
+        flex-direction: column;
+        border: #0c0c0c 1px solid;
+        margin-top: 10px;
+        box-shadow: 1px 0.5px 0.5px #0c0c0c;
+    }
+    
+    .OpenCompanyContainer{
+       display: none;
+    }
+    
+    .campanyTitle{
+            /* background-color:aquamarine; */
+            height: 1.2rem;
+           color: #201f1f;
+            width: 9rem;
+            font-size: 1.2rem;
+            margin-left: 0.3rem;
+            font-family: Neue Machinai-Light;
+            margin-top: 2%;
+            margin-bottom: 4%;
+    }
+    
+    .firstCompanyContainer{
+        /* background-color:rgb(15, 124, 88); */
+        height: 2rem;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .firstCompanyContainerInputContainer{
+        /* background-color:rgb(142, 235, 204); */
+        height: 2rem;
+        width: 10%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .firstCompanytitleDiv{
+        /* background-color:rgb(5, 34, 24); */
+        height: 2rem;
+        width: 90%;
+        display: flex;
+        
+    }
+    .titleOfCompany1{
+        /* background-color:rgb(6, 10, 9); */
+        height: 2rem;
+        width: 90%;
+        font-size: 0.9rem;
+        font-family: Neue Machinai-Light;
+        margin-top: 0.3rem;
+        padding-left:5px ;
+        
+    }
+    
+    .secCompanyContainer{
+        height: 2rem;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .secCompanyContainerInputContainer{
+        height: 2rem;
+        width: 10%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .secCompanytitleDiv{
+        height: 2rem;
+        width: 90%;
+        display: flex;
+        
+    }
+    .titleOfCompany2{
+        /* background-color:rgb(6, 10, 9); */
+        height: 2rem;
+        width: 90%;
+        font-size: 0.9rem;
+        font-family: Neue Machinai-Light;
+        margin-top: 0.3rem;
+        padding-left:5px ;
+        
+    }
+    
+    .thirdCompanyContainer{
+        height: 2rem;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .thirdCompanyContainerInputContainer{
+        height: 2rem;
+        width: 10%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .thirdCompanytitleDiv{
+        height: 2rem;
+        width: 90%;
+        display: flex;
+        
+    }
+    .titleOfCompany3{
+        /* background-color:rgb(6, 10, 9); */
+        height: 2rem;
+        width: 90%;
+        font-size: 0.9rem;
+        font-family: Neue Machinai-Light;
+        margin-top: 0.3rem;
+        padding-left:5px ;
+        
+    }
+    
+    .fourthCompanyContainer{
+        /* background-color:rgb(15, 124, 88); */
+        height: 2rem;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .fourthCompanyContainerInputContainer{
+        /* background-color:rgb(142, 235, 204); */
+        height: 2rem;
+        width: 10%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .fourthCompanytitleDiv{
+        /* background-color:rgb(5, 34, 24); */
+        height: 2rem;
+        width: 90%;
+        display: flex;
+        
+    }
+    .titleOfCompany4{
+        /* background-color:rgb(6, 10, 9); */
+        height: 2rem;
+        width: 90%;
+        font-size: 0.9rem;
+        font-family: Neue Machinai-Light;
+        margin-top: 0.3rem;
+        padding-left:5px ;
+        
+    }
+    
+    .fifthCompanyContainer{
+        /* background-color:rgb(15, 124, 88); */
+        height: 2rem;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .fifthCompanyContainerInputContainer{
+        /* background-color:rgb(142, 235, 204); */
+        height: 2rem;
+        width: 10%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .fifthCompanytitleDiv{
+        /* background-color:rgb(5, 34, 24); */
+        height: 2rem;
+        width: 90%;
+        display: flex;
+        
+    }
+    .titleOfCompany5{
+        /* background-color:rgb(6, 10, 9); */
+        height: 2rem;
+        width: 90%;
+        font-size: 0.9rem;
+        font-family: Neue Machinai-Light;
+        margin-top: 0.3rem;
+        padding-left:5px ;
+        
+    }
+    
+    
+    .sixthCompanyContainer{
+        /* background-color:rgb(15, 124, 88); */
+        height: 2rem;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .sixthCompanyContainerInputContainer{
+        /* background-color:rgb(142, 235, 204); */
+        height: 2rem;
+        width: 10%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .sixthCompanytitleDiv{
+        /* background-color:rgb(5, 34, 24); */
+        height: 2rem;
+        width: 90%;
+        display: flex;
+        
+    }
+    .titleOfCompany6{
+        /* background-color:rgb(6, 10, 9); */
+        height: 2rem;
+        width: 90%;
+        font-size: 0.9rem;
+        font-family: Neue Machinai-Light;
+        margin-top: 0.3rem;
+        padding-left:5px ;
+        
+    }
+    
+    
+    .sevenCompanyContainer{
+        /* background-color:rgb(15, 124, 88); */
+        height: 2rem;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .sevenCompanyContainerInputContainer{
+        /* background-color:rgb(142, 235, 204); */
+        height: 2rem;
+        width: 10%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .sevenCompanytitleDiv{
+        /* background-color:rgb(5, 34, 24); */
+        height: 2rem;
+        width: 90%;
+        display: flex;
+        
+    }
+    .titleOfCompany7{
+        /* background-color:rgb(6, 10, 9); */
+        height: 2rem;
+        width: 90%;
+        font-size: 0.9rem;
+        font-family: Neue Machinai-Light;
+        margin-top: 0.3rem;
+        padding-left:5px ;
+        
+    }
+    
+    
+    .eightCompanyContainer{
+        /* background-color:rgb(15, 124, 88); */
+        height: 2rem;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .eightCompanyContainerInputContainer{
+        /* background-color:rgb(142, 235, 204); */
+        height: 2rem;
+        width: 10%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .eightCompanytitleDiv{
+        /* background-color:rgb(5, 34, 24); */
+        height: 2rem;
+        width: 90%;
+        display: flex;
+        
+    }
+    .titleOfCompany8{
+        /* background-color:rgb(6, 10, 9); */
+        height: 2rem;
+        width: 90%;
+        font-size: 0.9rem;
+        font-family: Neue Machinai-Light;
+        margin-top: 0.3rem;
+        padding-left:5px ;
+        
+    }
+    
+    
+    .ninthCompanyContainer{
+        /* background-color:rgb(15, 124, 88); */
+        height: 2rem;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .ninthCompanyContainerInputContainer{
+        /* background-color:rgb(142, 235, 204); */
+        height: 2rem;
+        width: 10%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .ninthCompanytitleDiv{
+        /* background-color:rgb(5, 34, 24); */
+        height: 2rem;
+        width: 90%;
+        display: flex;
+        
+    }
+    .titleOfCompany9{
+        /* background-color:rgb(6, 10, 9); */
+        height: 2rem;
+        width: 90%;
+        font-size: 0.9rem;
+        font-family: Neue Machinai-Light;
+        margin-top: 0.3rem;
+        padding-left:5px ;
+        
+    }
+    
+    
+    .tenthCompanyContainer{
+        /* background-color:rgb(15, 124, 88); */
+        height: 2rem;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .tenthCompanyContainerInputContainer{
+        /* background-color:rgb(142, 235, 204); */
+        height: 2rem;
+        width: 10%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .tenthCompanytitleDiv{
+        /* background-color:rgb(5, 34, 24); */
+        height: 2rem;
+        width: 90%;
+        display: flex;
+        
+    }
+    .titleOfCompany10{
+        /* background-color:rgb(6, 10, 9); */
+        height: 2rem;
+        width: 90%;
+        font-size: 0.9rem;
+        font-family: Neue Machinai-Light;
+        margin-top: 0.3rem;
+        padding-left:5px ;
+        
+    }
+
+}
+
+@media only screen and (min-width: 1201px){
+
+      
+    .container{
+        /* background-color: antiquewhite; */
+        background-color: #f3f3f3;
+        height: 100%;
+        width: 100%;
+    }
+    .Wrapper{
+        margin-top: 1.5rem;
+        /* background-color: rgb(172, 111, 31); */
+        background-color: #f3f3f3;
+        height: 2rem;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    .textt{
+        /* background-color: rgb(83, 76, 76); */
+        background-color: #f3f3f3;
+        height: 2rem;
+        font-size: 1.5rem;
+        font-weight: 300;
+        width: 90%;
+        font-family: Neue Machinai-Light;
+        padding-left:0.3rem ;
+    }
+    .plusIcon{
+        /* background-color: rgb(117, 0, 0); */
+        height: 2rem;
+        font-size: 0.5rem;
+        width: 10%;
+        transition: all ease-in 500ms;
+        display: none;
+    }
+    .crossicon{
+        /* background-color: rgb(117, 0, 0); */
+        height: 2rem;
+        font-size: 0.5rem;
+        width: 10%;
+        transform: rotate(43deg);
+        transition: all ease-in 500ms;
+        display: none;
+    }
+    
+    
+    .priceContainer{
+        /* display: none; */
+        height: 8rem;
+        width: 100%;
+        background-color: #f3f3f3;
+        border: #0c0c0c 1px solid;
+        margin-bottom: 10px;
+        box-shadow: 1px 0.5px 0.5px #0c0c0c;
+    }
+    .OpenPriceContainer{
+        /* height: 8rem;
+        width: 100%;
+        background-color: #f3f3f3; */
+        display: none;
+    }
+    .priceTitle{
+        /* background-color:aquamarine; */
+        height: 2rem;
+        width: 5rem;
+        font-size: 1.2rem;
+        margin-left: 0.3rem;
+        font-family: Neue Machinai-Light;
+    }
+    .firstPriceContainer{
+        /* background-color:rgb(15, 124, 88); */
+        height: 2rem;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .firstPriceContainerInputContainer{
+        /* background-color:rgb(142, 235, 204); */
+        height: 2rem;
+        width: 10%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .firstPricetitleDiv{
+        /* background-color:rgb(5, 34, 24); */
+        height: 2rem;
+        width: 90%;
+        display: flex;
+        
+    }
+    .title1{
+        /* background-color:rgb(6, 10, 9); */
+        height: 2rem;
+        width: 60%;
+        font-size: 0.9rem;
+        font-family: Neue Machinai-Light;
+        margin-top: 0.3rem;
+        padding-left:5px ;
+        
+    }
+    
+    .TwoPriceContainer{
+        /* background-color:rgb(15, 124, 88); */
+        height: 2rem;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    .TwoPriceContainerInputContainer{
+        /* background-color:rgb(142, 235, 204); */
+        height: 2rem;
+        width: 10%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .TwoPricetitleDiv{
+        /* background-color:rgb(5, 34, 24); */
+        height: 2rem;
+        width: 90%;
+        display: flex;
+    }
+    .title2{
+        height: 2rem;
+        width: 60%;
+        font-size: 0.9rem;
+        font-family: Neue Machinai-Light;
+        margin-top: 0.3rem;
+        padding-left:5px ;
+    }
+    .ThirdPriceContainer{
+        /* background-color:rgb(15, 124, 88); */
+        height: 2rem;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    .ThirdPriceContainerInputContainer{
+        /* background-color:rgb(142, 235, 204); */
+        height: 2rem;
+        width: 10%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .ThirdPricetitleDiv{
+        /* background-color:rgb(5, 34, 24); */
+        height: 2rem;
+        width: 90%;
+        display: flex;
+    }
+    .title3{
+        height: 2rem;
+        width: 60%;
+        font-size: 0.9rem;
+        font-family: Neue Machinai-Light;
+        margin-top: 0.3rem;
+        padding-left:5px ;
+    }
+    .categoryContainer{
+        /* display: none; */
+        height: 6rem;
+        width: 100%;
+        /* background-color: rgb(90, 56, 4); */
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .OpenCategoryContainer{
+       display: none;
+    }
+    
+    .btn1{
+        height: 2rem;
+        width: 100%;
+        background-color: #f3f3f3;
+        color: #0c0c0c;
+        border: 1px #0c0c0c solid;
+        font-size: 1.3rem;
+        font-family: Neue Machinai-Light;
+    }
+    .btn1:hover{
+        background-color: #0c0c0c;
+        color: #f3f3f3;
+    }
+    
+    .btn2{
+        height: 2rem;
+        width: 100%;
+        background-color: #f3f3f3;
+        color: #0c0c0c;
+        border: 1px #0c0c0c solid;
+        border-bottom: none;
+        border-top: none;
+        font-size: 1.3rem;
+        font-family: Neue Machinai-Light;
+    }
+    .btn2:hover{
+        background-color: #0c0c0c;
+        color: #f3f3f3;
+    }
+    .btn3{
+        height: 2rem;
+        width: 100%;
+        background-color: #f3f3f3;
+        color: #0c0c0c;
+        border: 1px #0c0c0c solid;
+        font-size: 1.3rem;
+        font-family: Neue Machinai-Light;
+       
+    }
+    .btn3:hover{
+        background-color: #0c0c0c;
+        color: #f3f3f3;
+    }
+    .companyContainer{
+        /* display: none; */
+        height: 21rem;
+        width: 100%;
+        background-color: #f3f3f3;
+        display: flex;
+        flex-direction: column;
+        border: #0c0c0c 1px solid;
+        margin-top: 10px;
+        box-shadow: 1px 0.5px 0.5px #0c0c0c;
+    }
+    
+    .OpenCompanyContainer{
+        display: none;
+    }
+    
+    .campanyTitle{
+            /* background-color:aquamarine; */
+            height: 1.2rem;
+            width: 9rem;
+            font-size: 1.2rem;
+            margin-left: 0.3rem;
+            font-family: Neue Machinai-Light;
+            margin-top: 2%;
+            margin-bottom: 4%;
+    }
+    
+    .firstCompanyContainer{
+        /* background-color:rgb(15, 124, 88); */
+        height: 2rem;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .firstCompanyContainerInputContainer{
+        /* background-color:rgb(142, 235, 204); */
+        height: 2rem;
+        width: 10%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .firstCompanytitleDiv{
+        /* background-color:rgb(5, 34, 24); */
+        height: 2rem;
+        width: 90%;
+        display: flex;
+        
+    }
+    .titleOfCompany1{
+        /* background-color:rgb(6, 10, 9); */
+        height: 2rem;
+        width: 60%;
+        font-size: 0.9rem;
+        font-family: Neue Machinai-Light;
+        margin-top: 0.3rem;
+        padding-left:5px ;
+        
+    }
+    
+    .secCompanyContainer{
+        height: 2rem;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .secCompanyContainerInputContainer{
+        height: 2rem;
+        width: 10%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .secCompanytitleDiv{
+        height: 2rem;
+        width: 90%;
+        display: flex;
+        
+    }
+    .titleOfCompany2{
+        /* background-color:rgb(6, 10, 9); */
+        height: 2rem;
+        width: 60%;
+        font-size: 0.9rem;
+        font-family: Neue Machinai-Light;
+        margin-top: 0.3rem;
+        padding-left:5px ;
+        
+    }
+    
+    .thirdCompanyContainer{
+        height: 2rem;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .thirdCompanyContainerInputContainer{
+        height: 2rem;
+        width: 10%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .thirdCompanytitleDiv{
+        height: 2rem;
+        width: 90%;
+        display: flex;
+        
+    }
+    .titleOfCompany3{
+        /* background-color:rgb(6, 10, 9); */
+        height: 2rem;
+        width: 60%;
+        font-size: 0.9rem;
+        font-family: Neue Machinai-Light;
+        margin-top: 0.3rem;
+        padding-left:5px ;
+        
+    }
+    
+    .fourthCompanyContainer{
+        /* background-color:rgb(15, 124, 88); */
+        height: 2rem;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .fourthCompanyContainerInputContainer{
+        /* background-color:rgb(142, 235, 204); */
+        height: 2rem;
+        width: 10%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .fourthCompanytitleDiv{
+        /* background-color:rgb(5, 34, 24); */
+        height: 2rem;
+        width: 90%;
+        display: flex;
+        
+    }
+    .titleOfCompany4{
+        /* background-color:rgb(6, 10, 9); */
+        height: 2rem;
+        width: 60%;
+        font-size: 0.9rem;
+        font-family: Neue Machinai-Light;
+        margin-top: 0.3rem;
+        padding-left:5px ;
+        
+    }
+    
+    .fifthCompanyContainer{
+        /* background-color:rgb(15, 124, 88); */
+        height: 2rem;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .fifthCompanyContainerInputContainer{
+        /* background-color:rgb(142, 235, 204); */
+        height: 2rem;
+        width: 10%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .fifthCompanytitleDiv{
+        /* background-color:rgb(5, 34, 24); */
+        height: 2rem;
+        width: 90%;
+        display: flex;
+        
+    }
+    .titleOfCompany5{
+        /* background-color:rgb(6, 10, 9); */
+        height: 2rem;
+        width: 60%;
+        font-size: 0.9rem;
+        font-family: Neue Machinai-Light;
+        margin-top: 0.3rem;
+        padding-left:5px ;
+        
+    }
+    
+    
+    .sixthCompanyContainer{
+        /* background-color:rgb(15, 124, 88); */
+        height: 2rem;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .sixthCompanyContainerInputContainer{
+        /* background-color:rgb(142, 235, 204); */
+        height: 2rem;
+        width: 10%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .sixthCompanytitleDiv{
+        /* background-color:rgb(5, 34, 24); */
+        height: 2rem;
+        width: 90%;
+        display: flex;
+        
+    }
+    .titleOfCompany6{
+        /* background-color:rgb(6, 10, 9); */
+        height: 2rem;
+        width: 60%;
+        font-size: 0.9rem;
+        font-family: Neue Machinai-Light;
+        margin-top: 0.3rem;
+        padding-left:5px ;
+        
+    }
+    
+    
+    .sevenCompanyContainer{
+        /* background-color:rgb(15, 124, 88); */
+        height: 2rem;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .sevenCompanyContainerInputContainer{
+        /* background-color:rgb(142, 235, 204); */
+        height: 2rem;
+        width: 10%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .sevenCompanytitleDiv{
+        /* background-color:rgb(5, 34, 24); */
+        height: 2rem;
+        width: 90%;
+        display: flex;
+        
+    }
+    .titleOfCompany7{
+        /* background-color:rgb(6, 10, 9); */
+        height: 2rem;
+        width: 60%;
+        font-size: 0.9rem;
+        font-family: Neue Machinai-Light;
+        margin-top: 0.3rem;
+        padding-left:5px ;
+        
+    }
+    
+    
+    .eightCompanyContainer{
+        /* background-color:rgb(15, 124, 88); */
+        height: 2rem;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .eightCompanyContainerInputContainer{
+        /* background-color:rgb(142, 235, 204); */
+        height: 2rem;
+        width: 10%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .eightCompanytitleDiv{
+        /* background-color:rgb(5, 34, 24); */
+        height: 2rem;
+        width: 90%;
+        display: flex;
+        
+    }
+    .titleOfCompany8{
+        /* background-color:rgb(6, 10, 9); */
+        height: 2rem;
+        width: 60%;
+        font-size: 0.9rem;
+        font-family: Neue Machinai-Light;
+        margin-top: 0.3rem;
+        padding-left:5px ;
+        
+    }
+    
+    
+    .ninthCompanyContainer{
+        /* background-color:rgb(15, 124, 88); */
+        height: 2rem;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .ninthCompanyContainerInputContainer{
+        /* background-color:rgb(142, 235, 204); */
+        height: 2rem;
+        width: 10%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .ninthCompanytitleDiv{
+        /* background-color:rgb(5, 34, 24); */
+        height: 2rem;
+        width: 90%;
+        display: flex;
+        
+    }
+    .titleOfCompany9{
+        /* background-color:rgb(6, 10, 9); */
+        height: 2rem;
+        width: 60%;
+        font-size: 0.9rem;
+        font-family: Neue Machinai-Light;
+        margin-top: 0.3rem;
+        padding-left:5px ;
+        
+    }
+    
+    
+    .tenthCompanyContainer{
+        /* background-color:rgb(15, 124, 88); */
+        height: 2rem;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .tenthCompanyContainerInputContainer{
+        /* background-color:rgb(142, 235, 204); */
+        height: 2rem;
+        width: 10%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .tenthCompanytitleDiv{
+        /* background-color:rgb(5, 34, 24); */
+        height: 2rem;
+        width: 90%;
+        display: flex;
+        
+    }
+    .titleOfCompany10{
+        /* background-color:rgb(6, 10, 9); */
+        height: 2rem;
+        width: 60%;
+        font-size: 0.9rem;
+        font-family: Neue Machinai-Light;
+        margin-top: 0.3rem;
+        padding-left:5px ;
+        
+    }
+
+}

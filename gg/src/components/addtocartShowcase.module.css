@@ -1,0 +1,711 @@
+@font-face {
+    font-family: acumin-pro;
+    src: url(../../public//static/Acumin-RPro.otf);
+}
+
+@font-face {
+    font-family: acumin-pro-bold;
+    src: url(../../public//static/Acumin-BdPro.otf);
+}
+@font-face {
+    font-family: Neue Machinai-Light;
+    src: url(../../public//static//NeueMachina-Light.otf);
+}
+@font-face {
+    font-family: Neue Machinai-Regular;
+    src: url(../../public//static//NeueMachina-Regular.otf);
+}
+@font-face {
+    font-family: Neue Machinai-Bold;
+    src: url(../../public/static//NeueMachina-Ultrabold.otf);
+}
+
+@media only screen and (min-width: 300px) and (max-width: 500px) {
+.container{
+    height: 22rem;
+    width: 70%;
+    /* background-color: cadetblue; */
+    background-color: #f3f3f3;
+    border: 1px #0c0c0c solid;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.imgContainer{
+    height: 10rem;
+    width: 100%;
+    /* background-color: #f3f3f3; */
+    display: flex;
+    justify-content: center;
+}
+
+.imgg{
+    height: 10rem;
+    width: 10rem;
+    
+}
+.firstContainer{
+    height: 5rem;
+    width: 100%;
+    /* background-color: bisque; */
+    display: flex;
+    flex-direction: column;
+}
+
+.titleContainer{
+    height: 3.5rem;
+    width: 100%;
+    /* background-color: rgb(189, 40, 21); */
+    font-family: Neue Machinai-Light;
+    word-wrap: break-word;
+    font-size: 1.2rem;
+}
+
+.categoryContainer{
+    height: 1.5rem;
+    width: 100%;
+    /* background-color: rgb(236, 120, 105); */
+}
+.categorytitle{
+    height: auto;
+    width: auto;
+    /* background-color: rgb(236, 120, 105); */
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: Neue Machinai-Light;
+    padding-left: 3px;
+}
+
+.secContainer{
+    height: 6.9rem;
+    width: 100%;
+    /* background-color: rgb(141, 78, 0); */
+    display: flex;
+    flex-direction: column;
+}
+
+.priceContainer{
+    height: 2.5rem;
+    width: 100%;
+    
+    /* background-color: rgb(252, 225, 193); */
+    
+}
+.pricetitle{
+    height: auto;
+    width: auto;
+    /* background-color: rgb(252, 225, 193); */
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: Neue Machinai-Light;
+    padding-left: 1.5px;
+}
+.IncAndDecContainer{
+    height: 3rem;
+    width: 100%;
+    /* background-color: rgb(175, 136, 88); */
+    display: flex;
+    flex-direction: row;
+
+}
+
+.incBtn{
+    height: 1.5rem;
+    width:1.5rem;
+    /* background-color: rgb(36, 24, 11); */
+    border:1px #0c0c0c solid ;
+    border-right:none ;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 5px;
+    cursor: pointer;
+    color: #9d50ff;
+}
+
+.inputValue{
+    height: 1.5rem;
+    width:2rem;
+    padding-left: 5px;
+    border:none ;
+    outline: none;
+    /* background-color: rgb(236, 234, 232); */
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-top: 2px;
+    border:1px #0c0c0c solid ;
+    border-right:none ;
+    border-left:none ;
+}
+.decBtn{
+    height: 1.5rem;
+    width:1.5rem;
+    border:none ;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right:auto ;
+    /* background-color: rgb(24, 16, 8); */
+    border:1px #0c0c0c solid ;
+    border-left:none ;
+    cursor: pointer;
+    color: #9d50ff;
+}
+.AddMoreQuantityBTn{
+    height: 1.7rem;
+    width: 4rem;
+    background-color: #f3f3f3;
+    color: #0c0c0c;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 5px;
+    margin-left: 3px;
+    outline: none;
+    border:1px #0c0c0c solid ;
+}
+
+.AddMoreQuantityBTn:hover{
+    background-color: #0c0c0c;
+    color: #f3f3f3;
+    cursor: pointer;
+}
+.RemoveContainer{
+    height: 2rem;
+    width: 100%;
+    /* background-color: rgb(118, 88, 175); */
+}
+
+.remvBtn{
+    height: 1.5rem;
+    width:auto;
+    font-family: Neue Machinai-Light;
+    margin-left: 5px;
+    cursor: pointer;
+    
+}
+
+.remvBtn:hover{
+    text-decoration: underline;
+    text-decoration-color: #0c0c0c;
+}
+
+}
+
+
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+
+    .container{
+        height: 22rem;
+        width: 12rem;
+        /* background-color: cadetblue; */
+        background-color: #f3f3f3;
+        border: 1px #0c0c0c solid;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+    }
+    
+    .imgContainer{
+        height: 10rem;
+        width: 100%;
+        /* background-color: rgb(184, 230, 18); */
+        display: flex;
+        justify-content: center;
+    }
+    
+    .imgg{
+        height: 10rem;
+        width: 10rem;
+        
+    }
+    .firstContainer{
+        height: 5rem;
+        width: 100%;
+        /* background-color: bisque; */
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .titleContainer{
+        height: 3.5rem;
+        width: 100%;
+        /* background-color: rgb(189, 40, 21); */
+        font-family: Neue Machinai-Light;
+        word-wrap: break-word;
+        font-size: 1.2rem;
+    }
+    
+    .categoryContainer{
+        height: 1.5rem;
+        width: 100%;
+        /* background-color: rgb(236, 120, 105); */
+    }
+    .categorytitle{
+        height: auto;
+        width: auto;
+        /* background-color: rgb(236, 120, 105); */
+        font-size: 1rem;
+        font-weight: 600;
+        font-family: Neue Machinai-Light;
+        padding-left: 3px;
+    }
+    
+    .secContainer{
+        height: 6.9rem;
+        width: 100%;
+        /* background-color: rgb(141, 78, 0); */
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .priceContainer{
+        height: 2.5rem;
+        width: 100%;
+        
+        /* background-color: rgb(252, 225, 193); */
+        
+    }
+    .pricetitle{
+        height: auto;
+        width: auto;
+        /* background-color: rgb(252, 225, 193); */
+        font-size: 1.5rem;
+        font-weight: 600;
+        font-family: Neue Machinai-Light;
+        padding-left: 1.5px;
+    }
+    .IncAndDecContainer{
+        height: 3rem;
+        width: 100%;
+        /* background-color: rgb(175, 136, 88); */
+        display: flex;
+        flex-direction: row;
+    
+    }
+    
+    .incBtn{
+        height: 1.5rem;
+        width:1.5rem;
+        /* background-color: rgb(36, 24, 11); */
+        color: #9d50ff;
+        border:1px #0c0c0c solid ;
+        border-right:none ;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: 5px;
+        cursor: pointer;
+    }
+    
+    .inputValue{
+        height: 1.5rem;
+        width:2rem;
+        padding-left: 5px;
+        border:none ;
+        outline: none;
+        /* background-color: rgb(236, 234, 232); */
+        margin-top: auto;
+        margin-bottom: auto;
+        padding-top: 2px;
+        border:1px #0c0c0c solid ;
+        border-right:none ;
+        border-left:none ;
+    }
+    .decBtn{
+        height: 1.5rem;
+        width:1.5rem;
+        border:none ;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-right:auto ;
+        color: #9d50ff;
+        border:1px #0c0c0c solid ;
+        border-left:none ;
+        cursor: pointer;
+    }
+
+    .AddMoreQuantityBTn{
+        height: 1.7rem;
+        width: 6rem;
+        background-color: #f3f3f3;
+        color: #0c0c0c;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-right: 16px;
+        margin-left: 5px;
+        outline: none;
+        border:1px #0c0c0c solid ;
+    }
+
+    .AddMoreQuantityBTn:hover{
+        background-color: #0c0c0c;
+        color: #f3f3f3;
+        cursor: pointer;
+    }
+    .RemoveContainer{
+        height: 2rem;
+        width: 100%;
+        /* background-color: rgb(118, 88, 175); */
+    }
+    
+    .remvBtn{
+        height: 1.5rem;
+        width:auto;
+        font-family: Neue Machinai-Light;
+        margin-left: 5px;
+        cursor: pointer;
+        
+    }
+    
+    .remvBtn:hover{
+        text-decoration: underline;
+        text-decoration-color: #0c0c0c;
+    }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+
+    .container{
+        height: 22rem;
+        width: 13rem;
+        /* background-color: cadetblue; */
+        background-color: #f3f3f3;
+        border: 1px #0c0c0c solid;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        margin-left: 1.5rem;
+        margin-right:1.5rem;
+    }
+    
+    .imgContainer{
+        height: 10rem;
+        width: 100%;
+        /* background-color: rgb(184, 230, 18); */
+        display: flex;
+        justify-content: center;
+    }
+    
+    .imgg{
+        height: 10rem;
+        width: 10rem;
+        
+    }
+    .firstContainer{
+        height: 5rem;
+        width: 100%;
+        /* background-color: bisque; */
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .titleContainer{
+        height: 3.5rem;
+        width: 100%;
+        /* background-color: rgb(189, 40, 21); */
+        font-family: Neue Machinai-Light;
+        word-wrap: break-word;
+        font-size: 1.2rem;
+    }
+    
+    .categoryContainer{
+        height: 1.5rem;
+        width: 100%;
+        /* background-color: rgb(236, 120, 105); */
+    }
+    .categorytitle{
+        height: auto;
+        width: auto;
+        /* background-color: rgb(236, 120, 105); */
+        font-size: 1rem;
+        font-weight: 600;
+        font-family: Neue Machinai-Light;
+        padding-left: 3px;
+    }
+    
+    .secContainer{
+        height: 6.9rem;
+        width: 100%;
+        /* background-color: rgb(141, 78, 0); */
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .priceContainer{
+        height: 2.5rem;
+        width: 100%;
+        
+        /* background-color: rgb(252, 225, 193); */
+        
+    }
+    .pricetitle{
+        height: auto;
+        width: auto;
+        /* background-color: rgb(252, 225, 193); */
+        font-size: 1.5rem;
+        font-weight: 600;
+        font-family: Neue Machinai-Light;
+        padding-left: 1.5px;
+    }
+    .IncAndDecContainer{
+        height: 3rem;
+        width: 100%;
+        /* background-color: rgb(175, 136, 88); */
+        display: flex;
+        flex-direction: row;
+    
+    }
+    
+    .incBtn{
+        height: 1.5rem;
+        width:1.5rem;
+        /* background-color: rgb(36, 24, 11); */
+        border:1px #0c0c0c solid ;
+        border-right:none ;
+        margin-top: auto;
+        margin-bottom: auto;
+        color: #9d50ff;
+        margin-left: 5px;
+        cursor: pointer;
+    }
+    
+    .inputValue{
+        height: 1.5rem;
+        width:2rem;
+        padding-left: 5px;
+        border:none ;
+        outline: none;
+        /* background-color: rgb(236, 234, 232); */
+        margin-top: auto;
+        margin-bottom: auto;
+        padding-top: 2px;
+        border:1px #0c0c0c solid ;
+        border-right:none ;
+        border-left:none ;
+    }
+    .decBtn{
+        height: 1.5rem;
+        width:1.5rem;
+        border:none ;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-right:auto ;
+        /* background-color: rgb(24, 16, 8); */
+        color: #9d50ff;
+        border:1px #0c0c0c solid ;
+        border-left:none ;
+        cursor: pointer;
+    }
+
+    .AddMoreQuantityBTn{
+        height: 1.7rem;
+        width: 6rem;
+        background-color: #f3f3f3;
+        color: #0c0c0c;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-right: 20px;
+        outline: none;
+        border:1px #0c0c0c solid ;
+    }
+    .AddMoreQuantityBTn:hover{
+        background-color: #0c0c0c;
+        color: #f3f3f3;
+        cursor: pointer;
+    }
+    .RemoveContainer{
+        height: 2rem;
+        width: 100%;
+        /* background-color: rgb(118, 88, 175); */
+    }
+    
+    .remvBtn{
+        height: 1.5rem;
+        width:auto;
+        font-family: Neue Machinai-Light;
+        margin-left: 5px;
+        cursor: pointer;
+        
+    }
+    
+    .remvBtn:hover{
+        text-decoration: underline;
+        text-decoration-color: #0c0c0c;
+    }
+
+}
+
+@media only screen and (min-width: 1201px){
+
+
+   
+    .container{
+        height: 22rem;
+        width: 16rem;
+        /* background-color: cadetblue; */
+        background-color: #f3f3f3;
+        border: 1px #0c0c0c solid;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        margin-left: 5rem;
+        margin-right: 5rem;
+        
+    }
+    
+    .imgContainer{
+        height: 10rem;
+        width: 100%;
+        /* background-color: rgb(184, 230, 18); */
+        display: flex;
+        justify-content: center;
+    }
+    
+    .imgg{
+        height: 10rem;
+        width: 10rem;
+        
+    }
+    .firstContainer{
+        height: 5rem;
+        width: 100%;
+        /* background-color: bisque; */
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .titleContainer{
+        height: 3.5rem;
+        width: 100%;
+        /* background-color: rgb(189, 40, 21); */
+        font-family: Neue Machinai-Light;
+        word-wrap: break-word;
+        font-size: 1.2rem;
+    }
+    
+    .categoryContainer{
+        height: 1.5rem;
+        width: 100%;
+        /* background-color: rgb(236, 120, 105); */
+    }
+    .categorytitle{
+        height: auto;
+        width: auto;
+        /* background-color: rgb(236, 120, 105); */
+        font-size: 1rem;
+        font-weight: 600;
+        font-family: Neue Machinai-Light;
+        padding-left: 3px;
+    }
+    
+    .secContainer{
+        height: 6.9rem;
+        width: 100%;
+        /* background-color: rgb(141, 78, 0); */
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .priceContainer{
+        height: 2.5rem;
+        width: 100%;
+        
+        /* background-color: rgb(252, 225, 193); */
+        
+    }
+    .pricetitle{
+        height: auto;
+        width: auto;
+        /* background-color: rgb(252, 225, 193); */
+        font-size: 1.5rem;
+        font-weight: 600;
+        font-family: Neue Machinai-Light;
+        padding-left: 1.5px;
+    }
+    .IncAndDecContainer{
+        height: 3rem;
+        width: 100%;
+        /* background-color: rgb(175, 136, 88); */
+        display: flex;
+        flex-direction: row;
+    
+    }
+    
+    .incBtn{
+        height: 1.5rem;
+        width:1.5rem;
+        /* background-color: rgb(36, 24, 11); */
+        border:1px #0c0c0c solid ;
+        border-right:none ;
+        margin-top: auto;
+        margin-bottom: auto;
+        color: #9d50ff;
+        margin-left: 5px;
+        cursor: pointer;
+    }
+    
+    .inputValue{
+        height: 1.5rem;
+        width:2rem;
+        padding-left: 5px;
+        border:none ;
+        outline: none;
+        /* background-color: rgb(236, 234, 232); */
+        margin-top: auto;
+        margin-bottom: auto;
+        padding-top: 2px;
+        border:1px #0c0c0c solid ;
+        border-right:none ;
+        border-left:none ;
+    }
+    .decBtn{
+        height: 1.5rem;
+        width:1.5rem;
+        border:none ;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-right:auto ;
+        /* background-color: rgb(24, 16, 8); */
+        color: #9d50ff;
+        border:1px #0c0c0c solid ;
+        border-left:none ;
+        cursor: pointer;
+    }
+
+    .AddMoreQuantityBTn{
+        height: 1.7rem;
+        width: 6rem;
+        background-color: #f3f3f3;
+        color: #0c0c0c;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-right: 20px;
+        outline: none;
+        border:1px #0c0c0c solid ;
+        cursor: pointer;
+    }
+    .AddMoreQuantityBTn:hover{
+        background-color: #0c0c0c;
+        color: #f3f3f3;
+        cursor: pointer;
+    }
+    .RemoveContainer{
+        height: 2rem;
+        width: 100%;
+        /* background-color: rgb(118, 88, 175); */
+    }
+    
+    .remvBtn{
+        height: 1.5rem;
+        width:auto;
+        font-family: Neue Machinai-Light;
+        margin-left: 5px;
+        cursor: pointer;
+        
+    }
+    
+    .remvBtn:hover{
+        text-decoration: underline;
+        text-decoration-color: #0c0c0c;
+    }
+
+}

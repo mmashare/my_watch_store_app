@@ -1,0 +1,958 @@
+@font-face {
+    font-family: acumin-pro;
+    src: url(../../../public//static/Acumin-RPro.otf);
+}
+
+@font-face {
+    font-family: acumin-pro-bold;
+    src: url(../../../public//static/Acumin-BdPro.otf);
+}
+@font-face {
+    font-family: Neue Machinai-Light;
+    src: url(../../../public//static//NeueMachina-Light.otf);
+}
+@font-face {
+    font-family: Neue Machinai-Regular;
+    src: url(../../../public//static//NeueMachina-Regular.otf);
+}
+@font-face {
+    font-family: Neue Machinai-Bold;
+    src: url(../../../public/static//NeueMachina-Ultrabold.otf);
+}
+
+@font-face {
+    font-family: BetterGrade;
+    src: url(../../../public/static/BetterGrade-519DV.ttf);
+}
+
+@media only screen and (min-width: 1px) and (max-width: 300px) {
+    .container{
+        height: 100vh;
+        width: 100vw;
+        background-color: rgb(0, 0, 0);
+        display: none;
+    }
+}
+@media only screen and (min-width: 300px) and (max-width: 500px) {
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-color: #f3f3f3;
+}
+
+.navContainer{
+    width: 100%;
+    height: auto;
+    background-color: rgb(48, 44, 38);
+}
+
+.mainContainer{
+    height: 46rem;
+    width: 90%;
+    /* background-color: rgb(190, 61, 2); */
+    background-color: #f3f3f3;
+    border: 1px solid #0c0c0c;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    
+}
+
+.imageContainer{
+    height: 10rem;
+    width: 15rem;
+    /* background-color: rgb(190, 61, 2); */
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img{
+    height: 10rem;
+    width: 15rem;
+    /* background-color: rgb(190, 61, 2); */
+}
+
+.ContentContainer{
+    height: 30rem;
+    width: 100%;
+    /* background-color: rgb(235, 145, 103); */
+    margin-top: 2rem;
+}
+.titleContainer{
+    height: auto;
+    width: 100%;
+    word-wrap: break-word;
+ 
+   
+    /* background-color: rgb(206, 2, 2); */
+}
+.title{
+    height: auto;
+    width: 100%;
+    padding-left: 5px;
+    padding-right: 5px;
+    /* background-color: rgb(206, 2, 2); */
+}
+.CategoryContainer{
+    height: 3rem;
+    width: 100%;
+    /* background-color: rgb(37, 11, 11); */
+    
+}
+
+.Categorytitle{
+    height: 1.5rem;
+    width: 100%;
+    /* background-color: rgb(158, 52, 52); */
+    color: rgb(92, 92, 90);
+    font-weight: 600;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left:0.5rem ;
+    font-family: Neue Machinai-Light;
+}
+.Categorystar{
+    height: 1.5rem;
+    width: 100%;
+    /* background-color: rgb(255, 174, 174); */
+    color: rgb(92, 92, 90);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left:0.5rem ;
+    font-family: Neue Machinai-Light;
+}
+
+.priceContainer{
+    height: 3rem;
+    width: 100%;
+    /* background-color: rgb(37, 11, 11); */
+}
+
+.pricetitle{
+    height: 3rem;
+    width: 100%;
+    padding-left:0.5rem ;
+    /* background-color: rgb(230, 86, 86); */
+    font-size: 2rem;
+    font-family: Neue Machinai-Light;
+}
+
+.AddToContainerContainer{
+    height: 2.1rem;
+    width: 100%;
+    /* background-color: rgb(37, 11, 11); */
+    display: flex;
+    flex-direction: row;
+}
+
+.AddTocartbtn{
+    height: 2.1rem;
+    width: 100%;
+    border: 1px solid #0c0c0c;
+    border-right: none;
+    border-left: none;
+    background-color: rgb(47, 253, 47);
+    color: #0c0c0c;
+    font-family: Neue Machinai-Regular;
+    font-weight: 700; 
+}
+.AddTocartbtn:hover{
+    background-color: #0c0c0c;
+    color:#f3f3f3 ;
+}
+.savebtn{
+    height: 2.1rem;
+    width: 15%;
+    border: 1px solid #0c0c0c;
+    background-color: rgb(47, 253, 47); 
+    
+}
+
+.savebtn:hover{
+    background-color: #0c0c0c;
+    color:#f3f3f3 ;
+}
+
+.DescriptionContainer{
+    height: 13rem;
+    width: 100%;
+    /* background-color: rgb(37, 11, 11); */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.description{
+    height: 13rem;
+    width: 100%;
+    /* background-color: #f3f3f3; */
+    padding-left:0.5rem ;
+    padding-right:0.5rem ;
+    padding-top:0.5rem ;
+    padding-bottom:0.5rem ;
+    font-family: Neue Machinai-Light;
+    font-size: 0.9rem;
+}
+
+.similerProductContainer{
+    height: auto;
+    /* min-height: 56rem; */
+    width: 90%;
+    /* width: 100%; */
+    /* background-color: rgb(37, 11, 11); */
+    background-color: #f3f3f3;
+    /* background-color: rgb(255, 58, 23); */
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+}
+
+.similerProductHeadingContainer{
+    height: 3rem;
+    width: 100%;
+    background-color: #f3f3f3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #0c0c0c;
+    border-bottom:none;
+}
+
+.similerProductHeading{
+    height: auto;
+    width: auto;
+    font-family: Neue Machinai-Light;
+    font-size: 1.5rem;  
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.spanofSimilerproductHeading{
+    height: auto;
+    width: auto;
+    font-family: BetterGrade;
+    font-size: 2.3rem;
+    color:#a157ff ;
+}
+
+.similerProductsection{
+    height: auto;
+    width: 100%;
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    padding-left: 12%;
+    padding-bottom: 2rem;
+    padding-top: 1.5rem;
+    border: 1px solid #0c0c0c;
+    
+    
+}
+
+.FooterContainer{
+    height: auto;
+    width: 100%;
+    /* background-color: rgb(1, 46, 31); */
+    
+}
+
+}
+
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+
+    .container{
+        width: 100vw;
+        height: 100vh;
+        background-color: #f3f3f3;
+    }
+    
+    .navContainer{
+        width: 100%;
+        height: auto;
+        background-color: rgb(48, 44, 38);
+    }
+    
+    .mainContainer{
+        height: 44rem;
+        width: 90%;
+        /* background-color: rgb(190, 61, 2); */
+        background-color: #f3f3f3;
+        border: 1px solid #0c0c0c;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: column;
+        margin-top: 1rem;
+        
+    }
+    
+    .imageContainer{
+        height: 10rem;
+        width: 15rem;
+        /* background-color: rgb(190, 61, 2); */
+        margin-top: 15px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .img{
+        height: 10rem;
+        width: 15rem;
+        /* background-color: rgb(190, 61, 2); */
+    }
+    
+    .ContentContainer{
+        height: 30rem;
+        width: 100%;
+        /* background-color: rgb(235, 145, 103); */
+        margin-top: 2rem;
+    }
+    .titleContainer{
+        height: auto;
+        width: 100%;
+        margin-bottom: 6px;
+        /* background-color: rgb(206, 2, 2); */
+    }
+    .title{
+        height: auto;
+        width: 100%;
+        padding-left: 5px;
+        padding-right: 5px;
+        /* background-color: rgb(206, 2, 2); */
+       
+    }
+    .CategoryContainer{
+        height: 3rem;
+        width: 100%;
+        /* background-color: rgb(37, 11, 11); */
+        
+    }
+    
+    .Categorytitle{
+        height: 1.5rem;
+        width: 100%;
+        /* background-color: rgb(158, 52, 52); */
+        color: rgb(92, 92, 90);
+        font-weight: 600;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-left:0.5rem ;
+        font-family: Neue Machinai-Light;
+    }
+    .Categorystar{
+        height: 1.5rem;
+        width: 100%;
+        /* background-color: rgb(255, 174, 174); */
+        color: rgb(92, 92, 90);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-left:0.5rem ;
+        font-family: Neue Machinai-Light;
+    }
+    
+    .priceContainer{
+        height: 3rem;
+        width: 100%;
+        /* background-color: rgb(37, 11, 11); */
+    }
+    
+    .pricetitle{
+        height: 3rem;
+        width: 100%;
+        padding-left:0.5rem ;
+        /* background-color: rgb(230, 86, 86); */
+        font-size: 2rem;
+        font-family: Neue Machinai-Light;
+    }
+    
+    .AddToContainerContainer{
+        height: 2.1rem;
+        width: 100%;
+        /* background-color: rgb(37, 11, 11); */
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .AddTocartbtn{
+        height: 2.1rem;
+        width: 100%;
+        border: 1px solid #0c0c0c;
+        border-right: none;
+        border-left: none;
+        background-color: rgb(47, 253, 47);
+        color: #0c0c0c;
+        font-family: Neue Machinai-Regular;
+        font-weight: 700; 
+    }
+    .AddTocartbtn:hover{
+        background-color: #0c0c0c;
+        color:#f3f3f3 ;
+    }
+    .savebtn{
+        height: 2.1rem;
+        width: 15%;
+        border: 1px solid #0c0c0c;
+        background-color: rgb(47, 253, 47); 
+        
+    }
+    
+    .savebtn:hover{
+        background-color: #0c0c0c;
+        color:#f3f3f3 ;
+    }
+    
+    .DescriptionContainer{
+        height: 15rem;
+        width: 100%;
+        /* background-color: rgb(37, 11, 11); */
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .description{
+        height: 15rem;
+        width: 100%;
+        background-color: #f3f3f3;
+        padding-left:0.5px ;
+        padding-right:10px ;
+        padding-top:0.5rem ;
+        padding-bottom:0.5rem ;
+        font-family: Neue Machinai-Light;
+        font-size: 0.9rem;
+    }
+    
+    .similerProductContainer{
+        height: auto;
+        width: 90%;
+        background-color: rgb(37, 11, 11);
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 1rem;
+    }
+    
+    .similerProductHeadingContainer{
+        height: 3rem;
+        width: 100%;
+        background-color: #f3f3f3;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #0c0c0c;
+        border-bottom:none ;
+    }
+    
+    .similerProductHeading{
+        height: auto;
+        width: auto;
+        font-family: Neue Machinai-Light;
+        font-size: 1.5rem;  
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .spanofSimilerproductHeading{
+        height: auto;
+        width: auto;
+        font-family: BetterGrade;
+        font-size: 2.3rem;
+        color:#a157ff ;
+    }
+    
+    .similerProductsection{
+        height: auto;
+        width: 100%;
+        background-color: aquamarine;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding-bottom: 2rem;
+        padding-top: 1.5rem;
+        border: 1px solid #0c0c0c;
+        
+        
+    }
+    
+    .FooterContainer{
+        height: auto;
+        width: 100%;
+        background-color: rgb(1, 46, 31);
+        
+    }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+
+    .container{
+        width: 100vw;
+        height: 100vh;
+        background-color: #f3f3f3;
+    }
+    
+    .navContainer{
+        width: 100%;
+        height: auto;
+        background-color: rgb(48, 44, 38);
+    }
+    
+    .mainContainer{
+        height: 46rem;
+        width: 90%;
+        /* background-color: rgb(190, 61, 2); */
+        background-color: #f3f3f3;
+        border: 1px solid #0c0c0c;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: column;
+        margin-top: 1rem;
+        
+    }
+    
+    .imageContainer{
+        height: 10rem;
+        width: 15rem;
+        /* background-color: rgb(190, 61, 2); */
+        margin-top: 15px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .img{
+        height: 10rem;
+        width: 15rem;
+        /* background-color: rgb(190, 61, 2); */
+    }
+    
+    .ContentContainer{
+        height: 30rem;
+        width: 100%;
+        /* background-color: rgb(235, 145, 103); */
+        margin-top: 1rem;
+    }
+    .titleContainer{
+        height: 3rem;
+        width: 100%;
+        margin-bottom: 10px;
+        /* background-color: rgb(206, 2, 2); */
+    }
+    .title{
+        height: 4rem;
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+        /* background-color: rgb(206, 2, 2); */
+    }
+    .CategoryContainer{
+        height: 3rem;
+        width: 100%;
+        /* background-color: rgb(37, 11, 11); */
+        
+    }
+    
+    .Categorytitle{
+        height: 1.5rem;
+        width: 100%;
+        /* background-color: rgb(158, 52, 52); */
+        color: rgb(92, 92, 90);
+        font-weight: 600;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-left:0.5rem ;
+        font-family: Neue Machinai-Light;
+    }
+    .Categorystar{
+        height: 1.5rem;
+        width: 100%;
+        /* background-color: rgb(255, 174, 174); */
+        color: rgb(92, 92, 90);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-left:0.5rem ;
+        font-family: Neue Machinai-Light;
+    }
+    
+    .priceContainer{
+        height: 3rem;
+        width: 100%;
+        /* background-color: rgb(37, 11, 11); */
+    }
+    
+    .pricetitle{
+        height: 3rem;
+        width: 100%;
+        padding-left:0.5rem ;
+        /* background-color: rgb(230, 86, 86); */
+        font-size: 2rem;
+        font-family: Neue Machinai-Light;
+    }
+    
+    .AddToContainerContainer{
+        height: 2.1rem;
+        width: 100%;
+        /* background-color: rgb(37, 11, 11); */
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .AddTocartbtn{
+        height: 2.1rem;
+        width: 100%;
+        border: 1px solid #0c0c0c;
+        border-right: none;
+        border-left: none;
+        background-color: rgb(47, 253, 47);
+        color: #0c0c0c;
+        font-family: Neue Machinai-Regular;
+        font-weight: 700; 
+    }
+    .AddTocartbtn:hover{
+        background-color: #0c0c0c;
+        color:#f3f3f3 ;
+    }
+    .savebtn{
+        height: 2.1rem;
+        width: 15%;
+        border: 1px solid #0c0c0c;
+        background-color: rgb(47, 253, 47); 
+        
+    }
+    
+    .savebtn:hover{
+        background-color: #0c0c0c;
+        color:#f3f3f3 ;
+    }
+    
+    .DescriptionContainer{
+        height: 10rem;
+        width: 100%;
+        background-color: rgb(37, 11, 11);
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .description{
+        height: 20rem;
+        width: 100%;
+        background-color: #f3f3f3;
+        padding-left:0.5rem ;
+        padding-right:0.5rem ;
+        padding-top:0.5rem ;
+        padding-bottom:0.5rem ;
+        font-family: Neue Machinai-Light;
+        font-size: 0.9rem;
+    }
+    
+    .similerProductContainer{
+        height: auto;
+        width: 90%;
+        background-color: rgb(37, 11, 11);
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 1rem;
+    }
+    
+    .similerProductHeadingContainer{
+        height: 3rem;
+        width: 100%;
+        background-color: #f3f3f3;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #0c0c0c;
+        border-bottom:none ;
+    }
+    
+    .similerProductHeading{
+        height: auto;
+        width: auto;
+        font-family: Neue Machinai-Light;
+        font-size: 1.5rem;  
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .spanofSimilerproductHeading{
+        height: auto;
+        width: auto;
+        font-family: BetterGrade;
+        font-size: 2.3rem;
+        color:#a157ff ;
+    }
+    
+    .similerProductsection{
+        height: auto;
+        width: 100%;
+        background-color: aquamarine;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding-bottom: 2rem;
+        padding-top: 1.5rem;
+        border: 1px solid #0c0c0c;
+        
+        
+    }
+    
+    .FooterContainer{
+        height: auto;
+        width: 100%;
+        background-color: rgb(1, 46, 31);
+        
+    }
+
+}
+
+@media only screen and (min-width: 1201px){
+
+    .container{
+        width: 100vw;
+        height: 100vh;
+        background-color: #f3f3f3;
+    }
+    
+    .navContainer{
+        width: 100%;
+        height: auto;
+        background-color: rgb(48, 44, 38);
+    }
+    
+    .mainContainer{
+        height: 23rem;
+        width: 90%;
+        /* background-color: rgb(190, 61, 2); */
+        background-color: #f3f3f3;
+        border: 1px solid #0c0c0c;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: row;
+        margin-top: 1rem;
+        margin-bottom: 4rem;
+        
+    }
+    
+    .imageContainer{
+        height: 22.9rem;
+        width: 40%;
+        /* background-color: rgb(255, 81, 0); */
+        /* margin-top: 1rem; */
+        display: flex;
+       justify-content: center;
+       align-items: center;
+       
+        
+    }
+    
+    .img{
+        height: 17rem;
+        width: 17rem;
+        /* background-color: rgb(190, 61, 2); */
+    }
+    
+    .ContentContainer{
+        height: 22.9rem;
+        width:60%;
+        /* background-color: rgb(235, 145, 103); */
+        /* margin-top: 1rem; */
+        border: #0c0c0c 1px solid;
+        border-right:none ;
+        border-top:none ;
+        border-bottom:none ;
+    }
+    .titleContainer{
+        height: 4.7rem;
+        width: 100%;
+        /* background-color: rgb(206, 2, 2); */
+    }
+    .title{
+        height: 4rem;
+        width: 100%;
+        padding-left: 5px;
+        padding-right: 1px;
+        padding-top: 5px;
+        padding-top: 1px;
+        /* background-color: rgb(206, 2, 2); */
+    }
+    .CategoryContainer{
+        height: 3rem;
+        width: 100%;
+        /* background-color: rgb(37, 11, 11); */
+        
+        
+    }
+    
+    .Categorytitle{
+        height: 1.5rem;
+        width: 100%;
+        /* background-color: rgb(158, 52, 52); */
+        color: rgb(92, 92, 90);
+        font-weight: 600;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-left:0.5rem ;
+        font-family: Neue Machinai-Light;
+    }
+    .Categorystar{
+        height: 1.5rem;
+        width: 100%;
+        /* background-color: rgb(255, 174, 174); */
+        color: rgb(92, 92, 90);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-left:0.5rem ;
+        font-family: Neue Machinai-Light;
+    }
+    
+    .priceContainer{
+        height: 3rem;
+        width: 100%;
+        /* background-color: rgb(37, 11, 11); */
+    }
+    
+    .pricetitle{
+        height: 3rem;
+        width: 100%;
+        padding-left:0.5rem ;
+        /* background-color: rgb(230, 86, 86); */
+        font-size: 2rem;
+        font-family: Neue Machinai-Light;
+    }
+    
+    .AddToContainerContainer{
+        height: 2.1rem;
+        width: 100%;
+        /* background-color: rgb(37, 11, 11); */
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .AddTocartbtn{
+        height: 2.1rem;
+        width: 100%;
+        border: 1px solid #0c0c0c;
+        border-right: none;
+        background-color: rgb(47, 253, 47);
+        color: #111111;
+        font-family: Neue Machinai-Regular;
+        font-weight: 700; 
+    }
+    .AddTocartbtn:hover{
+        background-color: #0c0c0c;
+        color:#f3f3f3 ;
+    }
+    .savebtn{
+        height: 2.1rem;
+        width: 15%;
+        border: 1px solid #0c0c0c;
+        background-color: rgb(47, 253, 47); 
+        
+    }
+    
+    .savebtn:hover{
+        background-color: #0c0c0c;
+        color:#f3f3f3 ;
+    }
+    
+    .DescriptionContainer{
+        height: 10rem;
+        width: 100%;
+        background-color: rgb(37, 11, 11);
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .description{
+        height: 10rem;
+        width: 100%;
+        background-color: #f3f3f3;
+        padding-left:0.5rem ;
+        padding-right:0.5rem ;
+        padding-top:0.5rem ;
+        padding-bottom:0.5rem ;
+        font-family: Neue Machinai-Light;
+        font-size: 0.9rem;
+    }
+    
+    .similerProductContainer{
+        height: auto;
+        width: 90%;
+        background-color: rgb(37, 11, 11);
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 1rem;
+    }
+    
+    .similerProductHeadingContainer{
+        height: 3rem;
+        width: 100%;
+        background-color: #f3f3f3;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #0c0c0c;
+        border-bottom:none ;
+    }
+    
+    .similerProductHeading{
+        height: auto;
+        width: auto;
+        font-family: Neue Machinai-Light;
+        font-size: 1.5rem;  
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .spanofSimilerproductHeading{
+        height: auto;
+        width: auto;
+        font-family: BetterGrade;
+        font-size: 2.3rem;
+        color:#a157ff ;
+    }
+    
+    .similerProductsection{
+        height: auto;
+        width: 100%;
+        background-color: aquamarine;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding-bottom: 2rem;
+        padding-top: 1.5rem;
+        border: 1px solid #0c0c0c;
+        
+        
+    }
+    
+    .FooterContainer{
+        height: auto;
+        width: 100%;
+        background-color: rgb(1, 46, 31);
+        
+    }
+    
+
+}
