@@ -319,17 +319,17 @@ const Filterpanel = () => {
     // console.log(women)
     // console.log(smartWatch)
   return (
-    <div className={mytoogle?styles.OpenContainer:styles.container}>
-        <div className={styles.Wrapper}>
+    <main className={mytoogle?styles.OpenContainer:styles.container}>
+        <section className={styles.Wrapper}>
             <h3 className={styles.textt} style={{color: '#111111'}}>Filter</h3>
             <AiOutlinePlus className={mytoogle?styles.crossicon:styles.plusIcon} style={{color: '#111111'}} onClick={()=>{setMyToogle(!mytoogle)}}/>
-        </div>
+        </section>
         
-        <div className={mytoogle?styles.OpenPriceContainer:styles.priceContainer}>
+        <section className={mytoogle?styles.OpenPriceContainer:styles.priceContainer}>
 
             <p className={styles.priceTitle} style={{color: '#111111'}}>Price</p>
             {/* first column */}
-            <div className={styles.firstPriceContainer}>
+            <article className={styles.firstPriceContainer}>
                 <div className={styles.firstPriceContainerInputContainer}>
 
                 <input 
@@ -346,9 +346,9 @@ const Filterpanel = () => {
                     <p className={styles.title1} style={{color: '#111111'}}>$100 to $1k</p>
                 </div>
 
-            </div>
+            </article>
             {/* second column */}
-            <div className={styles.TwoPriceContainer}>
+            <article className={styles.TwoPriceContainer}>
                 <div className={styles.TwoPriceContainerInputContainer}>
 
                 <input type="checkbox" 
@@ -363,9 +363,9 @@ const Filterpanel = () => {
                     <p className={styles.title2} style={{color: '#111111'}}>$1k to $100k</p>
                 </div>
 
-            </div>
+            </article>
             {/* third column */}
-            <div className={styles.ThirdPriceContainer}>
+            <article className={styles.ThirdPriceContainer}>
                 <div className={styles.ThirdPriceContainerInputContainer}>
 
                 <input type="checkbox" 
@@ -381,21 +381,21 @@ const Filterpanel = () => {
                 <p className={styles.title3} style={{color: '#111111'}}>$1m to $100m</p>
                 </div>
 
-            </div>
-        </div>
+            </article>
+        </section>
         {/* btn section */}
-        <div className={mytoogle?styles.OpenCategoryContainer:styles.categoryContainer}>
+        <section className={mytoogle?styles.OpenCategoryContainer:styles.categoryContainer}>
             <button className={styles.btn1} onClick={handleChangeForBtn1} >Men</button>
             <button className={styles.btn2} onClick={handleChangeForBtn2} >Women</button>
             <button className={styles.btn3} onClick={handleChangeForBtn3} >Smart-Watch</button>
-        </div>
+        </section>
 
         
-        <div className={mytoogle?styles.OpenCompanyContainer:styles.companyContainer}>
+        <section className={mytoogle?styles.OpenCompanyContainer:styles.companyContainer}>
 
         <p className={styles.campanyTitle} style={{color: '#111111'}}>Collection</p>
 
-             <div className={styles.firstCompanyContainer}>
+             <article className={styles.firstCompanyContainer}>
                 <div className={styles.firstCompanyContainerInputContainer}>
                
                 <input 
@@ -410,10 +410,10 @@ const Filterpanel = () => {
                 </div>
                 <div className={styles.firstCompanytitleDiv}>
                     <p className={styles.titleOfCompany1} style={{color: '#111111'}}>Patek-Philippe</p>
-                    </div>
-            </div>
+                </div>
+            </article>
 
-            <div className={styles.secCompanyContainer}>
+            <article className={styles.secCompanyContainer}>
                 <div className={styles.secCompanyContainerInputContainer}>
                 
                 <input 
@@ -429,9 +429,9 @@ const Filterpanel = () => {
                 <div className={styles.secCompanytitleDiv}>
                 <p className={styles.titleOfCompany2} style={{color: '#111111'}}>Rolex</p> 
                 </div>
-            </div>
+            </article>
 
-            <div className={styles.thirdCompanyContainer}>
+            <article className={styles.thirdCompanyContainer}>
                 <div className={styles.thirdCompanyContainerInputContainer}>
                 
                 <input type="checkbox" 
@@ -446,9 +446,9 @@ const Filterpanel = () => {
                 <div className={styles.thirdCompanytitleDiv}>
                 <p className={styles.titleOfCompany3} style={{color: '#111111'}}>Audemars-Piguet</p> 
                 </div>
-            </div>
+            </article>
 
-            <div className={styles.fourthCompanyContainer}>
+            <article className={styles.fourthCompanyContainer}>
                 <div className={styles.fourthCompanyContainerInputContainer}>
                 
                 <input 
@@ -464,9 +464,9 @@ const Filterpanel = () => {
                 <div className={styles.fourthCompanytitleDiv}>
                 <p className={styles.titleOfCompany4} style={{color: '#111111'}}>Hublot</p>  
                 </div>
-            </div>
+            </article>
 
-            <div className={styles.fifthCompanyContainer}>
+            <article className={styles.fifthCompanyContainer}>
                 <div className={styles.fifthCompanyContainerInputContainer}>
                 
                 <input 
@@ -482,9 +482,9 @@ const Filterpanel = () => {
                 <div className={styles.fifthCompanytitleDiv}>
                 <p className={styles.titleOfCompany5} style={{color: '#111111'}}>Zenith</p>  
                 </div>
-            </div>
+            </article>
 
-            <div className={styles.sixthCompanyContainer}>
+            <article className={styles.sixthCompanyContainer}>
                 <div className={styles.sixthCompanyContainerInputContainer}>
                 
                 <input 
@@ -500,9 +500,9 @@ const Filterpanel = () => {
                 <div className={styles.sixthCompanytitleDiv}>
                 <p className={styles.titleOfCompany6} style={{color: '#111111'}}>Omega</p> 
                 </div>
-            </div>
+            </article>
 
-            <div className={styles.sevenCompanyContainer}>
+            <article className={styles.sevenCompanyContainer}>
                 <div className={styles.sevenCompanyContainerInputContainer}>
                
                 <input 
@@ -518,9 +518,9 @@ const Filterpanel = () => {
                 <div className={styles.sevenCompanytitleDiv}>
                 <p className={styles.titleOfCompany7} style={{color: '#111111'}}>Breitling</p> 
                 </div>
-            </div>
+            </article>
 
-            <div className={styles.eightCompanyContainer}>
+            <article className={styles.eightCompanyContainer}>
                 <div className={styles.eightCompanyContainerInputContainer}>
                 
                 <input 
@@ -537,9 +537,9 @@ const Filterpanel = () => {
                 <div className={styles.eightCompanytitleDiv}>
                 <p className={styles.titleOfCompany8}style={{color: '#111111'}}> Richard-Mille</p> 
                 </div>
-            </div>
+            </article>
 
-            <div className={styles.ninthCompanyContainer}>
+            <article className={styles.ninthCompanyContainer}>
                 <div className={styles.ninthCompanyContainerInputContainer}>
                 
                 <input 
@@ -555,10 +555,10 @@ const Filterpanel = () => {
                 <div className={styles.ninthCompanytitleDiv}>
                 <p className={styles.titleOfCompany9} style={{color: '#111111'}}>Garmin</p> 
                 </div>
-            </div>
+            </article>
 
-        </div>
-    </div>
+        </section>
+    </main>
   )
 }
 

@@ -42,31 +42,31 @@ const Navbar = () => {
   }
   
   return (
-    <div className={toogle?styles.toogleContainer:styles.container}>
+    <main className={toogle?styles.toogleContainer:styles.container}>
     <div className={styles.upperdiv}>
     </div>
 
     
     <div className={styles.mainNavbarSection}>
 
-    <div className={styles.hamburgerContainer}>
+    <section className={styles.hamburgerContainer}>
       <RxHamburgerMenu className={styles.hamburgerIcon}  onClick={()=>{
       setToogle(!toogle)
     }}/>
-    </div>
+    </section>
 
-    <div className={styles.logoSection}>
+    <figure className={styles.logoSection}>
     <Link href="/"><Image src={Logo} className={styles.imgss}></Image></Link>
-    </div>
+    </figure>
     
     <div className={styles.optionSection}>
      
-      <div className={styles.semiOptionSection}>
+      <section className={styles.semiOptionSection}>
       <Link href="/"> <p className={styles.homeSection}>Home</p></Link>
       <Link href="/store"><p className={styles.WomenSection}>Women</p></Link>
       <Link href="/store"><p className={styles.MenSection}>Men</p></Link>
       <Link href="/store"><p className={styles.smartWatchSection}>Smart Watch</p></Link>
-      </div>
+      </section>
 
       <div className={styles.semiInputSection}>
       <BiSearch className={styles.SearchIcon}/>
@@ -76,37 +76,37 @@ const Navbar = () => {
     </div>
 
       {isUserId && isUserId.length > 2 ?(
-        <div className={styles.iconSection}>
+        <section className={styles.iconSection}>
           <button className={styles.loginbtn} onClick={idRemover}>Logout</button>
         {/* <HiOutlineUserCircle className={styles.icons2}/> */}
        {/* <RiShoppingBasketLine className={styles.icons3} /> */}
        <Link href="/addtocart"><button className={styles.loginbtn} >Cart</button></Link>
-        </div>
+        </section>
       ):(
-        <div className={styles.iconSection}>
+        <section className={styles.iconSection}>
         <Link href="/auth"><button className={styles.loginbtn} onClick={()=>{dispatch(toggleChanger(false))}}>Login</button></Link>
         <Link href="/auth"><button className={styles.signupbtn} onClick={()=>{dispatch(toggleChanger(true))}}>Signup</button></Link>
-          </div>
+          </section>
       )}
       
       
-    <div className={styles.langSection}>
+    <section className={styles.langSection}>
       <p className={styles.langUS}>US</p>
       <p className={styles.langEn}>EN</p>
-    </div>
+    </section>
     </div>
     {toogle?
         (
-            <div className={styles.TooglesemiOptionSection}>
+            <section className={styles.TooglesemiOptionSection}>
           <Link href="/" className={styles.TooglehomeSection}> Home</Link>
            <Link href="/store" className={styles.ToogleWomenSection} >Women</Link>
            <Link href="/store" className={styles.ToogleMenSection}>Men</Link>
            <Link href="/store" className={styles.TooglesmartWatchSection}>Smart Watch</Link>
-          </div>
+          </section>
         )
       :
         ""}
-    </div>
+    </main>
   )
 }
 

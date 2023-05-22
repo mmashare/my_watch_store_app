@@ -68,22 +68,22 @@ const AddToCartShowcase = ({productID,token,userID,AddQuantityToCart}) => {
 
 
   return (
-    <div className={styles.container}>
+    <main className={styles.container}>
         {/* image section */}
-        <div className={styles.imgContainer}>
+        <figure className={styles.imgContainer}>
         <Image src={fulldata && fulldata.data.img} className={styles.imgg} height="500" width="500"></Image>
-        </div>
+        </figure>
         {/* title and category container */}
-        <div className={styles.firstContainer}>
+        <section className={styles.firstContainer}>
                 <div className={styles.titleContainer} style={{color:"#111111"}}>
                 {excerpt(fulldata && fulldata.data.name)}
                 </div>
                 <div className={styles.categoryContainer}>
                     <p className={styles.categorytitle} style={{color:"#111111",fontWeight:"600"}}>For {fulldata && fulldata.data.type}</p>
                 </div>
-        </div>
+        </section>
         {/* price and incdecbtn and remove container */}
-        <div className={styles.secContainer}>
+        <section className={styles.secContainer}>
                 <div className={styles.priceContainer}>
                   <p className={styles.pricetitle} style={{color:"#111111"}}>${fulldata && fulldata.data.price}</p>
                 </div>
@@ -98,8 +98,8 @@ const AddToCartShowcase = ({productID,token,userID,AddQuantityToCart}) => {
                     <p className={styles.remvBtn} onClick={()=>{DeletePost(`${productID._id}`)}} style={{color:"#111111"}}>Remove</p>
                     {/*  */}
                 </div>
-        </div>
-    </div>
+        </section>
+    </main>
   )
 }
 

@@ -93,32 +93,32 @@ const AddtoCart = () => {
 
          
   return (
-    <div className={styles.container}>
-        <div className={styles.navContainer}>
+    <main className={styles.container}>
+        <nav className={styles.navContainer}>
            <Navbar/>         
-        </div>
-        <div className={styles.headingContainer}>
+        </nav>
+        <section className={styles.headingContainer}>
                {fullData?<h2 className={styles.heading} style={{color:"#111111"}}>YOUR CART</h2>:""}
-            </div>
-        <div className={styles.mainContainer}>
+            </section>
+        <section className={styles.mainContainer}>
             
-            <div className={styles.CardContainer}>
+            <section className={styles.CardContainer}>
             
                   {fullData?(fullData.data.map((h,i)=>{
                     return (
-                        <div key={i} className={styles.miniCardContainer}>
+                        <article key={i} className={styles.miniCardContainer}>
                             {/* {console.log("myPrice",h?.Products[i]?.Price)} */}
                         <AddToCartShowcase productID={h} token={token} userID={userID} AddQuantityToCart={AddQuantityToCart}/>
-                        </div>
+                        </article>
                     )
                     })):(<h className={styles.heading} style={{margin:"3rem auto auto auto",wordBreak:"breakWord"}}>IF you want to add product in your cart you have to login first </h>)
                   }
                    
                
                {/* <AddToCartShowcase/> */}
-            </div>
+            </section>
             
-            <div className={styles.TotalCardCotainer}>
+            <section className={styles.TotalCardCotainer}>
 
            <div className={styles.TotalCardSemiCotainer}>
             <div className={styles.HeadTitleContainer}>
@@ -140,14 +140,14 @@ const AddtoCart = () => {
            
            </div>
            
-            </div> 
+            </section> 
 
 
-        </div>
-        <div className={styles.footerContainer}>
+        </section>
+        <footer className={styles.footerContainer}>
             <Footer/>
-        </div>
-    </div>
+        </footer>
+    </main>
   )
 }
 

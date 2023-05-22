@@ -86,16 +86,16 @@ const SingleProductPage= () => {
     
    
   return (
-    <div className={styles.container}>
+    <main className={styles.container}>
         {/* navbar section */}
-        <div className={styles.navContainer}>
+        <nav className={styles.navContainer}>
             <Navbar />
-        </div>
+        </nav>
         {/* main section */}
-        <div className={styles.mainContainer}>
-            <div className={styles.imageContainer}>
+        <section className={styles.mainContainer}>
+            <figure className={styles.imageContainer}>
                 <Image src={mydata && mydata.data.img} className={styles.img} height="500" width="500"></Image>
-            </div>
+            </figure>
             <div className={styles.ContentContainer}>
                 <div className={styles.titleContainer}>
                     <h2 className={styles.title} style={{color: "#111111"}}>{mydata && mydata.data.name}</h2>
@@ -118,30 +118,30 @@ const SingleProductPage= () => {
                     </p>
                 </div>
             </div>
-        </div>
+        </section>
         {/* people also like section */}
 
-        <div className={styles.similerProductContainer} style={{backgroundColor: "#f3f3f3"}}>
+        <section className={styles.similerProductContainer} style={{backgroundColor: "#f3f3f3"}}>
             <div className={styles.similerProductHeadingContainer}>
                 <h3 className={styles.similerProductHeading} style={{color: "#111111",fontWeight:"600"}}><span className={styles.spanofSimilerproductHeading}>Other</span> Products</h3>
             </div>
             <div className={styles.similerProductsection}>
                 {recomandedPost && recomandedPost.slice(0,4).map((h,i)=>{
                     return(
-                        <div key={i} style={{display:"flex",flexDirection: "row",justifyContent:"space-around",
+                        <article key={i} style={{display:"flex",flexDirection: "row",justifyContent:"space-around",
                     flexWrap:"wrap",height:"auto",marginBottom:"0px",padding:"0px",
                     width: "auto"}}>
                    <Link href={`/store/${h._id}`}><Showcase name={h.name} price={h.price} img={h.img}/></Link> 
-                    </div>
+                    </article>
                     )
                 })}
             </div>
-        </div>
+        </section>
         {/* footer section */}
-        <div className={styles.FooterContainer}>
+        <footer className={styles.FooterContainer}>
             <Footer/>
-        </div>
-    </div>
+        </footer>
+    </main>
   )
 }
 

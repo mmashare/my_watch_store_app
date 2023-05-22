@@ -15,33 +15,33 @@ export default function Home({smartWatch,expensiveWatch}) {
   console.log(expensiveWatch)
   console.log("BAJE_URL",process.env.NEXT_PUBLIC_BAJE_URL)
   return (
-   <div className={styles.container}>
-    <div className={styles.Navbarcontainer}>
+   <main className={styles.container}>
+    <nav className={styles.Navbarcontainer}>
     <Navbar />
-    </div>
+    </nav>
 
-    <div className={styles.homePageContainer}>
+    <section className={styles.homePageContainer}>
       {/* homepage design */}
       <HomeComponent/>
-    </div>
+    </section>
 
-  <div className={styles.smartwatchWrapper}>
+  <article className={styles.smartwatchWrapper}>
     {/* smart watches */}
     <div className={styles.headingDiv}>
       <p className={styles.headingOfSmartWatch}><span className={styles.spanOfSmart}>SMART</span> WATCHES</p>
     </div>
     
-    <div className={styles.showCaseContainer}>
+    <figure className={styles.showCaseContainer}>
     {smartWatch && smartWatch.slice(0,3).map((h,i)=>{
       return (<div key={i} style={{display:"flex",justifyContent:"space-around"}}>
         <Link href={`/store/${h._id}`}> <Showcase name={h.name} price={h.price} img={h.img}/> </Link>
       </div>)
       })
     }
-    </div>
-  </div>
+    </figure>
+  </article>
 
-    <div className={styles.highpriceWrapper}>
+    <article className={styles.highpriceWrapper}>
       {/* high price watches */}
 
       <div className={styles.headingDivOfExp}>
@@ -49,18 +49,17 @@ export default function Home({smartWatch,expensiveWatch}) {
       <p className={styles.spanOfexp}>WATCHES</p>
     </div>
 
-    <div className={styles.expensiveWContainer}>
+    <figure className={styles.expensiveWContainer}>
     {expensiveWatch && expensiveWatch.slice(0,3).map((h,i)=>{
       return (<div key={i} style={{display:"flex",justifyContent:"space-around"}}>
        <Link href={`/store/${h._id}`}> <Showcase name={h.name} price={h.price} img={h.img}/> </Link>
       </div>)
       })
     }
-    </div>
+    </figure>
+    </article>
 
-    </div>
-
-    <div className={styles.shopebybrandSection}>
+    <section className={styles.shopebybrandSection}>
       {/* shop by brand */}
       <Link href="/store"><div className={styles.headLineContainer}>
         <p className={styles.headLine}>BRANDS</p>
@@ -82,9 +81,9 @@ export default function Home({smartWatch,expensiveWatch}) {
         <BsArrowUpRight className={styles.arrow4}/>
         </div></Link>
 
-    </div>
+    </section>
 
-    <div className={styles.signupSection}>
+    <section className={styles.signupSection}>
       {/* sign up page promotion */}
       <div className={styles.imgContainer}>
      {/* <Image src={rolexImg} className={styles.imageTag}></Image> */}
@@ -94,13 +93,13 @@ export default function Home({smartWatch,expensiveWatch}) {
         <Link href="/auth"><p className={styles.heading2}>GO TO SIGNUP PAGE <BsArrowRightShort className={styles.arrowTowardRight}/></p></Link>
        
       </div>
-    </div>
+    </section>
 
-    <div className={styles.footerSection}>
+    <footer className={styles.footerSection}>
       {/* footer  */}
       <Footer/>
-    </div>
-   </div>
+    </footer>
+   </main>
   )
 }
 

@@ -159,24 +159,24 @@ const Store = ({alldata}) => {
   
   return (
     <main className={styles.container}>
-        <div className={styles.navbarContainer}><Navbar/></div>
-        <div className={styles.mainContentContainer}>
-             <div className={styles.sidebarContainer}>
+        <nav className={styles.navbarContainer}><Navbar/></nav>
+        <section className={styles.mainContentContainer}>
+             <aside className={styles.sidebarContainer}>
             <Filterpanel />
-            </div> 
+            </aside> 
              <div className={styles.StoreContainer}>
               { myproduct.length && myproduct.map((h,i)=>{
-                    return (<div key={i} style={{display:"flex",flexDirection: "row",justifyContent:"space-around",
+                    return (<article key={i} style={{display:"flex",flexDirection: "row",justifyContent:"space-around",
                     flexWrap:"wrap",height:"auto",marginBottom:"0px",padding:"0px",
                     width: "auto"}}>
                    <Link href={`/store/${h._id}`}><Showcase name={h.name} price={h.price} img={h.img}/></Link> 
-                    </div>)
+                    </article>)
                     })
                   }
               
               
             </div> 
-        </div>
+        </section>
     </main>
   )
 }

@@ -13,7 +13,7 @@ const Showcase = ({img,name,price}) => {
 
   return (
 
-    <div className={styles.container}>
+    <section className={styles.container}>
         <div className={styles.imgContainer}>
             <Image src={img} className={styles.img} height="500" width="500"></Image>
             {/* <Image src={Imagess} className={styles.img} ></Image> */}
@@ -22,7 +22,7 @@ const Showcase = ({img,name,price}) => {
         <p className={styles.name}>{excerpt(name)}</p>
         <p className={styles.price}>${price}</p>
         </div>
-    </div>
+    </section>
   )
 }
 

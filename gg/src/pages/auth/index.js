@@ -81,11 +81,11 @@ const auth = () => {
   
   },[typeof window !== 'undefined'])
   return (
-    <div className={styles.container} style={{backgroundColor: "#ebebeb"}}>
+    <main className={styles.container} style={{backgroundColor: "#ebebeb"}}>
 
-        <div className={styles.Navbarcontainer}>
+        <nav className={styles.Navbarcontainer}>
             <Navbar/>
-        </div>
+        </nav>
 
 
         <div className={styles.headingContainer}>
@@ -95,11 +95,11 @@ const auth = () => {
         <div className={styles.mainCOntainer}>{myAuthToggle?(
                 // signup
 
-                <div className={styles.Semicontainer}>
+                <section className={styles.Semicontainer}>
 
-                <div className={styles.Imgcontainer}>
+                <figure className={styles.Imgcontainer}>
                         <Image src={Myimg} className={styles.Imgg}></Image>
-                </div>
+                </figure>
                 <div className={styles.contentDiv}>
                 <div className={styles.nameContainer}>
                     {IsAlreadySignUp?<p className={styles.Reminder}>*A user has been created. Now, please signin.</p>:""}
@@ -125,14 +125,14 @@ const auth = () => {
                     {IsAlreadySignUp?<button className={styles.GoBtn} style={{color:"#0c0c0c"}} disabled >Go</button>:<button className={styles.GoBtn} style={{color:"#0c0c0c",cursor:"pointer"}} onClick={handleSignUp}>Go</button>}
                 </div>
                 </div>
-                </div>
+                </section>
 
         ):(
             // Login
-            <div className={styles.Semicontainer}>
-                 <div className={styles.Imgcontainer}>
+            <section className={styles.Semicontainer}>
+                 <figure className={styles.Imgcontainer}>
                         <Image src={Myimg} className={styles.Imgg}></Image>
-                </div>
+                </figure>
                 <div className={styles.contentDiv}>
             <div className={styles.emailContainer}>
                 { nothaveAccount?<p className={styles.Reminder}>*You don't have a account yet</p>:"" }
@@ -149,14 +149,14 @@ const auth = () => {
                     <button className={styles.GoBtn} onClick={handleLogin} style={{color:"#0c0c0c",cursor:"pointer"}}>Go</button>
             </div>
             </div>
-        </div>
+        </section>
 
         )}
         </div>
         
     
    
-    </div>
+    </main>
   )
 }
 
