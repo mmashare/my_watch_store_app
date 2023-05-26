@@ -33,7 +33,7 @@ export async function getServerSideProps(){
 const Store = ({alldata}) => {
   
   const {price1,price2,price3,men,women,smartWatch,patekPhilippe,rolex,audemarsPiguet,
-    hublot,zenith,omega,Breitling,richardMille,garmin} = useSelector((state)=>{
+    hublot,zenith,omega,Breitling,richardMille,garmin,ByNavWomen,ByNavMen,ByNavSmartWatch} = useSelector((state)=>{
     return state.product
   })
   const [myproduct,setMyproduct] = useState(alldata);
@@ -142,7 +142,7 @@ const Store = ({alldata}) => {
     useEffect(()=>{
       productSelector();
     },[price1,price2,price3,men,women,smartWatch,patekPhilippe,rolex,audemarsPiguet,
-      hublot,zenith,omega,Breitling,richardMille,garmin])
+      hublot,zenith,omega,Breitling,richardMille,garmin,ByNavWomen,ByNavMen,ByNavSmartWatch])
   
   // console.log("price1",price1)
   // console.log("price2",price2)
@@ -165,12 +165,14 @@ const Store = ({alldata}) => {
             <Filterpanel />
             </aside> 
              <div className={styles.StoreContainer}>
-              { myproduct.length && myproduct.map((h,i)=>{
-                    return (<article key={i} style={{display:"flex",flexDirection: "row",justifyContent:"space-around",
+             {/* style={{display:"flex",flexDirection: "row",justifyContent:"space-around",
                     flexWrap:"wrap",height:"auto",marginBottom:"0px",padding:"0px",
-                    width: "auto"}}>
-                   <Link href={`/store/${h._id}`}><Showcase name={h.name} price={h.price} img={h.img}/></Link> 
-                    </article>)
+                    width: "auto"}} */}
+              { myproduct.length && myproduct.map((h,i)=>{
+                // <Link href={`/store/${h._id}`} ><Showcase name={h.name} price={h.price} img={h.img}/></Link>
+                    return (
+                      <Link href={`/store/${h._id}`} style={{display:"flex"}}><Showcase name={h.name} price={h.price} img={h.img}/></Link>
+                    )
                     })
                   }
               
@@ -182,3 +184,5 @@ const Store = ({alldata}) => {
 }
 
 export default Store;
+
+

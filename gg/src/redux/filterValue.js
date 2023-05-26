@@ -18,6 +18,9 @@ const initialState= {
    Breitling:false,
    richardMille:false,
    garmin:false,
+   ByNavWomen:false,
+   ByNavMen:false,
+   ByNavSmartWatch:false,
 
   }
 
@@ -79,6 +82,22 @@ export const productSlice = createSlice({
         state.garmin = action.payload;
 
       },
+      MyByNavWomen:(state,action)=>{
+        state.ByNavWomen = action.payload;
+        state.ByNavMen = false;
+        state.ByNavSmartWatch = false;
+      },
+      MyByNavMen:(state,action)=>{
+        state.ByNavMen = action.payload;
+        state.ByNavSmartWatch = false;
+        state.ByNavWomen = false;
+      },
+      MyByNavSmartWatch:(state,action)=>{
+        state.ByNavSmartWatch = action.payload;
+        state.ByNavMen = false;
+        state.ByNavWomen = false;
+
+      },
       allValueOff:(state)=>{
         state.price1 = false;
         state.price2 = false;
@@ -95,6 +114,9 @@ export const productSlice = createSlice({
         state.Breitling = false;
         state.richardMille = false;
         state.garmin = false;
+        state.ByNavWomen = false;
+        state.ByNavMen = false;
+        state.ByNavSmartWatch = false;
       }
      
     },
@@ -116,6 +138,9 @@ export const productSlice = createSlice({
     myBreitling,
     myrichardMille,
     mygarmin,
+    MyByNavWomen,
+    MyByNavMen,
+    MyByNavSmartWatch,
 } = productSlice.actions;
   
   export default productSlice.reducer;

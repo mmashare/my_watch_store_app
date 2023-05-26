@@ -319,7 +319,7 @@ const Filterpanel = () => {
     // console.log(women)
     // console.log(smartWatch)
   return (
-    <main className={mytoogle?styles.OpenContainer:styles.container}>
+    <section className={mytoogle?styles.OpenContainer:styles.container}>
         <section className={styles.Wrapper}>
             <h3 className={styles.textt} style={{color: '#111111'}}>Filter</h3>
             <AiOutlinePlus className={mytoogle?styles.crossicon:styles.plusIcon} style={{color: '#111111'}} onClick={()=>{setMyToogle(!mytoogle)}}/>
@@ -339,11 +339,12 @@ const Filterpanel = () => {
                  className={styles.firstPriceContainerInput} 
                  onChange={handleChange} 
                  checked={firstInput?"checked":""}
+                 id="$100to$1k"
                  />
 
                 </div>
                 <div className={styles.firstPricetitleDiv}>
-                    <p className={styles.title1} style={{color: '#111111'}}>$100 to $1k</p>
+                    <label className={styles.title1} style={{color: '#111111'}} for="$100to$1k">$100 to $1k</label>
                 </div>
 
             </article>
@@ -357,10 +358,11 @@ const Filterpanel = () => {
                 className={styles.TwoPriceContainerInput} 
                 onChange={handleChange}
                 checked={secInput?"checked":""}
+                id="$1kto$100k"
                 />
                 </div>
                 <div className={styles.TwoPricetitleDiv}>
-                    <p className={styles.title2} style={{color: '#111111'}}>$1k to $100k</p>
+                    <label className={styles.title2} style={{color: '#111111'}} for="$1kto$100k">$1k to $100k</label>
                 </div>
 
             </article>
@@ -374,11 +376,12 @@ const Filterpanel = () => {
                 className={styles.ThirdPriceContainerInput} 
                 onChange={handleChange}
                 checked={thirdInput?"checked":""}
+                id="$1mto$100m"
                 />
 
                 </div>
                 <div className={styles.ThirdPricetitleDiv}>
-                <p className={styles.title3} style={{color: '#111111'}}>$1m to $100m</p>
+                <label className={styles.title3} style={{color: '#111111'}} for="$1mto$100m">$1m to $100m</label>
                 </div>
 
             </article>
@@ -405,11 +408,12 @@ const Filterpanel = () => {
                  value={patekPhilippe}
                  onChange={handlechangeForCompany}
                  checked={patekPhilippe?"checked":""}
+                 id="PatekPhilippe"
                  />
 
                 </div>
                 <div className={styles.firstCompanytitleDiv}>
-                    <p className={styles.titleOfCompany1} style={{color: '#111111'}}>Patek-Philippe</p>
+                    <label className={styles.titleOfCompany1} style={{color: '#111111'}} for="PatekPhilippe">Patek-Philippe</label>
                 </div>
             </article>
 
@@ -423,11 +427,12 @@ const Filterpanel = () => {
                 value={rolex}
                  onChange={handlechangeForCompany}
                  checked={rolex?"checked":""}
+                 id="Rolex"
                 />
 
                 </div>
                 <div className={styles.secCompanytitleDiv}>
-                <p className={styles.titleOfCompany2} style={{color: '#111111'}}>Rolex</p> 
+                <label className={styles.titleOfCompany2} style={{color: '#111111'}} for="Rolex">Rolex</label> 
                 </div>
             </article>
 
@@ -440,11 +445,12 @@ const Filterpanel = () => {
                 value={audemarsPiguet}
                  onChange={handlechangeForCompany}
                  checked={audemarsPiguet?"checked":""}
+                 id="AudemarsPiguet"
                 />
 
                 </div>
                 <div className={styles.thirdCompanytitleDiv}>
-                <p className={styles.titleOfCompany3} style={{color: '#111111'}}>Audemars-Piguet</p> 
+                <label className={styles.titleOfCompany3} style={{color: '#111111'}} for="AudemarsPiguet">Audemars-Piguet</label> 
                 </div>
             </article>
 
@@ -458,11 +464,12 @@ const Filterpanel = () => {
                 value={hublot}
                 onChange={handlechangeForCompany}
                 checked={hublot?"checked":""}
+                id="Hublot"
                 />
 
                 </div>
                 <div className={styles.fourthCompanytitleDiv}>
-                <p className={styles.titleOfCompany4} style={{color: '#111111'}}>Hublot</p>  
+                <label className={styles.titleOfCompany4} style={{color: '#111111'}} for="Hublot">Hublot</label>  
                 </div>
             </article>
 
@@ -476,11 +483,12 @@ const Filterpanel = () => {
                 value={zenith}
                 onChange={handlechangeForCompany}
                 checked={zenith?"checked":""}
+                id="Zenith"
                 />
 
                 </div>
                 <div className={styles.fifthCompanytitleDiv}>
-                <p className={styles.titleOfCompany5} style={{color: '#111111'}}>Zenith</p>  
+                <label className={styles.titleOfCompany5} style={{color: '#111111'}} for="Zenith">Zenith</label>  
                 </div>
             </article>
 
@@ -494,11 +502,12 @@ const Filterpanel = () => {
                 value={omega}
                 onChange={handlechangeForCompany}
                 checked={omega?"checked":""}
+                id="Omega"
                 />
 
                 </div>
                 <div className={styles.sixthCompanytitleDiv}>
-                <p className={styles.titleOfCompany6} style={{color: '#111111'}}>Omega</p> 
+                <label className={styles.titleOfCompany6} style={{color: '#111111'}} for="Omega">Omega</label> 
                 </div>
             </article>
 
@@ -512,11 +521,12 @@ const Filterpanel = () => {
                  value={Breitling}
                  onChange={handlechangeForCompany}
                  checked={Breitling?"checked":""}
+                 id="Breitling"
                  />
 
                 </div>
                 <div className={styles.sevenCompanytitleDiv}>
-                <p className={styles.titleOfCompany7} style={{color: '#111111'}}>Breitling</p> 
+                <label className={styles.titleOfCompany7} style={{color: '#111111'}} for="Breitling">Breitling</label> 
                 </div>
             </article>
 
@@ -530,12 +540,13 @@ const Filterpanel = () => {
                 value={richardMille}
                 onChange={handlechangeForCompany}
                 checked={richardMille?"checked":""}
+                id="RichardMille"
 
                 />
 
                 </div>
                 <div className={styles.eightCompanytitleDiv}>
-                <p className={styles.titleOfCompany8}style={{color: '#111111'}}> Richard-Mille</p> 
+                <label className={styles.titleOfCompany8}style={{color: '#111111'}} for="RichardMille">Richard-Mille</label> 
                 </div>
             </article>
 
@@ -549,16 +560,17 @@ const Filterpanel = () => {
                 value={garmin}
                 onChange={handlechangeForCompany}
                 checked={garmin?"checked":""}
+                id="Garmin"
                 />
 
                 </div>
                 <div className={styles.ninthCompanytitleDiv}>
-                <p className={styles.titleOfCompany9} style={{color: '#111111'}}>Garmin</p> 
+                <label className={styles.titleOfCompany9} style={{color: '#111111'}} for="Garmin">Garmin</label> 
                 </div>
             </article>
 
         </section>
-    </main>
+    </section>
   )
 }
 

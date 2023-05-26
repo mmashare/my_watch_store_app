@@ -11,6 +11,7 @@ import Link from 'next/link';
 import axios from 'axios';
 import {useSelector,useDispatch} from "react-redux"
 import {toggleChanger} from "../redux/authToggle"
+import {MyByNavMen,MyByNavSmartWatch,MyByNavWomen} from "../redux/filterValue"
 const Navbar = () => {
   const [toogle,setToogle] = useState(false);
   const [isUserId,setISUserId] = useState("") 
@@ -20,7 +21,19 @@ const Navbar = () => {
     return state.authToggle.myAuthToggle
   })
 
-  // console.log("myAuthToggle",myAuthToggle)
+  const ByNavWomen = useSelector((state)=>{
+    return state.product.ByNavWomen
+  })
+
+   console.log("ByNavWomen",ByNavWomen)
+  const ByNavMen = useSelector((state)=>{
+    return state.product.ByNavMen
+  })
+  console.log("ByNavMen",ByNavMen)
+  const ByNavSmartWatch = useSelector((state)=>{
+    return state.product.ByNavSmartWatch
+  })
+  console.log("ByNavSmartWatch",ByNavSmartWatch)
 
   useEffect(() => {
   if (typeof window !== 'undefined') {
@@ -42,7 +55,7 @@ const Navbar = () => {
   }
   
   return (
-    <main className={toogle?styles.toogleContainer:styles.container}>
+    <section className={toogle?styles.toogleContainer:styles.container}>
     <div className={styles.upperdiv}>
     </div>
 
@@ -62,17 +75,11 @@ const Navbar = () => {
     <div className={styles.optionSection}>
      
       <section className={styles.semiOptionSection}>
-      <Link href="/"> <p className={styles.homeSection}>Home</p></Link>
-      <Link href="/store"><p className={styles.WomenSection}>Women</p></Link>
-      <Link href="/store"><p className={styles.MenSection}>Men</p></Link>
-      <Link href="/store"><p className={styles.smartWatchSection}>Smart Watch</p></Link>
+      <Link href="/" ><p className={styles.homeSection}>Home</p></Link>
+      <Link href="/store" ><p className={styles.WomenSection} onClick={()=>{dispatch(MyByNavWomen(true))}}>Store</p></Link>
       </section>
 
-      <div className={styles.semiInputSection}>
-      <BiSearch className={styles.SearchIcon}/>
-        {/* <p className={styles.SearchIcon}><BiSearch className={styles.SearchIcon}/></p> */}
-        <input className={styles.inputt}placeholder="Search"/>
-      </div>
+      
     </div>
 
       {isUserId && isUserId.length > 2 ?(
@@ -99,15 +106,16 @@ const Navbar = () => {
         (
             <section className={styles.TooglesemiOptionSection}>
           <Link href="/" className={styles.TooglehomeSection}> Home</Link>
-           <Link href="/store" className={styles.ToogleWomenSection} >Women</Link>
-           <Link href="/store" className={styles.ToogleMenSection}>Men</Link>
-           <Link href="/store" className={styles.TooglesmartWatchSection}>Smart Watch</Link>
+           <Link href="/store" className={styles.ToogleWomenSection} onClick={()=>{dispatch(MyByNavWomen(true))}}>Store</Link>
+           {/* <Link href="/store" className={styles.ToogleMenSection} onClick={()=>{dispatch(MyByNavMen(true))}}>Men</Link>
+           <Link href="/store" className={styles.TooglesmartWatchSection} onClick={()=>{dispatch(MyByNavSmartWatch(true))}}>Smart Watch</Link> */}
           </section>
         )
       :
         ""}
-    </main>
+    </section>
   )
 }
 
 export default Navbar
+

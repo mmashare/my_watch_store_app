@@ -2,7 +2,7 @@ import React from 'react'
 import styles from "./footer.module.css"
 const Footer = () => {
   return (
-    <main className={styles.container}>
+    <section className={styles.container}>
         <section className={styles.copyrightSection}>
             <p>Copyright © 2023 Watches Inc. All rights reserved.</p>
         </section>
@@ -12,7 +12,7 @@ const Footer = () => {
             <p className={styles.option3}>Sales and Refunds</p>
             <p className={styles.option4}>Legal</p>
         </section>
-    </main>
+    </section>
   )
 }
 

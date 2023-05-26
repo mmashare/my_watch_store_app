@@ -32,11 +32,11 @@ export default function Home({smartWatch,expensiveWatch}) {
     </div>
     
     <figure className={styles.showCaseContainer}>
-    {smartWatch && smartWatch.slice(0,3).map((h,i)=>{
-      return (<div key={i} style={{display:"flex",justifyContent:"space-around"}}>
+    {smartWatch ? smartWatch.slice(0,3).map((h,i)=>{
+      return (<div key={i} style={{display:"flex",justifyContent:"space-around",marginLeft:"auto",marginRight:"auto"}}>
         <Link href={`/store/${h._id}`}> <Showcase name={h.name} price={h.price} img={h.img}/> </Link>
       </div>)
-      })
+      }):<div className={styles.loader}></div>
     }
     </figure>
   </article>
@@ -50,11 +50,13 @@ export default function Home({smartWatch,expensiveWatch}) {
     </div>
 
     <figure className={styles.expensiveWContainer}>
-    {expensiveWatch && expensiveWatch.slice(0,3).map((h,i)=>{
-      return (<div key={i} style={{display:"flex",justifyContent:"space-around"}}>
+    {expensiveWatch ? 
+    expensiveWatch.slice(0,3).map((h,i)=>{
+      return (<div key={i} style={{display:"flex",justifyContent:"space-around",marginTop:"20px"}}>
        <Link href={`/store/${h._id}`}> <Showcase name={h.name} price={h.price} img={h.img}/> </Link>
       </div>)
       })
+      :<div className={styles.loader}></div>
     }
     </figure>
     </article>
@@ -102,16 +104,6 @@ export default function Home({smartWatch,expensiveWatch}) {
    </main>
   )
 }
-
-// export async function getServerSideProps() {
-//   // Fetch data from external data source
-//   const res = await axios(`https://.../data`)
-//   const data = await res.json()
-
-//   // Pass data to the page via props
-//   return { props: { data } }
-// }
-
 
 export async function getServerSideProps(){
   

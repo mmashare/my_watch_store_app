@@ -68,7 +68,7 @@ const AddToCartShowcase = ({productID,token,userID,AddQuantityToCart}) => {
 
 
   return (
-    <main className={styles.container}>
+    <section className={styles.container}>
         {/* image section */}
         <figure className={styles.imgContainer}>
         <Image src={fulldata && fulldata.data.img} className={styles.imgg} height="500" width="500"></Image>
@@ -99,7 +99,7 @@ const AddToCartShowcase = ({productID,token,userID,AddQuantityToCart}) => {
                     {/*  */}
                 </div>
         </section>
-    </main>
+    </section>
   )
 }
 

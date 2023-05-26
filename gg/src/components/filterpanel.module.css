@@ -1817,12 +1817,14 @@
     
     .priceContainer{
         /* display: none; */
-        height: 8rem;
+        height: auto;
+        min-height: 8rem;
         width: 100%;
         background-color: #f3f3f3;
         border: #0c0c0c 1px solid;
         margin-bottom: 10px;
         box-shadow: 1px 0.5px 0.5px #0c0c0c;
+        padding:5px 5px
     }
     .OpenPriceContainer{
         /* height: 8rem;
@@ -1836,6 +1838,7 @@
         width: 5rem;
         font-size: 1.2rem;
         margin-left: 0.3rem;
+        margin-left: 0.5rem;
         font-family: Neue Machinai-Light;
     }
     .firstPriceContainer{
@@ -1988,7 +1991,8 @@
     }
     .companyContainer{
         /* display: none; */
-        height: 21rem;
+        height: auto;
+        min-height: 21rem;
         width: 100%;
         background-color: #f3f3f3;
         display: flex;
@@ -1996,6 +2000,7 @@
         border: #0c0c0c 1px solid;
         margin-top: 10px;
         box-shadow: 1px 0.5px 0.5px #0c0c0c;
+        padding: 5px 5px;
     }
     
     .OpenCompanyContainer{
@@ -2009,7 +2014,8 @@
             font-size: 1.2rem;
             margin-left: 0.3rem;
             font-family: Neue Machinai-Light;
-            margin-top: 2%;
+            margin-left: 0.3rem;
+            margin-top: 0.5rem;
             margin-bottom: 4%;
     }
     
@@ -2101,7 +2107,7 @@
     .titleOfCompany3{
         /* background-color:rgb(6, 10, 9); */
         height: 2rem;
-        width: 60%;
+        width: 80%;
         font-size: 0.9rem;
         font-family: Neue Machinai-Light;
         margin-top: 0.3rem;
