@@ -30,7 +30,7 @@ const SingleProductPage= () => {
                 `${process.env.NEXT_PUBLIC_BAJE_URL}/api/product/find/${router.query.id}`
               );
               setMydata(res)
-        }        
+        }    
          
     }
         
@@ -71,8 +71,9 @@ const SingleProductPage= () => {
       useEffect(()=>{
         
            getPost()
+          
           RecomendedPost()
-        },[router.query.id,mydata && mydata.data.type])
+        },[router.query.id,mydata && mydata.data.type,typeof window !== 'undefined'])
         
         useEffect(() => {
             if (typeof window !== 'undefined') {
@@ -81,7 +82,7 @@ const SingleProductPage= () => {
                
             }
             
-            },[typeof window !== 'undefined']);
+        },[typeof window !== 'undefined']);
     
    
   return (
@@ -97,6 +98,7 @@ const SingleProductPage= () => {
             </figure>
             <div className={styles.ContentContainer}>
                 <div className={styles.titleContainer}>
+                
                 {mydata?<h2 className={styles.title} style={{color: "#111111"}}>{mydata&&mydata.data.name}</h2>:<div className={styles.skeletonTitle}></div>}
                 </div>
                 <div className={styles.CategoryContainer}>
@@ -130,7 +132,7 @@ const SingleProductPage= () => {
                         <article key={i} style={{display:"flex",flexDirection: "row",justifyContent:"space-around",
                     flexWrap:"wrap",height:"auto",marginBottom:"0px",padding:"0px",
                     width: "auto",marginRight:"20px",marginLeft:"2px"}}>
-                   <Link href={`/store/${h._id}`}><Showcase name={h.name} price={h.price} img={h.img}/></Link> 
+                   <Link href={`/store/${h._id}`} ><Showcase name={h.name} price={h.price} img={h.img}/></Link> 
                     </article>
                     )
                 }):<div className={styles.loader}></div>}

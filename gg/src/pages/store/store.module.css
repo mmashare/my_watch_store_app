@@ -305,7 +305,7 @@
     .StoreContainer{
         /* background-color: rgb(170, 3, 31); */
         background-color: #f3f3f3;
-        height:auto;
+        height:min-content;
         min-height:35rem;
         width: 80%;
         display:flex;
